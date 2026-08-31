@@ -1,0 +1,49 @@
+/* Career Pathfinder page styles. Loaded only by the CareerPathfinder
+   page and scoped under .cp-root so nothing leaks into the rest of
+   the app. Brings in the brand type pairing: Fraunces (display serif)
+   + Nunito Sans (body). */
+
+.cp-root {
+  font-family: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+.cp-root .font-serif {
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+}
+
+/* Warm the surfaces: cards and option buttons use a warm white instead
+   of clinical pure white (higher specificity than the utility class). */
+.cp-root .bg-white {
+  background-color: #fffcf6;
+}
+
+.cp-root header {
+  background-color: rgba(255, 251, 243, 0.92);
+}
+
+/* Gentle float for the hero logo mark. */
+@keyframes cp-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.cp-float {
+  animation: cp-float 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cp-float {
+    animation: none;
+  }
+}
+
+/* Print: keep the report, drop the chrome. */
+@media print {
+  .cp-no-print {
+    display: none !important;
+  }
+
+  .cp-root {
+    background: white !important;
+  }
+}
