@@ -94,7 +94,7 @@ function MissionBand() {
 /** Platform mission band + stats + tool overview for the landing page. */
 export function PlatformAbout() {
   return (
-    <section aria-labelledby="about-heading" className="mt-10">
+    <section id="about" aria-labelledby="about-heading" className="mt-10 scroll-mt-16">
       <h2 id="about-heading" className="sr-only">
         About CrosseRoads
       </h2>
