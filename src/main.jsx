@@ -9,6 +9,8 @@ const CollegePlanner = lazy(() => import('./pages/CollegePlanner'));
 const ParentRoadmap = lazy(() => import('./pages/ParentRoadmap'));
 const Wellness = lazy(() => import('./pages/Wellness'));
 const Guides = lazy(() => import('./pages/Guides'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Terms = lazy(() => import('./pages/Terms'));
 
 function Fallback() {
   return (
@@ -30,6 +32,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/Wellness" element={<Wellness />} />
           <Route path="/Guides" element={<Guides />} />
           <Route path="/Guides/:slug" element={<Guides />} />
+          <Route path="/Privacy" element={<Privacy />} />
+          <Route path="/Terms" element={<Terms />} />
           <Route path="*" element={<Navigate to="/CareerPathfinder" replace />} />
         </Routes>
       </Suspense>

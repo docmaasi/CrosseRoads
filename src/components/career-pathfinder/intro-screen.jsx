@@ -98,7 +98,7 @@ export function IntroScreen({ onStart, hasProgress }) {
 
         <Button
           size="lg"
-          className="mt-7 h-13 rounded-full bg-[#4a2373] px-12 py-6 text-base text-white shadow-lg shadow-[#4a2373]/25 transition-all hover:scale-[1.03] hover:bg-[#17808d]"
+          className="mt-7 h-13 rounded-full bg-gradient-to-r from-[#4a2373] to-[#17808d] px-12 py-6 text-base text-white shadow-lg shadow-[#4a2373]/30 transition-all hover:scale-[1.04] hover:shadow-xl"
           onClick={onStart}
         >
           {hasProgress ? 'Continue where I left off' : 'Start the free assessment'}

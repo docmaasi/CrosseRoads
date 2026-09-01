@@ -1,30 +1,16 @@
 import { BRAND } from './branding';
 
-/** Compass-and-path mark for the Career Pathfinder brand. */
+/** The CrosseRoads emblem — the family-and-path art from the logo. */
 export function PathfinderMark({ size = 40 }) {
   return (
-    <svg
+    <img
+      src="/crosseroads-emblem.png"
+      alt=""
+      aria-hidden="true"
       width={size}
       height={size}
-      viewBox="0 0 120 120"
-      fill="none"
-      aria-hidden="true"
-    >
-      <circle cx="60" cy="60" r="53" stroke="#4a2373" strokeWidth="7" />
-      <path
-        d="M32 84 C 60 94, 76 74, 58 62 C 40 50, 52 34, 74 34"
-        stroke="#e8a33d"
-        strokeWidth="6.5"
-        strokeLinecap="round"
-        strokeDasharray="0.1 12"
-      />
-      <circle cx="32" cy="84" r="6.5" fill="#4a2373" />
-      <circle cx="58" cy="62" r="4.5" fill="#17808d" />
-      <path
-        d="M84 21 l4.6 9.4 10.4 1.5 -7.5 7.3 1.8 10.3 -9.3 -4.9 -9.3 4.9 1.8 -10.3 -7.5 -7.3 10.4 -1.5 z"
-        fill="#e8a33d"
-      />
-    </svg>
+      className="shrink-0 object-contain"
+    />
   );
 }
 

@@ -7,6 +7,7 @@ import { SectionScreen } from '@/components/career-pathfinder/section-screen';
 import { ResultsScreen } from '@/components/career-pathfinder/results/results-screen';
 import { CrosseRoadsHeader } from '@/components/career-pathfinder/crosseroads-header';
 import { FaqSection } from '@/components/career-pathfinder/faq-section';
+import { PlatformAbout } from '@/components/career-pathfinder/platform-about';
 import { ResourceLibrary } from '@/components/career-pathfinder/results/resource-library';
 import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import { TOTAL_QUESTIONS } from '@/components/career-pathfinder/data/sections';
@@ -65,6 +66,7 @@ export default function CareerPathfinder() {
                   onStart={() => setScreen(0)}
                   hasProgress={answeredCount > 0}
                 />
+                <PlatformAbout />
                 <FaqSection />
                 <div className="mx-auto max-w-2xl px-4 pb-14">
                   <ResourceLibrary />

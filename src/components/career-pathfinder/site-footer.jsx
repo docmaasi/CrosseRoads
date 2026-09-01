@@ -75,8 +75,8 @@ export function SiteFooter() {
               {BRAND.contactEmail}
             </a>
           </li>
-          <li className="text-stone-400">Privacy Policy — coming soon</li>
-          <li className="text-stone-400">Terms of Use — coming soon</li>
+          <li><a className={footerLink} href="/Privacy">Privacy Policy</a></li>
+          <li><a className={footerLink} href="/Terms">Terms of Use</a></li>
         </FooterColumn>
       </div>
 
@@ -90,7 +90,16 @@ export function SiteFooter() {
           </p>
           <p>
             © {new Date().getFullYear()} {BRAND.platformName}. All rights
-            reserved.
+            reserved. Site created and maintained by{' '}
+            <a
+              className="text-stone-300 underline underline-offset-2 transition-colors hover:text-white"
+              href="https://smithappstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SmithAppStudio LLC
+            </a>
+            .
           </p>
         </div>
       </div>
