@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import { BrandRibbon } from './brand-decor';
 import { PathfinderMark } from './pathfinder-logo';
 
 const NAV_LINKS = [
@@ -18,6 +19,7 @@ export function CrosseRoadsHeader({ right = null }) {
 
   return (
     <header className="cp-no-print sticky top-0 z-10 border-b border-stone-200/80 bg-white/90 backdrop-blur">
+      <BrandRibbon />
       <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-2.5">
         <a href="/CareerPathfinder" className="flex shrink-0 items-center gap-2">
           <PathfinderMark size={30} />

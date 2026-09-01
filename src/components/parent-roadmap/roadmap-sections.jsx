@@ -1,6 +1,7 @@
 import { CalendarCheck, Mail, Map } from 'lucide-react';
 import { PACKAGE_ITEMS, ADDITIONAL_SERVICES, ROADMAP_FAQ } from './data/package';
 import { BRAND } from '../career-pathfinder/branding';
+import { HeroLaurels } from '../career-pathfinder/brand-decor';
 
 /** Hero for the First-Time College Parent Roadmap package. */
 export function RoadmapHero() {
@@ -10,12 +11,17 @@ export function RoadmapHero() {
         aria-hidden="true"
         className="pointer-events-none absolute -top-20 left-[-10%] h-64 w-64 rounded-full bg-[#e8a33d]/10 blur-3xl"
       />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-24 left-[30%] h-64 w-64 rounded-full bg-[#7a3e9d]/10 blur-3xl"
+      />
+      <HeroLaurels />
       <div className="relative mx-auto max-w-2xl px-4 pb-2 pt-12 text-center">
         <span className="inline-flex items-center gap-2 rounded-full border border-[#17808d]/25 bg-white/80 px-4 py-1.5 text-sm text-[#4a2373] shadow-sm">
           <Map className="h-4 w-4 text-[#7a3e9d]" aria-hidden="true" />
           For first-time college parents
         </span>
-        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight text-[#4a2373]">
+        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text text-transparent">
           The First-Time College Parent Roadmap
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-lg text-stone-600">

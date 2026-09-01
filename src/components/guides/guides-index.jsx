@@ -13,7 +13,7 @@ export function GuidesIndex() {
         <p className="text-xs font-semibold uppercase tracking-widest text-[#17808d]">
           {BRAND.platformName} Guides
         </p>
-        <h1 className="mt-1 font-serif text-4xl font-bold text-[#4a2373]">
+        <h1 className="mt-1 font-serif text-4xl font-bold bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text text-transparent">
           Guidance you can act on
         </h1>
         <p className="mx-auto mt-3 max-w-lg text-lg text-stone-600">

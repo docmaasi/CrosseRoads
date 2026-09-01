@@ -1,6 +1,7 @@
 import { GraduationCap } from 'lucide-react';
 import { PHASES } from './data/phases';
 import { BRAND } from '../career-pathfinder/branding';
+import { HeroLaurels } from '../career-pathfinder/brand-decor';
 
 /** Hero + phase overview cards that double as anchor navigation. */
 export function PlannerHero({ phaseProgress, totalDone, totalItems }) {
@@ -10,12 +11,17 @@ export function PlannerHero({ phaseProgress, totalDone, totalItems }) {
         aria-hidden="true"
         className="pointer-events-none absolute -top-20 right-[-10%] h-64 w-64 rounded-full bg-[#17808d]/10 blur-3xl"
       />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-24 left-[30%] h-64 w-64 rounded-full bg-[#7a3e9d]/10 blur-3xl"
+      />
+      <HeroLaurels />
       <div className="relative mx-auto max-w-3xl px-4 pb-4 pt-12 text-center">
         <span className="inline-flex items-center gap-2 rounded-full border border-[#17808d]/25 bg-white/80 px-4 py-1.5 text-sm text-[#4a2373] shadow-sm">
           <GraduationCap className="h-4 w-4 text-[#17808d]" aria-hidden="true" />
           College Roadmap
         </span>
-        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight text-[#4a2373]">
+        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text text-transparent">
           College Admissions Planner
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-lg text-stone-600">

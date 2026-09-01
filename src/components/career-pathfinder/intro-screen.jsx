@@ -2,6 +2,7 @@ import { Clock, Gift, ShieldCheck } from 'lucide-react';
 import { Button } from '@/ui/button';
 import { PathfinderLogo } from './pathfinder-logo';
 import { BRAND } from './branding';
+import { HeroLaurels } from './brand-decor';
 
 const FACTORS = [
   'Education',
@@ -32,16 +33,21 @@ export function IntroScreen({ onStart, hasProgress }) {
         aria-hidden="true"
         className="pointer-events-none absolute top-40 left-[-12%] h-80 w-80 rounded-full bg-[#e8a33d]/10 blur-3xl"
       />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-10 left-[35%] h-64 w-64 rounded-full bg-[#7a3e9d]/10 blur-3xl"
+      />
+      <HeroLaurels />
 
       <div className="relative mx-auto max-w-2xl px-4 py-14 text-center">
         <div className="cp-float flex justify-center">
           <PathfinderLogo />
         </div>
 
-        <h1 className="mt-9 font-serif text-4xl font-bold leading-tight text-[#4a2373] sm:text-5xl">
-          Discover the careers that fit{' '}
+        <h1 className="mt-9 font-serif text-4xl font-bold leading-tight sm:text-5xl">
+          <span className="bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text text-transparent">Discover the careers that fit</span>{' '}
           <span className="relative whitespace-nowrap">
-            who you are
+            <span className="bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text text-transparent">who you are</span>
             <svg
               aria-hidden="true"
               viewBox="0 0 200 9"

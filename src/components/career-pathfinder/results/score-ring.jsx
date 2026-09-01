@@ -22,6 +22,12 @@ export function ScoreRing({ value, size = 48 }) {
       role="img"
       aria-label={`${value}% match`}
     >
+      <defs>
+        <linearGradient id="cr-ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#4a2373" />
+          <stop offset="100%" stopColor="#17808d" />
+        </linearGradient>
+      </defs>
       <circle
         cx={center}
         cy={center}
@@ -35,7 +41,7 @@ export function ScoreRing({ value, size = 48 }) {
         cy={center}
         r={radius}
         fill="none"
-        stroke={value >= 85 ? '#e8a33d' : '#17808d'}
+        stroke={value >= 85 ? '#e8a33d' : 'url(#cr-ring-grad)'}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeDasharray={circumference}
