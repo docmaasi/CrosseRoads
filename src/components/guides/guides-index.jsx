@@ -10,7 +10,15 @@ export function GuidesIndex() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-12">
       <div className="text-center">
-        <p className="text-xs font-semibold uppercase tracking-widest text-[#17808d]">
+        <img
+          src="/crosseroads-logo-clear.png"
+          alt=""
+          aria-hidden="true"
+          className="mx-auto w-48"
+          width="640"
+          height="500"
+        />
+        <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-[#17808d]">
           {BRAND.platformName} Guides
         </p>
         <h1 className="mt-1 font-serif text-4xl font-bold bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text text-transparent">

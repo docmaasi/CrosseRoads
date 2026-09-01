@@ -1,6 +1,5 @@
 import { Clock, Gift, ShieldCheck } from 'lucide-react';
 import { Button } from '@/ui/button';
-import { PathfinderLogo } from './pathfinder-logo';
 import { BRAND } from './branding';
 import { HeroLaurels } from './brand-decor';
 
@@ -41,8 +40,17 @@ export function IntroScreen({ onStart, hasProgress }) {
 
       <div className="relative mx-auto max-w-2xl px-4 py-14 text-center">
         <div className="cp-float flex justify-center">
-          <PathfinderLogo />
+          <img
+            src="/crosseroads-logo-clear.png"
+            alt={`${BRAND.platformName} — ${BRAND.platformTagline}`}
+            className="w-64 sm:w-80"
+            width="640"
+            height="500"
+          />
         </div>
+        <p className="mt-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#17808d]">
+          {BRAND.productName} · {BRAND.tagline}
+        </p>
 
         <h1 className="mt-9 font-serif text-4xl font-bold leading-tight sm:text-5xl">
           <span className="bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text text-transparent">Discover the careers that fit</span>{' '}
