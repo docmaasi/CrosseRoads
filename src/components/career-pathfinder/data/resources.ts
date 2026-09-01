@@ -102,6 +102,11 @@ export const RESOURCE_LIBRARY: ResourceGroup[] = [
         url: 'https://openlibrary.org/',
         description: 'A free, open catalog of millions of books you can read online',
       },
+      {
+        name: 'ExamPilot (AI exam prep)',
+        url: 'https://exampilot.help/',
+        description: 'AI-powered practice questions, flashcards and timed tests — free to start',
+      },
     ],
   },
   {

@@ -21,6 +21,7 @@ const GROUPS = [
       { href: '/CollegePlanner#resources', label: 'Official college links' },
       { href: '/ParentRoadmap#services', label: 'Advising services' },
       { href: '/Wellness#resources', label: 'Wellness resources' },
+      { href: 'https://exampilot.help/', label: 'ExamPilot — AI exam prep', external: true },
     ],
   },
   {
@@ -80,6 +81,8 @@ export function MenuPanel({ isActive, onClose }) {
                 <li key={link.href}>
                   <a
                     href={link.href}
+                    target={link.external ? '_blank' : undefined}
+                    rel={link.external ? 'noopener noreferrer' : undefined}
                     aria-current={isActive(link.href) ? 'page' : undefined}
                     className={`${itemClass} ${
                       isActive(link.href) ? 'font-medium text-[#4a2373]' : ''

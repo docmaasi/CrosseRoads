@@ -3,10 +3,12 @@ import {
   BookOpen,
   ClipboardCheck,
   Compass,
+  ExternalLink,
   GraduationCap,
   HandHeart,
   HeartPulse,
   Map,
+  Sparkles,
   Users,
 } from 'lucide-react';
 import { BRAND } from './branding';
@@ -146,6 +148,28 @@ export function PlatformAbout() {
             </a>
           ))}
         </div>
+
+        <a
+          href="https://exampilot.help/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group mb-2 mt-4 flex items-start gap-3 rounded-xl border border-[#e8a33d]/40 bg-gradient-to-r from-[#e8a33d]/10 to-[#17808d]/10 p-4 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#e8a33d] to-[#b07514]">
+            <Sparkles className="h-5 w-5 text-white" aria-hidden="true" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="inline-flex items-center gap-1.5 font-medium text-[#4a2373] group-hover:text-[#17808d]">
+              ExamPilot — AI-powered exam prep
+              <ExternalLink className="h-3.5 w-3.5 opacity-60" aria-hidden="true" />
+            </span>
+            <p className="mt-0.5 text-sm text-stone-600">
+              Studying for a class or a big test? Our AI study partner offers
+              119+ courses with practice questions, flashcards, and timed
+              tests — free to start at ExamPilot.help.
+            </p>
+          </span>
+        </a>
       </div>
     </section>
   );
