@@ -60,3 +60,38 @@ export const PLANNER_RESOURCES: PlannerResource[] = [
     description: 'Find local volunteer opportunities near you',
   },
 ];
+
+// International study databases — official government and agency portals
+// for families exploring options beyond (or into) the U.S.
+export const INTERNATIONAL_RESOURCES: PlannerResource[] = [
+  {
+    name: 'EducationUSA (U.S. Dept. of State)',
+    url: 'https://educationusa.state.gov/',
+    description: 'The official U.S. advising network for international students',
+  },
+  {
+    name: 'UCAS (United Kingdom)',
+    url: 'https://www.ucas.com/',
+    description: "The UK's central university application service",
+  },
+  {
+    name: 'Study in Europe (European Commission)',
+    url: 'https://education.ec.europa.eu/study-in-europe',
+    description: 'Official EU portal covering 33 countries, costs and scholarships',
+  },
+  {
+    name: 'EduCanada (Government of Canada)',
+    url: 'https://www.educanada.ca/',
+    description: 'Official Canadian source for programs, costs and scholarships',
+  },
+  {
+    name: 'DAAD (Germany)',
+    url: 'https://www.daad.de/en/',
+    description: 'The German Academic Exchange Service — programs and funding',
+  },
+  {
+    name: 'Fulbright U.S. Student Program',
+    url: 'https://us.fulbrightonline.org/',
+    description: 'Prestigious U.S. government grants to study or teach abroad',
+  },
+];

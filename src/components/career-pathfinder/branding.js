@@ -2,6 +2,9 @@
 // decided — change it here and it updates everywhere in the assessment.
 export const BRAND = {
   platformName: 'CrosseRoads',
+  platformTagline: 'Guidance • Support • Opportunity',
+  mission:
+    'Empowering single moms and single dads to navigate the path from high school to college and beyond.',
   productName: 'Career Pathfinder',
   tagline: "Find the work you're made for",
   byline: 'From Dr. Kisa Crosse',

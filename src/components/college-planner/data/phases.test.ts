@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { ALL_ITEMS, PHASES, TOTAL_ITEMS, phaseItemIds } from './phases';
-import { PLANNER_RESOURCES } from './resources';
+import { INTERNATIONAL_RESOURCES, PLANNER_RESOURCES } from './resources';
 
 describe('planner phase data', () => {
   it('has three phases in journey order', () => {
@@ -45,8 +45,14 @@ describe('planner resources', () => {
       'collegescorecard.ed.gov',
       'www.dosomething.org',
       'www.volunteermatch.org',
+      'educationusa.state.gov',
+      'www.ucas.com',
+      'education.ec.europa.eu',
+      'www.educanada.ca',
+      'www.daad.de',
+      'us.fulbrightonline.org',
     ];
-    for (const resource of PLANNER_RESOURCES) {
+    for (const resource of [...PLANNER_RESOURCES, ...INTERNATIONAL_RESOURCES]) {
       const url = new URL(resource.url);
       expect(url.protocol).toBe('https:');
       expect(allowedHosts).toContain(url.host);

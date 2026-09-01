@@ -29,9 +29,11 @@ export function SiteFooter() {
             <PathfinderMark size={34} />
             <CrosseRoadsWordmark className="text-lg text-white" />
           </div>
+          <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-[#e8a33d]">
+            {BRAND.platformTagline}
+          </p>
           <p className="mt-3 text-sm leading-relaxed">
-            Guidance for life&apos;s biggest transitions — career discovery,
-            college planning, and wellness — {BRAND.byline.replace(/^From/, 'from')},
+            {BRAND.mission} {BRAND.byline.replace(/^From/, 'From')},
             physician, educator, and mom.
           </p>
         </div>

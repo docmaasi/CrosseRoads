@@ -1,7 +1,7 @@
 # CrosseRoads
 
-Dr. Kisa Crosse's guidance platform — **guidance for life's biggest
-transitions** — as a standalone web app with no backend: every tool runs
+Dr. Kisa Crosse's guidance platform — **Guidance • Support • Opportunity** — empowering single moms and
+single dads to navigate the path from high school to college and beyond — as a standalone web app with no backend: every tool runs
 in the visitor's browser, and everything they enter stays on their device.
 
 ## The tools

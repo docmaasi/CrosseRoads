@@ -22,11 +22,11 @@ describe('wellness data', () => {
     expect(FOCUS_GUIDES.length).toBeGreaterThanOrEqual(4);
   });
 
-  it('links only to official .gov https health resources', () => {
+  it('links only to official .gov or WHO https health resources', () => {
     for (const resource of WELLNESS_RESOURCES) {
       const url = new URL(resource.url);
       expect(url.protocol).toBe('https:');
-      expect(url.host.endsWith('.gov')).toBe(true);
+      expect(url.host.endsWith('.gov') || url.host === 'www.who.int').toBe(true);
     }
   });
 

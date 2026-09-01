@@ -92,6 +92,42 @@ export const RESOURCE_LIBRARY: ResourceGroup[] = [
         url: 'https://www.coursera.org/',
         description: 'Professional courses and certificates, many free to audit',
       },
+      {
+        name: 'OpenLearn (The Open University)',
+        url: 'https://www.open.edu/openlearn/',
+        description: 'Over 900 free courses with badges and certificates, from the UK',
+      },
+      {
+        name: 'Open Library',
+        url: 'https://openlibrary.org/',
+        description: 'A free, open catalog of millions of books you can read online',
+      },
+    ],
+  },
+  {
+    id: 'worldwide',
+    title: 'Career data worldwide',
+    links: [
+      {
+        name: 'International Labour Organization',
+        url: 'https://www.ilo.org/',
+        description: 'The United Nations agency for the world of work — global labour data',
+      },
+      {
+        name: 'Europass (European Union)',
+        url: 'https://europass.europa.eu/',
+        description: "The EU's free tools for CVs, skills and careers across Europe",
+      },
+      {
+        name: 'National Careers Service (UK)',
+        url: 'https://nationalcareers.service.gov.uk/',
+        description: "The UK government's career profiles and skills assessments",
+      },
+      {
+        name: 'Job Bank (Canada)',
+        url: 'https://www.jobbank.gc.ca/career-planning',
+        description: "The Government of Canada's career quizzes and job profiles",
+      },
     ],
   },
   {

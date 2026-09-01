@@ -1,4 +1,5 @@
-// Official, free wellness resources — government health sites only.
+// Official, free wellness resources — government health sites and the
+// World Health Organization only.
 
 export interface WellnessResource {
   name: string;
@@ -36,6 +37,11 @@ export const WELLNESS_RESOURCES: WellnessResource[] = [
     name: 'MedlinePlus (NIH)',
     url: 'https://medlineplus.gov/',
     description: 'Trusted, ad-free health information on any condition',
+  },
+  {
+    name: 'Physical activity (WHO)',
+    url: 'https://www.who.int/news-room/fact-sheets/detail/physical-activity',
+    description: "The World Health Organization's global activity guidance",
   },
   {
     name: 'Dietary Guidelines for Americans',
