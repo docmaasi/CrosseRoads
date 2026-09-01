@@ -8,13 +8,13 @@ export function ChecklistItemRow({ item, isChecked, onToggle }) {
         type="button"
         aria-pressed={isChecked}
         onClick={() => onToggle(item.id)}
-        className="flex w-full items-start gap-3 rounded-lg px-2 py-2 text-left transition-colors hover:bg-[#2e7d8c]/5"
+        className="flex w-full items-start gap-3 rounded-lg px-2 py-2 text-left transition-colors hover:bg-[#17808d]/5"
       >
         <span
           aria-hidden="true"
           className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition-colors ${
             isChecked
-              ? 'border-[#2e7d8c] bg-[#2e7d8c] text-white'
+              ? 'border-[#17808d] bg-[#17808d] text-white'
               : 'border-stone-300 bg-white'
           }`}
         >

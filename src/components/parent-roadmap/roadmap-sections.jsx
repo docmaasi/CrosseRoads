@@ -11,11 +11,11 @@ export function RoadmapHero() {
         className="pointer-events-none absolute -top-20 left-[-10%] h-64 w-64 rounded-full bg-[#e8a33d]/10 blur-3xl"
       />
       <div className="relative mx-auto max-w-2xl px-4 pb-2 pt-12 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full border border-[#2e7d8c]/25 bg-white/80 px-4 py-1.5 text-sm text-[#1e4d5c] shadow-sm">
-          <Map className="h-4 w-4 text-[#c2703e]" aria-hidden="true" />
+        <span className="inline-flex items-center gap-2 rounded-full border border-[#17808d]/25 bg-white/80 px-4 py-1.5 text-sm text-[#4a2373] shadow-sm">
+          <Map className="h-4 w-4 text-[#7a3e9d]" aria-hidden="true" />
           For first-time college parents
         </span>
-        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight text-[#1e4d5c]">
+        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight text-[#4a2373]">
           The First-Time College Parent Roadmap
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-lg text-stone-600">
@@ -36,7 +36,7 @@ export function RoadmapHero() {
 export function PackageContents() {
   return (
     <section id="package" aria-labelledby="package-heading" className="scroll-mt-16">
-      <h2 id="package-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="package-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         What&apos;s inside
       </h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -50,15 +50,15 @@ export function PackageContents() {
                 item.href ? 'transition-all hover:-translate-y-0.5 hover:shadow-md' : ''
               }`}
             >
-              <p className="flex items-center gap-1.5 font-semibold text-[#1e4d5c]">
-                <CalendarCheck className="h-4 w-4 shrink-0 text-[#c2703e]" aria-hidden="true" />
+              <p className="flex items-center gap-1.5 font-semibold text-[#4a2373]">
+                <CalendarCheck className="h-4 w-4 shrink-0 text-[#7a3e9d]" aria-hidden="true" />
                 {item.title}
               </p>
               <p className="mt-1 text-sm leading-relaxed text-stone-600">
                 {item.description}
               </p>
               {item.href && (
-                <p className="mt-1.5 text-xs font-medium text-[#2e7d8c]">
+                <p className="mt-1.5 text-xs font-medium text-[#17808d]">
                   {item.href.startsWith('#') ? 'Use it below ↓' : 'Open it now →'}
                 </p>
               )}
@@ -74,7 +74,7 @@ export function PackageContents() {
 export function ServicesMenu() {
   return (
     <section id="services" aria-labelledby="services-heading" className="scroll-mt-16">
-      <h2 id="services-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="services-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         Work with Dr. Crosse
       </h2>
       <p className="mt-1 text-sm text-stone-600">
@@ -93,7 +93,7 @@ export function ServicesMenu() {
       </ul>
       <a
         href={`mailto:${BRAND.contactEmail}?subject=Parent%20Roadmap%20inquiry`}
-        className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#1e4d5c] px-7 py-3 font-medium text-white shadow-lg shadow-[#1e4d5c]/25 transition-all hover:scale-[1.02] hover:bg-[#2e7d8c]"
+        className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#4a2373] px-7 py-3 font-medium text-white shadow-lg shadow-[#4a2373]/25 transition-all hover:scale-[1.02] hover:bg-[#17808d]"
       >
         <Mail className="h-4 w-4" aria-hidden="true" />
         Ask about the Roadmap
@@ -108,7 +108,7 @@ export function RoadmapFaq() {
     <section id="faq" aria-labelledby="roadmap-faq-heading">
       <h2
         id="roadmap-faq-heading"
-        className="text-center font-serif text-2xl font-bold text-[#1e4d5c]"
+        className="text-center font-serif text-2xl font-bold text-[#4a2373]"
       >
         Frequently asked questions
       </h2>

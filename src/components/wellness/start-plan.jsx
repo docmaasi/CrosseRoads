@@ -3,8 +3,8 @@ import { LEVEL_GUIDES, FOCUS_GUIDES } from './data/plan-guides';
 const chip = (isActive) =>
   `rounded-full border px-3.5 py-1.5 text-sm transition-colors ${
     isActive
-      ? 'border-[#1e4d5c] bg-[#1e4d5c] text-white'
-      : 'border-stone-200 bg-white text-stone-700 hover:border-[#2e7d8c]'
+      ? 'border-[#4a2373] bg-[#4a2373] text-white'
+      : 'border-stone-200 bg-white text-stone-700 hover:border-[#17808d]'
   }`;
 
 /** "Start where you are": pick a level + focus areas, get a starting plan. */
@@ -18,7 +18,7 @@ export function StartPlan({ level, focus, setProfile }) {
 
   return (
     <section id="start" aria-labelledby="start-heading" className="scroll-mt-16">
-      <h2 id="start-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="start-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         Start where you are
       </h2>
       <p className="mt-1 text-sm text-stone-600">
@@ -61,7 +61,7 @@ export function StartPlan({ level, focus, setProfile }) {
 
       {guide && (
         <div className="mt-5 rounded-2xl border border-stone-200 bg-white p-5 shadow-sm">
-          <h3 className="font-serif text-lg font-bold text-[#1e4d5c]">
+          <h3 className="font-serif text-lg font-bold text-[#4a2373]">
             {guide.headline}
           </h3>
           <ul className="mt-2 space-y-2">

@@ -7,7 +7,7 @@ import { ScoreRing } from './score-ring';
 function Detail({ label, children }) {
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+      <p className="text-xs font-semibold uppercase tracking-wide text-[#17808d]">
         {label}
       </p>
       <p className="mt-0.5 text-sm text-stone-700">{children}</p>
@@ -28,7 +28,7 @@ export function MatchCard({ rank, match, defaultOpen = false }) {
         aria-expanded={isOpen}
         onClick={() => setIsOpen((open) => !open)}
       >
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1e4d5c] text-sm font-bold text-white">
+        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#4a2373] text-sm font-bold text-white">
           {rank}
         </span>
         <span className="flex-1">
@@ -60,14 +60,14 @@ export function MatchCard({ rank, match, defaultOpen = false }) {
           <Detail label="Potential challenge">{match.challenge}</Detail>
 
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[#17808d]">
               Reality check
             </p>
             <RealityCheck dimensions={match.dimensions} />
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#17808d]">
               Three things you can do now
             </p>
             <ol className="mt-1 list-decimal space-y-1 pl-5 text-sm text-stone-700">
@@ -78,7 +78,7 @@ export function MatchCard({ rank, match, defaultOpen = false }) {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#17808d]">
               Dig deeper (free)
             </p>
             <ul className="mt-1 space-y-1">
@@ -88,7 +88,7 @@ export function MatchCard({ rank, match, defaultOpen = false }) {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm font-medium text-[#1e4d5c] underline-offset-2 hover:text-[#2e7d8c] hover:underline"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-[#4a2373] underline-offset-2 hover:text-[#17808d] hover:underline"
                   >
                     {link.name}
                     <ExternalLink className="h-3 w-3 opacity-50" />

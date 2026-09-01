@@ -36,10 +36,10 @@ export function ResultsScreen({ answers, optimize, setOptimize, restart }) {
     <div className="mx-auto max-w-2xl space-y-8 px-4 py-8">
       <div className="flex items-end justify-between gap-3">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#2e7d8c]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#17808d]">
             Your career report
           </p>
-          <h2 className="mt-1 font-serif text-3xl font-bold text-[#1e4d5c]">
+          <h2 className="mt-1 font-serif text-3xl font-bold text-[#4a2373]">
             Your Career Profile
           </h2>
         </div>
@@ -57,7 +57,7 @@ export function ResultsScreen({ answers, optimize, setOptimize, restart }) {
       <ProfileSummary report={report} />
 
       <div>
-        <h3 className="font-serif text-xl font-bold text-[#1e4d5c]">
+        <h3 className="font-serif text-xl font-bold text-[#4a2373]">
           {OPTIMIZE_QUESTION.title}
         </h3>
         <p className="mt-1 text-sm text-stone-600">
@@ -71,8 +71,8 @@ export function ResultsScreen({ answers, optimize, setOptimize, restart }) {
               aria-pressed={optimize === option.id}
               className={`rounded-full border px-3 py-1.5 text-sm transition-colors ${
                 optimize === option.id
-                  ? 'border-[#1e4d5c] bg-[#1e4d5c] text-white'
-                  : 'border-stone-200 bg-white text-stone-700 hover:border-[#2e7d8c]'
+                  ? 'border-[#4a2373] bg-[#4a2373] text-white'
+                  : 'border-stone-200 bg-white text-stone-700 hover:border-[#17808d]'
               }`}
               onClick={() => setOptimize(optimize === option.id ? null : option.id)}
             >
@@ -83,7 +83,7 @@ export function ResultsScreen({ answers, optimize, setOptimize, restart }) {
       </div>
 
       <div className="space-y-3">
-        <h3 className="font-serif text-xl font-bold text-[#1e4d5c]">
+        <h3 className="font-serif text-xl font-bold text-[#4a2373]">
           Your top 10 career matches
         </h3>
         <TierNote report={report} />
@@ -101,7 +101,7 @@ export function ResultsScreen({ answers, optimize, setOptimize, restart }) {
 
       {report.hiddenGems.length > 0 && (
         <div className="space-y-3">
-          <h3 className="font-serif text-xl font-bold text-[#1e4d5c]">
+          <h3 className="font-serif text-xl font-bold text-[#4a2373]">
             Careers you may not have considered
           </h3>
           <p className="text-sm text-stone-600">

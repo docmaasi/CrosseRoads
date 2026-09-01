@@ -2,7 +2,7 @@
 // Variants: default (solid) and outline; sizes: default, sm, lg.
 
 const VARIANTS = {
-  default: 'bg-stone-800 text-white hover:bg-stone-700',
+  default: 'bg-[#4a2373] text-white hover:bg-[#33184f]',
   outline: 'border border-stone-300 bg-white text-stone-700 hover:bg-stone-50',
 };
 
@@ -22,7 +22,7 @@ export function Button({
   return (
     <button
       type={type}
-      className={`inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2e7d8c]/60 disabled:pointer-events-none disabled:opacity-50 ${VARIANTS[variant]} ${SIZES[size]} ${className}`}
+      className={`inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#17808d]/60 disabled:pointer-events-none disabled:opacity-50 ${VARIANTS[variant]} ${SIZES[size]} ${className}`}
       {...props}
     />
   );

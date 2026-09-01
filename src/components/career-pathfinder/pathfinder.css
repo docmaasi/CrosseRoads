@@ -14,7 +14,7 @@
 /* Warm the surfaces: cards and option buttons use a warm white instead
    of clinical pure white (higher specificity than the utility class). */
 .cp-root .bg-white {
-  background-color: #fffcf6;
+  background-color: #fefcfe;
 }
 
 .cp-root header {

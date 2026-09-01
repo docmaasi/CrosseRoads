@@ -27,7 +27,7 @@ export function ScoreRing({ value, size = 48 }) {
         cy={center}
         r={radius}
         fill="none"
-        stroke="#e8eef0"
+        stroke="#ece5f4"
         strokeWidth={strokeWidth}
       />
       <circle
@@ -35,7 +35,7 @@ export function ScoreRing({ value, size = 48 }) {
         cy={center}
         r={radius}
         fill="none"
-        stroke={value >= 85 ? '#e8a33d' : '#2e7d8c'}
+        stroke={value >= 85 ? '#e8a33d' : '#17808d'}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeDasharray={circumference}
@@ -48,7 +48,7 @@ export function ScoreRing({ value, size = 48 }) {
         y="50%"
         dominantBaseline="central"
         textAnchor="middle"
-        fill="#1e4d5c"
+        fill="#4a2373"
         fontSize={size * 0.27}
         fontWeight="700"
       >

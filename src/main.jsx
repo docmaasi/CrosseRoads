@@ -12,7 +12,7 @@ const Guides = lazy(() => import('./pages/Guides'));
 
 function Fallback() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#faf3e8] text-stone-500">
+    <div className="flex min-h-screen items-center justify-center bg-[#f6f0fa] text-stone-500">
       Loading…
     </div>
   );

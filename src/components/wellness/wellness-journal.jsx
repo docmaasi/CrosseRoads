@@ -8,7 +8,7 @@ export function WellnessJournal({ entries }) {
 
   return (
     <section id="journal" aria-labelledby="journal-heading" className="scroll-mt-16">
-      <h2 id="journal-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="journal-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         Your journal
       </h2>
       <div className="mt-3 flex gap-2.5 rounded-2xl border-2 border-[#e8a33d]/50 bg-[#e8a33d]/5 p-4">

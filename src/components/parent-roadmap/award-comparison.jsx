@@ -15,7 +15,7 @@ function MoneyInput({ id, label, value, onChange }) {
         value={value}
         placeholder="0"
         onChange={(event) => onChange(event.target.value)}
-        className="w-24 rounded-md border border-stone-200 px-2 py-1 text-right text-sm focus:border-[#2e7d8c] focus:outline-none"
+        className="w-24 rounded-md border border-stone-200 px-2 py-1 text-right text-sm focus:border-[#17808d] focus:outline-none"
       />
     </label>
   );
@@ -26,7 +26,7 @@ function SchoolCard({ school, canRemove, isBestNet, updateSchool, removeSchool }
   return (
     <div
       className={`rounded-2xl border bg-white p-4 shadow-sm ${
-        isBestNet ? 'border-[#2e7d8c]' : 'border-stone-200'
+        isBestNet ? 'border-[#17808d]' : 'border-stone-200'
       }`}
     >
       <div className="flex items-center gap-2">
@@ -35,7 +35,7 @@ function SchoolCard({ school, canRemove, isBestNet, updateSchool, removeSchool }
           placeholder="College name"
           aria-label="College name"
           onChange={(event) => updateSchool(school.id, { name: event.target.value })}
-          className="min-w-0 flex-1 rounded-md border border-stone-200 px-2 py-1.5 font-medium focus:border-[#2e7d8c] focus:outline-none"
+          className="min-w-0 flex-1 rounded-md border border-stone-200 px-2 py-1.5 font-medium focus:border-[#17808d] focus:outline-none"
         />
         {canRemove && (
           <button
@@ -49,7 +49,7 @@ function SchoolCard({ school, canRemove, isBestNet, updateSchool, removeSchool }
         )}
       </div>
 
-      <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-[#c2703e]">
+      <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-[#7a3e9d]">
         Cost of attendance (per year)
       </p>
       <div className="mt-1 space-y-1.5">
@@ -64,7 +64,7 @@ function SchoolCard({ school, canRemove, isBestNet, updateSchool, removeSchool }
         ))}
       </div>
 
-      <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+      <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-[#17808d]">
         Aid offered
       </p>
       <div className="mt-1 space-y-1.5">
@@ -88,7 +88,7 @@ function SchoolCard({ school, canRemove, isBestNet, updateSchool, removeSchool }
           <dt>Gift aid (never repaid)</dt>
           <dd>−{money(totals.giftAid)}</dd>
         </div>
-        <div className="flex justify-between font-bold text-[#1e4d5c]">
+        <div className="flex justify-between font-bold text-[#4a2373]">
           <dt>Net price</dt>
           <dd>{money(totals.netPrice)}</dd>
         </div>
@@ -98,7 +98,7 @@ function SchoolCard({ school, canRemove, isBestNet, updateSchool, removeSchool }
         </div>
       </dl>
       {isBestNet && (
-        <p className="mt-2 rounded-full bg-[#2e7d8c]/10 px-3 py-1 text-center text-xs font-semibold text-[#1e4d5c]">
+        <p className="mt-2 rounded-full bg-[#17808d]/10 px-3 py-1 text-center text-xs font-semibold text-[#4a2373]">
           Lowest net price
         </p>
       )}
@@ -114,7 +114,7 @@ export function AwardComparison({ schools, updateSchool, addSchool, removeSchool
 
   return (
     <section id="compare" aria-labelledby="compare-heading" className="scroll-mt-16">
-      <h2 id="compare-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="compare-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         Compare your financial-aid awards
       </h2>
       <p className="mt-1 text-sm text-stone-600">

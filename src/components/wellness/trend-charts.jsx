@@ -17,7 +17,7 @@ function TrendChart({ title, points }) {
 
   return (
     <div className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm">
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+      <p className="text-xs font-semibold uppercase tracking-wide text-[#17808d]">
         {title}
       </p>
       <svg
@@ -34,9 +34,9 @@ function TrendChart({ title, points }) {
           stroke="#e2e8f0"
           strokeWidth="1"
         />
-        <path d={path} fill="none" stroke="#2e7d8c" strokeWidth="2" strokeLinecap="round" />
+        <path d={path} fill="none" stroke="#17808d" strokeWidth="2" strokeLinecap="round" />
         {points.map((p, i) => (
-          <circle key={p.date} cx={x(i)} cy={y(p.value)} r="4" fill="#2e7d8c" stroke="#ffffff" strokeWidth="2">
+          <circle key={p.date} cx={x(i)} cy={y(p.value)} r="4" fill="#17808d" stroke="#ffffff" strokeWidth="2">
             <title>{`${p.date}: ${p.value}/5`}</title>
           </circle>
         ))}
@@ -60,7 +60,7 @@ export function TrendCharts({ entries }) {
 
   return (
     <section id="progress" aria-labelledby="progress-heading" className="scroll-mt-16">
-      <h2 id="progress-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="progress-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         Your trends
       </h2>
       <p className="mt-1 text-sm text-stone-600">

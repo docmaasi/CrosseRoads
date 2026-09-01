@@ -25,7 +25,7 @@ const STATUSES = [
 ];
 
 const selectClass =
-  'rounded-md border border-stone-200 bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-[#2e7d8c] focus:outline-none';
+  'rounded-md border border-stone-200 bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-[#17808d] focus:outline-none';
 
 function EntryRow({ entry, updateEntry, removeEntry }) {
   return (
@@ -35,7 +35,7 @@ function EntryRow({ entry, updateEntry, removeEntry }) {
         placeholder="College name"
         aria-label="College name"
         onChange={(event) => updateEntry(entry.id, { name: event.target.value })}
-        className="min-w-[10rem] flex-1 rounded-md border border-stone-200 px-2 py-1.5 text-sm font-medium focus:border-[#2e7d8c] focus:outline-none"
+        className="min-w-[10rem] flex-1 rounded-md border border-stone-200 px-2 py-1.5 text-sm font-medium focus:border-[#17808d] focus:outline-none"
       />
       <select
         aria-label="List category"
@@ -88,7 +88,7 @@ export function CollegeListTracker({ list, updateEntry, addEntry, removeEntry })
 
   return (
     <section id="college-list" aria-labelledby="list-heading" className="scroll-mt-16">
-      <h2 id="list-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="list-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         Your college list
       </h2>
       <p className="mt-1 text-sm text-stone-600">
@@ -99,7 +99,7 @@ export function CollegeListTracker({ list, updateEntry, addEntry, removeEntry })
         {counts.map((c) => (
           <span
             key={c.id}
-            className="rounded-full border border-[#2e7d8c]/25 bg-white px-3 py-1 text-xs text-[#1e4d5c]"
+            className="rounded-full border border-[#17808d]/25 bg-white px-3 py-1 text-xs text-[#4a2373]"
           >
             {c.label}: <strong>{c.count}</strong>
           </span>

@@ -22,7 +22,7 @@ const footerLink =
 /** Industry-standard site footer for the Career Pathfinder pages. */
 export function SiteFooter() {
   return (
-    <footer className="bg-[#173b47] text-stone-300">
+    <footer className="bg-[#33184f] text-stone-300">
       <div className="mx-auto grid max-w-5xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">

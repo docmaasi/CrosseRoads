@@ -12,13 +12,13 @@ export function NextMove({ matches }) {
 
   return (
     <div className="rounded-xl border-2 border-[#e8a33d]/50 bg-[#e8a33d]/5 p-5">
-      <h3 className="font-serif text-lg font-bold text-[#1e4d5c]">Your next move</h3>
+      <h3 className="font-serif text-lg font-bold text-[#4a2373]">Your next move</h3>
       <p className="mt-1 text-sm text-stone-600">
         Your career does not have to be decided today. Your goal is to identify
         pathways worth exploring.
       </p>
 
-      <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+      <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-[#17808d]">
         Your top 3 careers to investigate
       </p>
       <ol className="mt-1 list-decimal pl-5 text-sm font-medium text-stone-800">
@@ -27,7 +27,7 @@ export function NextMove({ matches }) {
         ))}
       </ol>
 
-      <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+      <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-[#17808d]">
         Your 30-day career exploration challenge
       </p>
       <ul className="mt-1 space-y-1 pl-1 text-sm text-stone-700">

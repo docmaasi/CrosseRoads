@@ -23,7 +23,7 @@ export function HabitTracker({ habits, checks, weekDone, toggleHabit, toggleChec
   return (
     <section id="habits" aria-labelledby="habits-heading" className="scroll-mt-16">
       <div className="flex items-baseline justify-between gap-3">
-        <h2 id="habits-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+        <h2 id="habits-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
           Your weekly habits
         </h2>
         <span className="inline-flex items-center gap-1 text-sm font-medium text-[#b07514]">
@@ -45,8 +45,8 @@ export function HabitTracker({ habits, checks, weekDone, toggleHabit, toggleChec
             title={habit.description}
             className={`rounded-full border px-3 py-1 text-xs transition-colors ${
               habits.includes(habit.id)
-                ? 'border-[#2e7d8c] bg-[#2e7d8c]/10 font-medium text-[#1e4d5c]'
-                : 'border-stone-200 bg-white text-stone-500 hover:border-[#2e7d8c]'
+                ? 'border-[#17808d] bg-[#17808d]/10 font-medium text-[#4a2373]'
+                : 'border-stone-200 bg-white text-stone-500 hover:border-[#17808d]'
             }`}
             onClick={() => toggleHabit(habit.id)}
           >
@@ -60,7 +60,7 @@ export function HabitTracker({ habits, checks, weekDone, toggleHabit, toggleChec
           <table className="w-full border-collapse">
             <thead>
               <tr>
-                <th className="w-40 pb-2 text-left text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+                <th className="w-40 pb-2 text-left text-xs font-semibold uppercase tracking-wide text-[#17808d]">
                   Habit
                 </th>
                 {days.map((day) => (
@@ -68,7 +68,7 @@ export function HabitTracker({ habits, checks, weekDone, toggleHabit, toggleChec
                     key={day.key}
                     scope="col"
                     className={`pb-2 text-center text-xs font-medium ${
-                      day.isToday ? 'text-[#1e4d5c]' : 'text-stone-400'
+                      day.isToday ? 'text-[#4a2373]' : 'text-stone-400'
                     }`}
                   >
                     {day.label}
@@ -90,8 +90,8 @@ export function HabitTracker({ habits, checks, weekDone, toggleHabit, toggleChec
                           aria-label={`${habit.name} on ${day.key}`}
                           className={`h-7 w-7 rounded-full border transition-colors ${
                             isDone
-                              ? 'border-[#2e7d8c] bg-[#2e7d8c] text-white'
-                              : 'border-stone-200 bg-white hover:border-[#2e7d8c]'
+                              ? 'border-[#17808d] bg-[#17808d] text-white'
+                              : 'border-stone-200 bg-white hover:border-[#17808d]'
                           }`}
                           onClick={() => toggleCheck(day.key, habit.id)}
                         >

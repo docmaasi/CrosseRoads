@@ -1,11 +1,11 @@
 import { toast } from 'sonner';
 
 const baseOption =
-  'w-full rounded-lg border px-4 py-2.5 text-left text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2e7d8c]/60';
+  'w-full rounded-lg border px-4 py-2.5 text-left text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#17808d]/60';
 const idleOption =
-  'border-stone-200 bg-white text-stone-700 hover:border-[#2e7d8c] hover:shadow-sm';
+  'border-stone-200 bg-white text-stone-700 hover:border-[#17808d] hover:shadow-sm';
 const activeOption =
-  'border-[#2e7d8c] bg-[#2e7d8c]/10 text-[#1e4d5c] font-medium shadow-sm';
+  'border-[#17808d] bg-[#17808d]/10 text-[#4a2373] font-medium shadow-sm';
 
 /** Single-choice question rendered as a list of selectable buttons. */
 export function SingleChoice({ question, value, onChange }) {

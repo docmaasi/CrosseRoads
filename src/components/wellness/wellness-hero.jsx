@@ -11,14 +11,14 @@ export function WellnessHero() {
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-32 left-[-12%] h-72 w-72 rounded-full bg-[#2e7d8c]/10 blur-3xl"
+        className="pointer-events-none absolute top-32 left-[-12%] h-72 w-72 rounded-full bg-[#17808d]/10 blur-3xl"
       />
       <div className="relative mx-auto max-w-2xl px-4 pb-2 pt-12 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full border border-[#2e7d8c]/25 bg-white/80 px-4 py-1.5 text-sm text-[#1e4d5c] shadow-sm">
-          <HeartPulse className="h-4 w-4 text-[#c2703e]" aria-hidden="true" />
+        <span className="inline-flex items-center gap-2 rounded-full border border-[#17808d]/25 bg-white/80 px-4 py-1.5 text-sm text-[#4a2373] shadow-sm">
+          <HeartPulse className="h-4 w-4 text-[#7a3e9d]" aria-hidden="true" />
           Wellness Transformation
         </span>
-        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight text-[#1e4d5c]">
+        <h1 className="mt-5 font-serif text-4xl font-bold leading-tight text-[#4a2373]">
           Reclaim your energy, one steady week at a time
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-lg text-stone-600">

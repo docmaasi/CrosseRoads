@@ -8,7 +8,7 @@ export function WellnessResources() {
     <section id="resources" aria-labelledby="wellness-resources-heading">
       <h2
         id="wellness-resources-heading"
-        className="font-serif text-2xl font-bold text-[#1e4d5c]"
+        className="font-serif text-2xl font-bold text-[#4a2373]"
       >
         Trusted, free resources
       </h2>
@@ -24,7 +24,7 @@ export function WellnessResources() {
             rel="noopener noreferrer"
             className="group rounded-xl border border-stone-200 bg-white p-4 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
           >
-            <span className="inline-flex items-center gap-1.5 font-medium text-[#1e4d5c] group-hover:text-[#2e7d8c]">
+            <span className="inline-flex items-center gap-1.5 font-medium text-[#4a2373] group-hover:text-[#17808d]">
               {resource.name}
               <ExternalLink
                 className="h-3.5 w-3.5 opacity-50 group-hover:opacity-100"
@@ -45,7 +45,7 @@ export function WellnessFaq() {
     <section id="faq" aria-labelledby="wellness-faq-heading">
       <h2
         id="wellness-faq-heading"
-        className="text-center font-serif text-2xl font-bold text-[#1e4d5c]"
+        className="text-center font-serif text-2xl font-bold text-[#4a2373]"
       >
         Frequently asked questions
       </h2>

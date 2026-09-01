@@ -33,14 +33,14 @@ export default function CareerPathfinder() {
   const isTakingAssessment = typeof screen === 'number';
 
   return (
-    <div className="cp-root flex min-h-screen flex-col bg-gradient-to-b from-[#faf3e8] via-[#fffcf5] to-[#f7eee0]">
+    <div className="cp-root flex min-h-screen flex-col bg-gradient-to-b from-[#f6f0fa] via-[#fefcff] to-[#efe8f6]">
       <CrosseRoadsHeader
         right={
           isTakingAssessment ? (
             <div className="flex w-32 items-center gap-2 sm:w-44">
               <Progress
                 value={(answeredCount / TOTAL_QUESTIONS) * 100}
-                className="h-2 bg-stone-100 [&>div]:bg-[#2e7d8c]"
+                className="h-2 bg-stone-100 [&>div]:bg-[#17808d]"
               />
               <span className="shrink-0 text-xs text-stone-500">
                 {answeredCount}/{TOTAL_QUESTIONS}

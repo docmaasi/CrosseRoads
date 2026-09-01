@@ -10,7 +10,7 @@ export function PathfinderMark({ size = 40 }) {
       fill="none"
       aria-hidden="true"
     >
-      <circle cx="60" cy="60" r="53" stroke="#1e4d5c" strokeWidth="7" />
+      <circle cx="60" cy="60" r="53" stroke="#4a2373" strokeWidth="7" />
       <path
         d="M32 84 C 60 94, 76 74, 58 62 C 40 50, 52 34, 74 34"
         stroke="#e8a33d"
@@ -18,8 +18,8 @@ export function PathfinderMark({ size = 40 }) {
         strokeLinecap="round"
         strokeDasharray="0.1 12"
       />
-      <circle cx="32" cy="84" r="6.5" fill="#1e4d5c" />
-      <circle cx="58" cy="62" r="4.5" fill="#2e7d8c" />
+      <circle cx="32" cy="84" r="6.5" fill="#4a2373" />
+      <circle cx="58" cy="62" r="4.5" fill="#17808d" />
       <path
         d="M84 21 l4.6 9.4 10.4 1.5 -7.5 7.3 1.8 10.3 -9.3 -4.9 -9.3 4.9 1.8 -10.3 -7.5 -7.3 10.4 -1.5 z"
         fill="#e8a33d"
@@ -47,14 +47,14 @@ export function PathfinderLogo({ compact = false }) {
       <PathfinderMark size={compact ? 34 : 44} />
       <div>
         <div
-          className={`font-serif font-bold leading-tight text-[#1e4d5c] ${
+          className={`font-serif font-bold leading-tight text-[#4a2373] ${
             compact ? 'text-lg' : 'text-2xl'
           }`}
         >
           {BRAND.productName}
         </div>
         {!compact && (
-          <div className="text-xs uppercase tracking-[0.2em] text-[#2e7d8c]">
+          <div className="text-xs uppercase tracking-[0.2em] text-[#17808d]">
             {BRAND.tagline}
           </div>
         )}

@@ -11,7 +11,7 @@ export function ResourceLibrary() {
     <section id="resources" aria-labelledby="resources-heading">
       <h3
         id="resources-heading"
-        className="font-serif text-xl font-bold text-[#1e4d5c]"
+        className="font-serif text-xl font-bold text-[#4a2373]"
       >
         Free tools to keep exploring
       </h3>
@@ -26,7 +26,7 @@ export function ResourceLibrary() {
             key={group.id}
             className="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm"
           >
-            <h4 className="text-xs font-semibold uppercase tracking-wide text-[#2e7d8c]">
+            <h4 className="text-xs font-semibold uppercase tracking-wide text-[#17808d]">
               {group.title}
             </h4>
             <ul className="mt-2 space-y-2.5">
@@ -36,7 +36,7 @@ export function ResourceLibrary() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-1 text-sm font-medium text-[#1e4d5c] underline-offset-2 hover:text-[#2e7d8c] hover:underline"
+                    className="group inline-flex items-center gap-1 text-sm font-medium text-[#4a2373] underline-offset-2 hover:text-[#17808d] hover:underline"
                   >
                     {link.name}
                     <ExternalLink className="h-3 w-3 opacity-50 group-hover:opacity-100" />

@@ -11,9 +11,9 @@ export const BRAND = {
 
 // Brand palette (deliberately independent of the CoParent theme).
 export const BRAND_COLORS = {
-  deep: '#1e4d5c',
-  teal: '#2e7d8c',
+  deep: '#4a2373',
+  teal: '#17808d',
   gold: '#e8a33d',
-  terracotta: '#c2703e',
-  paper: '#faf3e8',
+  terracotta: '#7a3e9d',
+  paper: '#f6f0fa',
 };

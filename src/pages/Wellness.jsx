@@ -35,7 +35,7 @@ export default function Wellness() {
   } = useWellness();
 
   return (
-    <div className="cp-root flex min-h-screen flex-col bg-gradient-to-b from-[#faf3e8] via-[#fffcf5] to-[#f7eee0]">
+    <div className="cp-root flex min-h-screen flex-col bg-gradient-to-b from-[#f6f0fa] via-[#fefcff] to-[#efe8f6]">
       <CrosseRoadsHeader />
 
       <main className="flex-1">

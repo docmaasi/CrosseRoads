@@ -46,13 +46,13 @@ export function PhaseSection({ phase, index, progress, checked, onToggle }) {
   return (
     <section id={phase.id} aria-labelledby={`${phase.id}-heading`} className="scroll-mt-20">
       <div className="flex items-center gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1e4d5c] font-serif text-lg font-bold text-white">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#4a2373] font-serif text-lg font-bold text-white">
           {index + 1}
         </span>
         <div className="min-w-0 flex-1">
           <h2
             id={`${phase.id}-heading`}
-            className="font-serif text-2xl font-bold text-[#1e4d5c]"
+            className="font-serif text-2xl font-bold text-[#4a2373]"
           >
             {phase.name}
           </h2>
@@ -63,7 +63,7 @@ export function PhaseSection({ phase, index, progress, checked, onToggle }) {
       <div className="mt-3 flex items-center gap-2">
         <div className="h-2 flex-1 overflow-hidden rounded-full bg-stone-100">
           <div
-            className="h-full rounded-full bg-[#2e7d8c] transition-all duration-500"
+            className="h-full rounded-full bg-[#17808d] transition-all duration-500"
             style={{ width: `${percent}%` }}
           />
         </div>

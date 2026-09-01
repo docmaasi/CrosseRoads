@@ -21,8 +21,8 @@ export function CrosseRoadsHeader({ right = null }) {
       <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-2.5">
         <a href="/CareerPathfinder" className="flex shrink-0 items-center gap-2">
           <PathfinderMark size={30} />
-          <span className="hidden font-serif text-lg font-bold text-[#1e4d5c] sm:inline">
-            Cross<span className="text-[#e8a33d]">e</span>Roads
+          <span className="hidden font-serif text-lg font-bold text-[#4a2373] sm:inline">
+            Cross<span className="text-[#e8a33d]">e</span><span className="text-[#17808d]">Roads</span>
           </span>
         </a>
         <nav
@@ -39,8 +39,8 @@ export function CrosseRoadsHeader({ right = null }) {
                 aria-current={isActive ? 'page' : undefined}
                 className={`whitespace-nowrap rounded-full px-3 py-1.5 text-sm transition-colors ${
                   isActive
-                    ? 'bg-[#1e4d5c] font-medium text-white'
-                    : 'text-stone-600 hover:bg-[#2e7d8c]/10 hover:text-[#1e4d5c]'
+                    ? 'bg-[#4a2373] font-medium text-white'
+                    : 'text-stone-600 hover:bg-[#17808d]/10 hover:text-[#4a2373]'
                 }`}
               >
                 {link.label}

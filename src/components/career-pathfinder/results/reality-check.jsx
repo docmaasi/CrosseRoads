@@ -14,7 +14,7 @@ function ratingLabel(score) {
 }
 
 function barColor(score) {
-  if (score >= 80) return 'bg-[#2e7d8c]';
+  if (score >= 80) return 'bg-[#17808d]';
   if (score >= 65) return 'bg-[#e8a33d]';
   if (score >= 50) return 'bg-amber-300';
   return 'bg-rose-300';

@@ -26,7 +26,7 @@ export function IntroScreen({ onStart, hasProgress }) {
       {/* Soft decorative glows behind the hero */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-24 right-[-10%] h-72 w-72 rounded-full bg-[#2e7d8c]/10 blur-3xl"
+        className="pointer-events-none absolute -top-24 right-[-10%] h-72 w-72 rounded-full bg-[#17808d]/10 blur-3xl"
       />
       <div
         aria-hidden="true"
@@ -38,7 +38,7 @@ export function IntroScreen({ onStart, hasProgress }) {
           <PathfinderLogo />
         </div>
 
-        <h1 className="mt-9 font-serif text-4xl font-bold leading-tight text-[#1e4d5c] sm:text-5xl">
+        <h1 className="mt-9 font-serif text-4xl font-bold leading-tight text-[#4a2373] sm:text-5xl">
           Discover the careers that fit{' '}
           <span className="relative whitespace-nowrap">
             who you are
@@ -67,7 +67,7 @@ export function IntroScreen({ onStart, hasProgress }) {
           {FACTORS.map((factor, index) => (
             <span
               key={factor}
-              className="rounded-full border border-[#2e7d8c]/25 bg-white/80 px-3.5 py-1.5 text-sm text-[#1e4d5c] shadow-sm transition-transform hover:-translate-y-0.5"
+              className="rounded-full border border-[#17808d]/25 bg-white/80 px-3.5 py-1.5 text-sm text-[#4a2373] shadow-sm transition-transform hover:-translate-y-0.5"
             >
               <span className="mr-1.5 font-semibold text-[#e8a33d]">
                 {index + 1}
@@ -84,7 +84,7 @@ export function IntroScreen({ onStart, hasProgress }) {
 
         <Button
           size="lg"
-          className="mt-7 h-13 rounded-full bg-[#1e4d5c] px-12 py-6 text-base text-white shadow-lg shadow-[#1e4d5c]/25 transition-all hover:scale-[1.03] hover:bg-[#2e7d8c]"
+          className="mt-7 h-13 rounded-full bg-[#4a2373] px-12 py-6 text-base text-white shadow-lg shadow-[#4a2373]/25 transition-all hover:scale-[1.03] hover:bg-[#17808d]"
           onClick={onStart}
         >
           {hasProgress ? 'Continue where I left off' : 'Start the free assessment'}
@@ -96,7 +96,7 @@ export function IntroScreen({ onStart, hasProgress }) {
               key={label}
               className="inline-flex items-center gap-1.5 text-sm text-stone-500"
             >
-              <Icon className="h-4 w-4 text-[#2e7d8c]" />
+              <Icon className="h-4 w-4 text-[#17808d]" />
               {label}
             </span>
           ))}

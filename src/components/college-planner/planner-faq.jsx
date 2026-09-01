@@ -6,7 +6,7 @@ export function PlannerFaq() {
     <section id="faq" aria-labelledby="planner-faq-heading">
       <h2
         id="planner-faq-heading"
-        className="text-center font-serif text-2xl font-bold text-[#1e4d5c]"
+        className="text-center font-serif text-2xl font-bold text-[#4a2373]"
       >
         Frequently asked questions
       </h2>

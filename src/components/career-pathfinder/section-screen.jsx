@@ -77,14 +77,14 @@ export function SectionScreen({ sectionIndex, answers, setAnswer, setScreen }) {
   return (
     <div className="mx-auto max-w-2xl px-4 py-8">
       <div className="flex items-center gap-3">
-        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#2e7d8c]/10">
-          <SectionIcon className="h-5 w-5 text-[#2e7d8c]" />
+        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#17808d]/10">
+          <SectionIcon className="h-5 w-5 text-[#17808d]" />
         </span>
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#2e7d8c]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#17808d]">
             Section {sectionIndex + 1} of {SECTIONS.length}
           </p>
-          <h2 className="font-serif text-2xl font-bold text-[#1e4d5c]">
+          <h2 className="font-serif text-2xl font-bold text-[#4a2373]">
             {section.title}
           </h2>
         </div>
@@ -113,7 +113,7 @@ export function SectionScreen({ sectionIndex, answers, setAnswer, setScreen }) {
           Back
         </Button>
         <Button
-          className="bg-[#1e4d5c] text-white hover:bg-[#2e7d8c]"
+          className="bg-[#4a2373] text-white hover:bg-[#17808d]"
           onClick={handleContinue}
         >
           {isLast ? 'See my results' : 'Continue'}

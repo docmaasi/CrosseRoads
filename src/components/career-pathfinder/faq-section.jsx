@@ -53,7 +53,7 @@ export function FaqSection() {
     <section id="faq" aria-labelledby="faq-heading" className="mx-auto max-w-2xl px-4 pb-14">
       <h2
         id="faq-heading"
-        className="text-center font-serif text-2xl font-bold text-[#1e4d5c]"
+        className="text-center font-serif text-2xl font-bold text-[#4a2373]"
       >
         Frequently asked questions
       </h2>

@@ -22,8 +22,8 @@ function ScaleRow({ label, value, onChange }) {
             aria-checked={value === rating}
             className={`h-10 flex-1 rounded-lg border text-sm font-medium transition-colors ${
               value === rating
-                ? 'border-[#2e7d8c] bg-[#2e7d8c]/10 text-[#1e4d5c] shadow-sm'
-                : 'border-stone-200 bg-white text-stone-600 hover:border-[#2e7d8c]'
+                ? 'border-[#17808d] bg-[#17808d]/10 text-[#4a2373] shadow-sm'
+                : 'border-stone-200 bg-white text-stone-600 hover:border-[#17808d]'
             }`}
             onClick={() => onChange(rating)}
           >
@@ -54,7 +54,7 @@ export function DailyCheckin({ entries, saveEntry }) {
 
   return (
     <section id="checkin" aria-labelledby="checkin-heading" className="scroll-mt-16">
-      <h2 id="checkin-heading" className="font-serif text-2xl font-bold text-[#1e4d5c]">
+      <h2 id="checkin-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         Today&apos;s check-in
       </h2>
       <p className="mt-1 text-sm text-stone-600">
@@ -81,12 +81,12 @@ export function DailyCheckin({ entries, saveEntry }) {
             rows={2}
             value={draft.note}
             onChange={(event) => setDraft((d) => ({ ...d, note: event.target.value }))}
-            className="mt-1 w-full rounded-lg border border-stone-200 p-3 text-sm focus:border-[#2e7d8c] focus:outline-none"
+            className="mt-1 w-full rounded-lg border border-stone-200 p-3 text-sm focus:border-[#17808d] focus:outline-none"
             placeholder="What helped today? What got in the way?"
           />
         </div>
         <Button
-          className="bg-[#1e4d5c] text-white hover:bg-[#2e7d8c]"
+          className="bg-[#4a2373] text-white hover:bg-[#17808d]"
           onClick={handleSave}
         >
           {existing ? "Update today's check-in" : 'Save my check-in'}
