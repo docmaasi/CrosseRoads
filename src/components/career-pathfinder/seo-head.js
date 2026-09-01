@@ -2,9 +2,9 @@
 // (Career Pathfinder, College Planner). One implementation keeps the
 // apply/reset behavior identical across pages.
 
-const DEFAULT_TITLE = 'CoParent.Help';
+const DEFAULT_TITLE = 'CrosseRoads — Guidance • Support • Opportunity';
 const DEFAULT_DESC =
-  'CoParent.Help - Manage your co-parenting communication, schedules, and expenses.';
+  'CrosseRoads empowers single moms and single dads to navigate the path from high school to college and beyond — a free career assessment, college admissions planner, parent roadmap, and wellness companion from Dr. Kisa Crosse.';
 
 function setMeta(name, content, attr = 'name') {
   let el = document.querySelector(`meta[${attr}="${name}"]`);
@@ -37,9 +37,11 @@ export function applySeoHead({ title, description, path, siteName }) {
   setMeta('og:url', canonical, 'property');
   setMeta('og:type', 'website', 'property');
   setMeta('og:site_name', siteName, 'property');
+  setMeta('og:image', `${window.location.origin}/crosseroads-logo.png`, 'property');
   setMeta('twitter:card', 'summary_large_image');
   setMeta('twitter:title', title);
   setMeta('twitter:description', description);
+  setMeta('twitter:image', `${window.location.origin}/crosseroads-logo.png`);
 }
 
 /**
