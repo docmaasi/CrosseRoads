@@ -4,7 +4,7 @@
 
 const DEFAULT_TITLE = 'CrosseRoads — Guidance • Support • Opportunity';
 const DEFAULT_DESC =
-  'CrosseRoads empowers single moms and single dads to navigate the path from high school to college and beyond — a free career assessment, college admissions planner, parent roadmap, and wellness companion from Dr. Kisa Crosse.';
+  'CrosseRoads empowers single moms, single dads, and families to navigate the path from high school to college and beyond — a free career assessment, college admissions planner, parent roadmap, and wellness companion from Dr. Kisa Crosse.';
 
 function setMeta(name, content, attr = 'name') {
   let el = document.querySelector(`meta[${attr}="${name}"]`);

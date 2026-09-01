@@ -48,6 +48,12 @@ export function IntroScreen({ onStart, hasProgress }) {
             height="500"
           />
         </div>
+        <p className="mx-auto mt-5 max-w-xl font-serif text-lg italic leading-relaxed text-[#4a2373]">
+          “{BRAND.mission}”
+        </p>
+        <p className="mt-1.5 text-xs font-semibold uppercase tracking-widest text-stone-500">
+          — Dr. Kisa Crosse
+        </p>
         <p className="mt-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#17808d]">
           {BRAND.productName} · {BRAND.tagline}
         </p>
