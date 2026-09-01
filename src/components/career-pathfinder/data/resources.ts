@@ -128,6 +128,16 @@ export const RESOURCE_LIBRARY: ResourceGroup[] = [
         url: 'https://www.jobbank.gc.ca/career-planning',
         description: "The Government of Canada's career quizzes and job profiles",
       },
+      {
+        name: 'Your Career (Australia)',
+        url: 'https://www.yourcareer.gov.au/',
+        description: "The Australian government's career explorer and pathways tool",
+      },
+      {
+        name: 'Tahatū Career Navigator (NZ)',
+        url: 'https://tahatu.govt.nz/',
+        description: "New Zealand's official career planner with 800+ career ideas",
+      },
     ],
   },
   {

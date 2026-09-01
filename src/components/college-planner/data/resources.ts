@@ -90,6 +90,26 @@ export const INTERNATIONAL_RESOURCES: PlannerResource[] = [
     description: 'The German Academic Exchange Service — programs and funding',
   },
   {
+    name: 'Study Australia',
+    url: 'https://www.studyaustralia.gov.au/',
+    description: "The Australian government's portal for courses and scholarships",
+  },
+  {
+    name: 'Study with New Zealand',
+    url: 'https://www.studywithnewzealand.govt.nz/en',
+    description: "Education New Zealand's official study and scholarship portal",
+  },
+  {
+    name: 'Study in Japan (JASSO)',
+    url: 'https://www.studyinjapan.go.jp/en/',
+    description: "Japan's official government portal — programs and scholarships",
+  },
+  {
+    name: 'Study in Korea',
+    url: 'https://www.studyinkorea.go.kr/',
+    description: "The Korean government's portal for universities and GKS scholarships",
+  },
+  {
     name: 'Fulbright U.S. Student Program',
     url: 'https://us.fulbrightonline.org/',
     description: 'Prestigious U.S. government grants to study or teach abroad',

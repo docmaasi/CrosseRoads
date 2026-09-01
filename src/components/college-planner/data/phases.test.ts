@@ -51,6 +51,10 @@ describe('planner resources', () => {
       'www.educanada.ca',
       'www.daad.de',
       'us.fulbrightonline.org',
+      'www.studyaustralia.gov.au',
+      'www.studywithnewzealand.govt.nz',
+      'www.studyinjapan.go.jp',
+      'www.studyinkorea.go.kr',
     ];
     for (const resource of [...PLANNER_RESOURCES, ...INTERNATIONAL_RESOURCES]) {
       const url = new URL(resource.url);
