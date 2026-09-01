@@ -1,5 +1,4 @@
-// Career Pathfinder brand settings. The platform name is still being
-// decided — change it here and it updates everywhere in the assessment.
+// CrosseRoads brand settings — change here, updates everywhere.
 export const BRAND = {
   platformName: 'CrosseRoads',
   platformTagline: 'Guidance • Support • Opportunity',
@@ -8,11 +7,10 @@ export const BRAND = {
   productName: 'Career Pathfinder',
   tagline: "Find the work you're made for",
   byline: 'From Dr. Kisa Crosse',
-  // Generic placeholder — swap for the real inbox when it exists.
   contactEmail: 'hello@crosseroads.com',
 };
 
-// Brand palette (deliberately independent of the CoParent theme).
+// CrosseRoads brand palette, taken from the logo.
 export const BRAND_COLORS = {
   deep: '#4a2373',
   teal: '#17808d',
