@@ -1,5 +1,5 @@
-import { CalendarCheck, Mail, Map } from 'lucide-react';
-import { PACKAGE_ITEMS, ADDITIONAL_SERVICES, ROADMAP_FAQ } from './data/package';
+import { ArrowRight, CalendarCheck, Heart, Map } from 'lucide-react';
+import { PACKAGE_ITEMS, ROADMAP_FAQ } from './data/package';
 import { BRAND } from '../career-pathfinder/branding';
 import { HeroLaurels } from '../career-pathfinder/brand-decor';
 
@@ -76,33 +76,35 @@ export function PackageContents() {
   );
 }
 
-/** Bookable services + contact. */
+/**
+ * Hand-off to the consulting page. The priced packages and the à la
+ * carte services live on /WorkWithMe now, so this page carries one
+ * pointer instead of a second, unpriced service menu.
+ */
 export function ServicesMenu() {
   return (
     <section id="services" aria-labelledby="services-heading" className="scroll-mt-16">
-      <h2 id="services-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
-        Work with Dr. Crosse
-      </h2>
-      <p className="mt-1 text-sm text-stone-600">
-        Every family is different — book exactly the help yours needs.
-      </p>
-      <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-        {ADDITIONAL_SERVICES.map((service) => (
-          <li
-            key={service}
-            className="flex gap-2 rounded-xl border border-stone-200 bg-white p-3.5 text-sm text-stone-700 shadow-sm"
-          >
-            <span className="text-[#e8a33d]">✦</span>
-            {service}
-          </li>
-        ))}
-      </ul>
       <a
-        href={`mailto:${BRAND.contactEmail}?subject=Parent%20Roadmap%20inquiry`}
-        className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#4a2373] px-7 py-3 font-medium text-white shadow-lg shadow-[#4a2373]/25 transition-all hover:scale-[1.02] hover:bg-[#17808d]"
+        href="/WorkWithMe"
+        className="group flex flex-col gap-4 rounded-3xl bg-gradient-to-br from-[#33184f] via-[#4a2373] to-[#17546b] p-6 text-white shadow-xl transition-all hover:-translate-y-0.5 hover:shadow-2xl sm:flex-row sm:items-center"
       >
-        <Mail className="h-4 w-4" aria-hidden="true" />
-        Ask about the Roadmap
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#e8a33d]">
+          <Heart className="h-6 w-6 text-[#33184f]" aria-hidden="true" />
+        </span>
+        <span className="min-w-0 flex-1">
+          <h2 id="services-heading" className="font-serif text-2xl font-bold">
+            Work with Dr. Crosse
+          </h2>
+          <p className="mt-1 text-sm text-white/85">
+            The tools on this page are free. When your family wants a guide
+            beside you — strategy sessions, essay reviews, a full application
+            season — see the consulting packages, from $500.
+          </p>
+        </span>
+        <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[#4a2373] transition-colors group-hover:bg-[#e8a33d] group-hover:text-[#33184f]">
+          See packages
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </span>
       </a>
     </section>
   );

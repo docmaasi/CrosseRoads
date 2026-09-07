@@ -15,11 +15,19 @@ const GROUPS = [
     ],
   },
   {
+    title: 'Work with Dr. Crosse',
+    links: [
+      { href: '/WorkWithMe#packages', label: 'Consulting packages' },
+      { href: '/WorkWithMe#power-hour', label: 'Power Hour — $150' },
+      { href: '/WorkWithMe#power-mom', label: 'Power Mom à la carte' },
+      { href: '/WorkWithMe#inquire', label: 'Send an inquiry' },
+    ],
+  },
+  {
     title: 'Resources',
     links: [
       { href: '/CareerPathfinder#resources', label: 'Career resource library' },
       { href: '/CollegePlanner#resources', label: 'Official college links' },
-      { href: '/ParentRoadmap#services', label: 'Advising services' },
       { href: '/Wellness#resources', label: 'Wellness resources' },
       { href: 'https://exampilot.help/', label: 'ExamPilot — AI exam prep', external: true },
     ],

@@ -17,7 +17,7 @@ export default defineConfig({
         name: 'CrosseRoads — Guidance • Support • Opportunity',
         short_name: 'CrosseRoads',
         description:
-          'Free tools from Dr. Kisa Crosse: career assessment, college planner, parent roadmap, wellness, and guides.',
+          'Free tools from Dr. Kisa Crosse — career assessment, college planner, parent roadmap, wellness, and guides — plus one-on-one college consulting.',
         start_url: '/CareerPathfinder',
         display: 'standalone',
         theme_color: '#4a2373',

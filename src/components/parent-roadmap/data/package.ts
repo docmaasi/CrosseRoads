@@ -1,6 +1,7 @@
-// The First-Time College Parent Roadmap package and service menu —
-// transcribed from Dr. Kisa Crosse's planning document. No prices are
-// listed anywhere; booking goes through the contact email.
+// The First-Time College Parent Roadmap — transcribed from Dr. Kisa
+// Crosse's planning document. The free tools live here; the priced
+// consulting packages and the à la carte service menu live in
+// src/components/packages/data/packages.ts and on /WorkWithMe.
 
 export interface PackageItem {
   title: string;
@@ -48,18 +49,6 @@ export const PACKAGE_ITEMS: PackageItem[] = [
   },
 ];
 
-export const ADDITIONAL_SERVICES: string[] = [
-  'A 60–90-minute Parent College Planning Consultation',
-  'Monthly small-group planning sessions',
-  'College-list review',
-  'Scholarship strategy session',
-  'Financial-aid award comparison',
-  'Application and deadline audit',
-  'Parent-and-student planning meeting',
-  'Senior-year text or email reminder membership',
-  'College transition and "letting go" workshop for parents',
-];
-
 export const ROADMAP_FAQ = [
   {
     question: 'What is the First-Time College Parent Roadmap?',
@@ -92,7 +81,9 @@ export const ROADMAP_FAQ = [
   {
     question: 'How do I book the consultation or another service?',
     answer:
-      'Email us and we will schedule a time. The tools on this page are free to ' +
-      'use; consultations and workshops with Dr. Crosse are booked individually.',
+      'The tools on this page are free to use. Consultations, workshops, and ' +
+      'full college-planning packages with Dr. Crosse are described on the Work ' +
+      'With Me page, where you can send an inquiry and she will reply personally ' +
+      'to schedule a time.',
   },
 ];

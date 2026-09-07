@@ -15,6 +15,7 @@ in the visitor's browser, and everything they enter stays on their device.
 | `/ParentRoadmap` | First-Time College Parent Roadmap package, with a financial-aid award comparison worksheet and a college-list tracker |
 | `/Wellness` | Wellness Transformation companion for midlife women (habits, check-ins, trends, journal) |
 | `/Guides` | Articles on career discovery and college admissions |
+| `/WorkWithMe` | One-on-one consulting packages with Dr. Crosse, the Power Hour, Power Mom à la carte services, and the inquiry form — the only form on the site; it posts to `api/inquiry.js`, which emails `hello@crosseroads.com` via Resend (set `RESEND_API_KEY` in Vercel) |
 
 ## Development
 

@@ -6,6 +6,7 @@ import {
   ExternalLink,
   GraduationCap,
   HandHeart,
+  Heart,
   HeartPulse,
   Map,
   Sparkles,
@@ -149,11 +150,36 @@ export function PlatformAbout() {
           ))}
         </div>
 
+        {/* The consulting practice sits apart from the five free tools —
+            it is the one thing on the site with a price, so it gets its
+            own tile rather than joining the free-tool count above. */}
+        <a
+          href="/WorkWithMe"
+          className="group mt-4 flex items-start gap-3 rounded-xl border-2 border-[#4a2373]/30 bg-gradient-to-r from-[#4a2373]/[0.06] via-white to-[#17808d]/[0.06] p-4 text-left shadow-md transition-all hover:-translate-y-0.5 hover:border-[#4a2373] hover:shadow-lg"
+        >
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#4a2373] to-[#17808d]">
+            <Heart className="h-5 w-5 text-white" aria-hidden="true" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="inline-flex items-center gap-1 font-medium text-[#4a2373] group-hover:text-[#17808d]">
+              Work with Dr. Crosse one-on-one
+              <ArrowRight
+                className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100"
+                aria-hidden="true"
+              />
+            </span>
+            <p className="mt-0.5 text-sm text-stone-600">
+              Consulting packages from $500, a $150 Power Hour, and à la carte
+              help — for families who want a guide beside them, not just a map.
+            </p>
+          </span>
+        </a>
+
         <a
           href="https://exampilot.help/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group mb-2 mt-4 flex items-start gap-3 rounded-xl border border-[#e8a33d]/40 bg-gradient-to-r from-[#e8a33d]/10 to-[#17808d]/10 p-4 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+          className="group mb-2 mt-3 flex items-start gap-3 rounded-xl border border-[#e8a33d]/40 bg-gradient-to-r from-[#e8a33d]/10 to-[#17808d]/10 p-4 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#e8a33d] to-[#b07514]">
             <Sparkles className="h-5 w-5 text-white" aria-hidden="true" />

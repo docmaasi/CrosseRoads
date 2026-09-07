@@ -12,9 +12,17 @@ const NAV_LINKS = [
   { href: '/ParentRoadmap', label: 'Parents' },
   { href: '/Wellness', label: 'Wellness' },
   { href: '/Guides', label: 'Guides' },
+  { href: '/WorkWithMe', label: 'Work with me', accent: true },
 ];
 
-function navLinkClass(isActive) {
+function navLinkClass(isActive, accent) {
+  if (accent) {
+    return `whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
+      isActive
+        ? 'bg-[#e8a33d] text-[#33184f]'
+        : 'border border-[#e8a33d]/60 text-[#b07514] hover:bg-[#e8a33d] hover:text-[#33184f]'
+    }`;
+  }
   return `whitespace-nowrap rounded-full px-3 py-1.5 text-sm transition-colors ${
     isActive
       ? 'bg-[#4a2373] font-medium text-white'
@@ -53,7 +61,7 @@ export function CrosseRoadsHeader({ right = null }) {
               key={link.href}
               href={link.href}
               aria-current={isActive(link.href) ? 'page' : undefined}
-              className={navLinkClass(isActive(link.href))}
+              className={navLinkClass(isActive(link.href), link.accent)}
             >
               {link.label}
             </a>
