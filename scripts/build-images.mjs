@@ -102,6 +102,29 @@ for (const file of readdirSync(SRC).filter((f) => /\.(jpe?g|png)$/i.test(f))) {
   );
 }
 
+/* The social share card.
+ *
+ * Facebook, LinkedIn, iMessage and the rest all want 1200x630. The brand card
+ * is 1200x800, so every platform was cropping the top and bottom off it — which
+ * on this artwork means slicing through the wordmark. Fitted rather than
+ * cropped, on the brand paper colour, so the whole card survives. */
+{
+  const source = join(ROOT, 'public', 'crosseroads-brand-card.png');
+  if (existsSync(source)) {
+    const target = join(OUT, '..', 'og-card.jpg');
+    const buffer = await sharp(source)
+      .resize(1200, 630, {
+        fit: 'contain',
+        background: { r: 246, g: 240, b: 250 }, // #f6f0fa, the brand paper
+      })
+      .jpeg({ quality: 86, progressive: true, mozjpeg: true })
+      .toBuffer();
+    await sharp(buffer).toFile(target);
+    console.log(`
+og-card.jpg          1200x630  ${kb(buffer.length)} KB (social share card)`);
+  }
+}
+
 console.log('');
 for (const item of built.filter((b) => b.format === 'webp')) {
   console.log(`  ${`${item.name}-${item.width}.webp`.padEnd(34)} ${String(item.kb).padStart(4)} KB  q${item.quality}`);

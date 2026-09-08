@@ -13,6 +13,7 @@ const GROUPS = [
       { href: '/Wellness', label: 'Wellness' },
       { href: '/Guides', label: 'Guides & articles' },
       { href: '/Worksheets', label: 'Printable worksheets' },
+      { href: '/Search', label: 'Search everything' },
     ],
   },
   {

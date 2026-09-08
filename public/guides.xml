@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CrosseRoads Guides</title>
+    <link>https://crosseroads.com/Guides</link>
+    <description>Practical guides on career discovery and college admissions, from Dr. Kisa Crosse.</description>
+    <language>en-us</language>
+    <atom:link href="https://crosseroads.com/guides.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The 30-Day Career Exploration Challenge</title>
+      <link>https://crosseroads.com/Guides/30-day-career-exploration-challenge</link>
+      <guid isPermaLink="true">https://crosseroads.com/Guides/30-day-career-exploration-challenge</guid>
+      <description>Your career does not have to be decided today. Your goal is to identify pathways worth exploring — and one focused month is enough to start.</description>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Junior Year: The Head Start That Makes Senior Year Easy</title>
+      <link>https://crosseroads.com/Guides/junior-year-college-head-start</link>
+      <guid isPermaLink="true">https://crosseroads.com/Guides/junior-year-college-head-start</guid>
+      <description>The work completed during junior year lays the groundwork for a successful senior year — service, leadership, testing strategy, and a balanced college list.</description>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title></title>
+      <link>https://crosseroads.com/Guides/fafsa-css-profile-scholarships-guide</link>
+      <guid isPermaLink="true">https://crosseroads.com/Guides/fafsa-css-profile-scholarships-guide</guid>
+      <description>The three lanes of college money — federal aid, institutional aid, and outside scholarships — and the follow-up habits that keep offers from slipping away.</description>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The Early Action Advantage: Why Applying Early Can Mean More Offers — and More Money</title>
+      <link>https://crosseroads.com/Guides/early-action-advantage</link>
+      <guid isPermaLink="true">https://crosseroads.com/Guides/early-action-advantage</guid>
+      <description>Early Action applications often bring earlier decisions, better scholarship consideration, and a far less stressful senior year. Here is how families use them well.</description>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to Choose a Career That Fits Who You Are: The 7-Factor Method</title>
+      <link>https://crosseroads.com/Guides/how-to-choose-a-career-that-fits</link>
+      <guid isPermaLink="true">https://crosseroads.com/Guides/how-to-choose-a-career-that-fits</guid>
+      <description>Most people pick careers based on one factor — salary, or a subject they liked. A better fit comes from looking at seven factors together.</description>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

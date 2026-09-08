@@ -68,7 +68,7 @@ export function HabitTracker({ habits, checks, weekDone, toggleHabit, toggleChec
                     key={day.key}
                     scope="col"
                     className={`pb-2 text-center text-xs font-medium ${
-                      day.isToday ? 'text-[#4a2373]' : 'text-stone-400'
+                      day.isToday ? 'text-[#4a2373]' : 'text-stone-500'
                     }`}
                   >
                     {day.label}

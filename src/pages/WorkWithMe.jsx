@@ -24,7 +24,7 @@ export default function WorkWithMe() {
     <div className="cp-root flex min-h-screen flex-col bg-gradient-to-b from-[#f6f0fa] via-[#fefcff] to-[#efe8f6]">
       <CrosseRoadsHeader />
 
-      <main className="flex-1">
+      <main id="main-content" tabIndex={-1} className="flex-1">
         <PackagesHero />
         <div className="mx-auto max-w-5xl space-y-16 px-4 py-12">
           <TierGrid />

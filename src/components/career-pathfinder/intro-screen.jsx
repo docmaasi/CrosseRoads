@@ -131,7 +131,7 @@ export function IntroScreen({ onStart, hasProgress }) {
           ))}
         </div>
 
-        <p className="mt-12 text-xs uppercase tracking-[0.2em] text-stone-400">
+        <p className="mt-12 text-xs uppercase tracking-[0.2em] text-stone-500">
           {BRAND.byline} — physician, educator &amp; mom
         </p>
       </div>

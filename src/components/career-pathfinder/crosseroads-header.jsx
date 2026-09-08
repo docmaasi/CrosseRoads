@@ -48,6 +48,12 @@ export function CrosseRoadsHeader({ right = null }) {
 
   return (
     <header className="cp-no-print sticky top-0 z-10 border-b border-stone-200/80 bg-white/90 backdrop-blur">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-full focus:bg-[#4a2373] focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
       <BrandRibbon />
       <div className="relative mx-auto flex max-w-3xl items-center gap-3 px-4 py-2.5">
         <a href="/CareerPathfinder" className="flex shrink-0 items-center gap-2">

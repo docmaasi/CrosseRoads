@@ -23,7 +23,7 @@ export function ChecklistItemRow({ item, isChecked, onToggle }) {
         <span className="flex-1">
           <span
             className={`block text-sm ${
-              isChecked ? 'text-stone-400 line-through' : 'text-stone-800'
+              isChecked ? 'text-stone-500 line-through' : 'text-stone-800'
             }`}
           >
             {item.text}

@@ -31,7 +31,7 @@ export function RoadmapHero() {
           move-in — with tools you can use today and Dr. Crosse beside you for
           the decisions that matter.
         </p>
-        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
+        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-500">
           {BRAND.byline} — who has navigated admissions and scholarships as a mom, more than once
         </p>
 

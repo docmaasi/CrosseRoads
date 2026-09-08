@@ -41,7 +41,7 @@ function SchoolCard({ school, canRemove, isBestNet, updateSchool, removeSchool }
           <button
             type="button"
             aria-label={`Remove ${school.name || 'college'}`}
-            className="text-stone-400 hover:text-stone-600"
+            className="text-stone-500 hover:text-stone-600"
             onClick={() => removeSchool(school.id)}
           >
             <X className="h-4 w-4" />

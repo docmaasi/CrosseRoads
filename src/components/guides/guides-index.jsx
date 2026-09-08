@@ -55,7 +55,7 @@ export function GuidesIndex() {
               {article.description}
             </p>
             <p className="mt-3 flex items-center gap-3 text-sm">
-              <span className="inline-flex items-center gap-1 text-stone-400">
+              <span className="inline-flex items-center gap-1 text-stone-500">
                 <Clock className="h-3.5 w-3.5" aria-hidden="true" />
                 {article.readMinutes} min
               </span>

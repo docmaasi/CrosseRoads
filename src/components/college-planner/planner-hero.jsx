@@ -30,7 +30,7 @@ export function PlannerHero({ phaseProgress, totalDone, totalItems }) {
           your family can work through together. Progress saves automatically
           on this device.
         </p>
-        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
+        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-500">
           {BRAND.byline} — who has navigated admissions and scholarships as a mom, more than once
         </p>
 
