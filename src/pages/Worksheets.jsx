@@ -23,7 +23,7 @@ export default function Worksheets() {
         <CrosseRoadsHeader />
       </div>
 
-      <main className="flex-1">
+      <main id="main-content" tabIndex={-1} className="flex-1">
         {worksheet ? <WorksheetView worksheet={worksheet} /> : <WorksheetsIndex />}
       </main>
 

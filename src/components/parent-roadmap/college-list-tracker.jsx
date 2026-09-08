@@ -70,7 +70,7 @@ function EntryRow({ entry, updateEntry, removeEntry }) {
       <button
         type="button"
         aria-label={`Remove ${entry.name || 'college'}`}
-        className="text-stone-400 hover:text-stone-600"
+        className="text-stone-500 hover:text-stone-600"
         onClick={() => removeEntry(entry.id)}
       >
         <X className="h-4 w-4" />

@@ -217,7 +217,7 @@ export function WorksheetSheet({ worksheet, standalone = true }) {
 
       {worksheet.tips && worksheet.tips.length > 0 && (
         <section className="cr-sheet-section mt-5 rounded-xl border border-[#17808d]/40 bg-[#17808d]/5 p-3">
-          <h2 className="text-[11px] font-semibold uppercase tracking-widest text-[#17808d]">
+          <h2 className="text-[11px] font-semibold uppercase tracking-widest text-[#116a75]">
             Worth knowing
           </h2>
           <ul className="mt-1.5 space-y-1">

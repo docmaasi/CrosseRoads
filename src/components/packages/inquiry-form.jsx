@@ -27,7 +27,7 @@ const GRADE_OPTIONS = [
 const INITIAL = { name: '', email: '', grade: '', pkg: '', message: '', website: '' };
 
 const inputClass =
-  'mt-1 w-full rounded-xl border border-stone-300 bg-white px-3.5 py-2.5 text-sm text-stone-800 shadow-sm transition-colors placeholder:text-stone-400 focus:border-[#17808d] focus:outline-none focus:ring-2 focus:ring-[#17808d]/30';
+  'mt-1 w-full rounded-xl border border-stone-300 bg-white px-3.5 py-2.5 text-sm text-stone-800 shadow-sm transition-colors placeholder:text-stone-500 focus:border-[#17808d] focus:outline-none focus:ring-2 focus:ring-[#17808d]/30';
 const labelClass = 'block text-sm font-medium text-stone-700';
 
 /**

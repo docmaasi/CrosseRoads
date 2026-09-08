@@ -44,9 +44,9 @@ export function MatchCard({ rank, match, defaultOpen = false }) {
         </span>
         <ScoreRing value={match.fit} />
         {isOpen ? (
-          <ChevronUp className="h-4 w-4 text-stone-400" />
+          <ChevronUp className="h-4 w-4 text-stone-500" />
         ) : (
-          <ChevronDown className="h-4 w-4 text-stone-400" />
+          <ChevronDown className="h-4 w-4 text-stone-500" />
         )}
       </button>
 

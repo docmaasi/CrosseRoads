@@ -18,6 +18,7 @@ const ROUTES = [
   '/Wellness',
   '/Guides',
   '/Worksheets',
+  '/Search',
   '/WorkWithMe',
   '/Privacy',
   '/Terms',

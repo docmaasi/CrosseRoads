@@ -14,9 +14,12 @@ const exploreLinks = RESOURCE_LIBRARY[0].links.slice(0, 4);
 function FooterColumn({ title, children }) {
   return (
     <nav aria-label={title}>
-      <h3 className="text-xs font-semibold uppercase tracking-wide text-[#e8a33d]">
+      {/* h2, not h3: these columns are peers of "Important disclaimers" below,
+          and on a page whose main content has no h2 -- an empty search, say --
+          an h3 straight after the h1 skips a level. */}
+      <h2 className="text-xs font-semibold uppercase tracking-wide text-[#e8a33d]">
         {title}
-      </h3>
+      </h2>
       <ul className="mt-3 space-y-2 text-sm">{children}</ul>
     </nav>
   );
@@ -62,6 +65,7 @@ export function SiteFooter() {
           <li><a className={footerLink} href="/Wellness">Wellness transformation</a></li>
           <li><a className={footerLink} href="/Guides">Guides</a></li>
           <li><a className={footerLink} href="/Worksheets">Printable worksheets</a></li>
+          <li><a className={footerLink} href="/Search">Search the site</a></li>
           <li><a className={`${footerLink} font-medium text-[#e8a33d]`} href="/WorkWithMe">Work with Dr. Crosse</a></li>
           <li><a className={footerLink} href="/CareerPathfinder#resources">Free resources</a></li>
           <li><a className={footerLink} href="/CareerPathfinder#faq">Frequently asked questions</a></li>

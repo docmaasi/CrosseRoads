@@ -33,7 +33,7 @@ export function WellnessHero() {
           midlife women: pick a starting point, track a few habits, check in
           with yourself daily, and watch your energy trend up.
         </p>
-        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
+        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-500">
           {BRAND.byline} — primary care physician
         </p>
 
@@ -46,7 +46,7 @@ export function WellnessHero() {
 
         <div className="mx-auto mt-7 flex max-w-xl gap-2.5 rounded-xl border border-stone-300 bg-white p-4 text-left">
           <ShieldAlert
-            className="mt-0.5 h-4 w-4 shrink-0 text-stone-400"
+            className="mt-0.5 h-4 w-4 shrink-0 text-stone-500"
             aria-hidden="true"
           />
           <p className="text-xs leading-relaxed text-stone-500">

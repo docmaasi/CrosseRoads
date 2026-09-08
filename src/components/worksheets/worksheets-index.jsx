@@ -18,9 +18,9 @@ const AUDIENCE_FILTERS = [
 ];
 
 function audienceBadgeClass(audience) {
-  if (audience === 'student') return 'bg-[#17808d]/10 text-[#17808d]';
+  if (audience === 'student') return 'bg-[#17808d]/10 text-[#116a75]';
   if (audience === 'parent') return 'bg-[#7a3e9d]/10 text-[#7a3e9d]';
-  return 'bg-[#e8a33d]/15 text-[#a5701a]';
+  return 'bg-[#e8a33d]/15 text-[#8a5a0a]';
 }
 
 function WorksheetCard({ worksheet }) {

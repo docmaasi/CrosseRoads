@@ -15,8 +15,8 @@ function GroupCard({ group, checked, onToggle }) {
   return (
     <div className="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm">
       <div className="flex items-baseline justify-between gap-3">
-        <h4 className="font-semibold text-stone-800">{group.title}</h4>
-        <span className="shrink-0 text-xs font-medium text-stone-400">
+        <h3 className="font-semibold text-stone-800">{group.title}</h3>
+        <span className="shrink-0 text-xs font-medium text-stone-500">
           {done}/{group.items.length}
         </span>
       </div>

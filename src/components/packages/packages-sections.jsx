@@ -37,7 +37,7 @@ export function PackagesHero() {
           take ownership of the process — while making sure parents know what
           should be happening behind the scenes.
         </p>
-        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
+        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-500">
           {BRAND.byline} — physician, educator &amp; mom
         </p>
         <p className="mx-auto mt-6 max-w-lg rounded-2xl border border-[#e8a33d]/40 bg-gradient-to-r from-[#e8a33d]/10 to-[#17808d]/10 px-5 py-3 text-sm text-stone-700">
@@ -100,7 +100,7 @@ function TierCard({ tier }) {
       <p className="mt-3 text-sm leading-relaxed text-stone-600">{tier.summary}</p>
 
       {tier.inheritsFrom && (
-        <p className="mt-4 rounded-lg bg-[#17808d]/10 px-3 py-2 text-sm font-medium text-[#17808d]">
+        <p className="mt-4 rounded-lg bg-[#17808d]/10 px-3 py-2 text-sm font-medium text-[#116a75]">
           Everything in {tier.inheritsFrom}, plus:
         </p>
       )}

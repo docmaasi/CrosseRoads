@@ -71,7 +71,7 @@ function ResourceItem({ resource }) {
 
       <p className="mt-0.5 text-xs text-stone-600">{resource.description}</p>
 
-      <p className="mt-1 text-[11px] text-stone-400">
+      <p className="mt-1 text-[11px] text-stone-500">
         {resource.provider} · {countryName(resource.country)}
       </p>
 
@@ -138,7 +138,7 @@ export function WorldwideDirectory() {
           >
             <h4 className="text-xs font-semibold uppercase tracking-wide text-[#17808d]">
               {group.label}
-              <span className="ml-1.5 font-normal normal-case tracking-normal text-stone-400">
+              <span className="ml-1.5 font-normal normal-case tracking-normal text-stone-500">
                 {group.items.length}
               </span>
             </h4>

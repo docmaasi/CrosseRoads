@@ -53,7 +53,7 @@ export default function CareerPathfinder() {
         }
       />
 
-      <main className="flex-1">
+      <main id="main-content" tabIndex={-1} className="flex-1">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={String(screen)}
