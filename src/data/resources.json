@@ -1,0 +1,2043 @@
+[
+  {
+    "id": "au-uac",
+    "name": "Universities Admissions Centre",
+    "category": "admissions",
+    "country": "AU",
+    "url": "https://www.uac.edu.au/",
+    "description": "The shared application centre for undergraduate courses in New South Wales and the ACT, with ATAR information and Educational Access Schemes.",
+    "provider": "Universities Admissions Centre",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "Applying costs a fee, but the Educational Access Scheme for students facing hardship is free to apply for and can lower entry requirements.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "atar",
+      "nsw"
+    ]
+  },
+  {
+    "id": "br-sisu",
+    "name": "SISU — Sistema de Seleção Unificada",
+    "category": "admissions",
+    "country": "BR",
+    "url": "https://acessounico.mec.gov.br/sisu",
+    "description": "Brazil’s unified system for claiming a place at a public university using an ENEM score, free of tuition once you are in.",
+    "provider": "Ministério da Educação, Brazil",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Portuguese only. The selection window lasts only a few days each January and places shift by the hour.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "enem",
+      "portuguese"
+    ]
+  },
+  {
+    "id": "ca-ouac",
+    "name": "Ontario Universities’ Application Centre",
+    "category": "admissions",
+    "country": "CA",
+    "url": "https://www.ouac.on.ca/",
+    "description": "The single application every Ontario university applicant uses, with published deadlines and program listings anyone can browse.",
+    "provider": "Council of Ontario Universities",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "Browsing programmes and deadlines is free; submitting an application costs a fee per programme.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "ontario",
+      "deadlines"
+    ]
+  },
+  {
+    "id": "de-daad",
+    "name": "DAAD — Study in Germany",
+    "category": "admissions",
+    "country": "DE",
+    "url": "https://www.daad.de/en/",
+    "description": "The official guide to studying in Germany, where most public universities charge no tuition even to international students.",
+    "provider": "German Academic Exchange Service",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "No tuition does not mean no cost — you must prove you can cover living expenses to get a student visa.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "tuition-free",
+      "germany"
+    ]
+  },
+  {
+    "id": "ie-cao",
+    "name": "Central Applications Office",
+    "category": "admissions",
+    "country": "IE",
+    "url": "https://www.cao.ie/",
+    "description": "The single application route to Irish universities and colleges, with points requirements published each year.",
+    "provider": "Central Applications Office, Ireland",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "There is an application fee, and the discounted early deadline in January saves money.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "ireland",
+      "points"
+    ]
+  },
+  {
+    "id": "ke-kuccps",
+    "name": "KUCCPS Student Portal",
+    "category": "admissions",
+    "country": "KE",
+    "url": "https://students.kuccps.net/",
+    "description": "Kenya’s central body placing students into universities and TVET colleges after KCSE results, with cut-off points published.",
+    "provider": "Kenya Universities and Colleges Central Placement Service",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Course revision windows are short and announced after KCSE results — watch the portal, not social media.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "kcse",
+      "placement"
+    ]
+  },
+  {
+    "id": "ng-jamb",
+    "name": "JAMB — Joint Admissions and Matriculation Board",
+    "category": "admissions",
+    "country": "NG",
+    "url": "https://www.jamb.gov.ng/",
+    "description": "Nigeria’s national admissions board: UTME registration, results and the CAPS portal where university offers are accepted.",
+    "provider": "Joint Admissions and Matriculation Board, Nigeria",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "UTME registration carries a fee. Only use jamb.gov.ng — there are many imitation sites charging for free services.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "utme",
+      "caps"
+    ]
+  },
+  {
+    "id": "nl-study-in-nl",
+    "name": "Study in NL",
+    "category": "admissions",
+    "country": "NL",
+    "url": "https://www.studyinnl.org/",
+    "description": "The official Dutch guide to studying in the Netherlands, including English-taught bachelor’s degrees and realistic cost estimates.",
+    "provider": "Nuffic",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "netherlands",
+      "english-taught"
+    ]
+  },
+  {
+    "id": "no-study-in-norway",
+    "name": "Study in Norway",
+    "category": "admissions",
+    "country": "NO",
+    "url": "https://www.studyinnorway.no/",
+    "description": "Norway’s official portal for international students, covering applications, living costs and which programmes are taught in English.",
+    "provider": "Norwegian Directorate for Higher Education and Skills",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Norway now charges tuition to most students from outside the EU/EEA — check the current rules on this page before assuming it is free.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "norway",
+      "international"
+    ]
+  },
+  {
+    "id": "us-nces-college-navigator",
+    "name": "College Navigator",
+    "category": "admissions",
+    "country": "US",
+    "url": "https://nces.ed.gov/collegenavigator/",
+    "description": "The federal statistics agency’s college search: admission rates, majors offered, campus safety and net price for every US institution.",
+    "provider": "National Center for Education Statistics",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Plainer and less marketed than commercial college search sites — and it sells nothing and collects nothing.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "college-search",
+      "ipeds"
+    ]
+  },
+  {
+    "id": "us-collegepoint",
+    "name": "CollegePoint",
+    "category": "admissions",
+    "country": "US",
+    "url": "https://www.collegepoint.info/",
+    "description": "Free virtual college advising from trained advisers for high-achieving students from families earning under about $80,000 a year.",
+    "provider": "CollegePoint / Bloomberg Philanthropies",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "Eligibility is based on grades, test scores and family income — check the criteria before signing up.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "advising",
+      "low-income"
+    ]
+  },
+  {
+    "id": "us-matriculate",
+    "name": "Matriculate",
+    "category": "admissions",
+    "country": "US",
+    "url": "https://matriculate.org/",
+    "description": "Pairs high-achieving students from low-income families with trained college students who guide them through applications for free.",
+    "provider": "Matriculate",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "Students are usually recruited through partner high schools — ask your counsellor whether your school is one.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "near-peer",
+      "advising"
+    ]
+  },
+  {
+    "id": "au-jobs-and-skills-australia",
+    "name": "Jobs and Skills Australia",
+    "category": "careers",
+    "country": "AU",
+    "url": "https://www.jobsandskills.gov.au/",
+    "description": "Australian government labour-market data: which occupations are in shortage, what they pay and where the jobs actually are.",
+    "provider": "Jobs and Skills Australia",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "labour-market",
+      "skills-shortage"
+    ]
+  },
+  {
+    "id": "ca-alis-alberta",
+    "name": "alis — Alberta Learning Information Service",
+    "category": "careers",
+    "country": "CA",
+    "url": "https://alis.alberta.ca/",
+    "description": "One of the strongest free career sites in Canada: occupational profiles with local wages, plus tools for planning a career change.",
+    "provider": "Government of Alberta",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Wage and demand data is Alberta-specific, though the occupational profiles are useful anywhere in Canada.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "occupations",
+      "wages"
+    ]
+  },
+  {
+    "id": "gb-prospects",
+    "name": "Prospects",
+    "category": "careers",
+    "country": "GB",
+    "url": "https://www.prospects.ac.uk/",
+    "description": "The UK’s main graduate careers service: what you can do with each degree, job profiles and a free careers quiz.",
+    "provider": "Jisc",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "graduate-careers",
+      "degree-options"
+    ]
+  },
+  {
+    "id": "in-national-career-service",
+    "name": "National Career Service",
+    "category": "careers",
+    "country": "IN",
+    "url": "https://www.ncs.gov.in/",
+    "description": "India’s government portal for career guidance, free skills training listings and job matching across states.",
+    "provider": "Ministry of Labour & Employment, India",
+    "providerType": "government",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "jobs",
+      "guidance"
+    ]
+  },
+  {
+    "id": "jm-heart-nsta-trust",
+    "name": "HEART/NSTA Trust",
+    "category": "careers",
+    "country": "JM",
+    "url": "https://www.heart-nsta.org/",
+    "description": "Jamaica’s national training agency, offering free and subsidised vocational qualifications to school leavers and adults.",
+    "provider": "HEART/NSTA Trust, Jamaica",
+    "providerType": "government",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "vocational",
+      "training"
+    ]
+  },
+  {
+    "id": "us-americorps",
+    "name": "AmeriCorps",
+    "category": "careers",
+    "country": "US",
+    "url": "https://americorps.gov/",
+    "description": "Paid national service terms that come with a Segal Education Award you can put toward college or use to repay student loans.",
+    "provider": "AmeriCorps",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "The living allowance is modest — the education award and experience are the real return. Some programmes provide housing.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "service",
+      "education-award",
+      "gap-year"
+    ]
+  },
+  {
+    "id": "us-jobcorps",
+    "name": "Job Corps",
+    "category": "careers",
+    "country": "US",
+    "url": "https://www.jobcorps.gov/",
+    "description": "Free career training, a high school diploma and housing for young people aged 16 to 24, funded by the federal government.",
+    "provider": "U.S. Department of Labor",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Residential programme with rules and an application process. Centre availability has changed in recent years — confirm the nearest one is operating.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "residential",
+      "free-training",
+      "housing"
+    ]
+  },
+  {
+    "id": "us-youthbuild",
+    "name": "YouthBuild",
+    "category": "careers",
+    "country": "US",
+    "url": "https://www.dol.gov/agencies/eta/youth/youthbuild",
+    "description": "Programmes where young people who left school earn a diploma while learning construction and other trades, and get paid to do it.",
+    "provider": "U.S. Department of Labor",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Delivered by local grantees — availability depends entirely on your area. Use the programme locator on this page.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "trades",
+      "diploma",
+      "out-of-school"
+    ]
+  },
+  {
+    "id": "us-dol-youth-rules",
+    "name": "YouthRules! — Teen Work Rules",
+    "category": "careers",
+    "country": "US",
+    "url": "https://www.dol.gov/agencies/whd/youthrules",
+    "description": "What hours a teenager may legally work and which jobs are off limits by age — the federal rules, plainly stated.",
+    "provider": "U.S. Department of Labor",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "State law can be stricter than federal law. Check both before a first job.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "first-job",
+      "labor-law"
+    ]
+  },
+  {
+    "id": "au-services-australia-families",
+    "name": "Services Australia — Families",
+    "category": "family-support",
+    "country": "AU",
+    "url": "https://www.servicesaustralia.gov.au/families",
+    "description": "Family Tax Benefit, Parenting Payment, childcare subsidy and the other Australian payments a single parent may be entitled to.",
+    "provider": "Services Australia",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "benefits",
+      "childcare"
+    ]
+  },
+  {
+    "id": "ca-canada-child-benefit",
+    "name": "Canada Child Benefit",
+    "category": "family-support",
+    "country": "CA",
+    "url": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html",
+    "description": "A tax-free monthly payment for families raising children under 18, with a calculator to estimate what you would receive.",
+    "provider": "Canada Revenue Agency",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "You must file a tax return every year to keep receiving it, even with no income.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "benefits",
+      "monthly-payment"
+    ]
+  },
+  {
+    "id": "gb-citizens-advice",
+    "name": "Citizens Advice",
+    "category": "family-support",
+    "country": "GB",
+    "url": "https://www.citizensadvice.org.uk/",
+    "description": "Free, independent advice on benefits, debt, housing and employment, online and through local offices across England and Wales.",
+    "provider": "Citizens Advice",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "benefits",
+      "debt",
+      "housing"
+    ]
+  },
+  {
+    "id": "gb-gingerbread",
+    "name": "Gingerbread",
+    "category": "family-support",
+    "country": "GB",
+    "url": "https://www.gingerbread.org.uk/",
+    "description": "The UK charity for single parent families — a free helpline, benefits guidance, and a community of other single parents.",
+    "provider": "Gingerbread",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "single-parents",
+      "helpline"
+    ]
+  },
+  {
+    "id": "gb-turn2us",
+    "name": "Turn2us",
+    "category": "family-support",
+    "country": "GB",
+    "url": "https://www.turn2us.org.uk/",
+    "description": "A free benefits calculator and a searchable database of charitable grants for families in financial hardship in the UK.",
+    "provider": "Turn2us",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "benefits-calculator",
+      "grants"
+    ]
+  },
+  {
+    "id": "ie-citizens-information",
+    "name": "Citizens Information",
+    "category": "family-support",
+    "country": "IE",
+    "url": "https://www.citizensinformation.ie/",
+    "description": "Ireland’s official plain-English guide to social welfare, education, housing and family rights, with a free phone service.",
+    "provider": "Citizens Information Board, Ireland",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "welfare",
+      "rights"
+    ]
+  },
+  {
+    "id": "us-211",
+    "name": "211",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.211.org/",
+    "description": "Dial 2-1-1 free from anywhere in the US to reach a real person who will find food, rent help, utilities or childcare near you.",
+    "provider": "United Way Worldwide",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "The single best first call when a family is in crisis and does not know where to start.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "helpline",
+      "crisis",
+      "local-services"
+    ]
+  },
+  {
+    "id": "us-benefits-gov",
+    "name": "Benefits.gov",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.benefits.gov/",
+    "description": "A free questionnaire that screens you against more than 1,000 federal and state benefit programmes and tells you what you may qualify for.",
+    "provider": "U.S. Government",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "The screener gives you a list to pursue — you still apply to each programme separately.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "screener",
+      "benefits"
+    ]
+  },
+  {
+    "id": "us-childcare-gov",
+    "name": "Childcare.gov",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://childcare.gov/",
+    "description": "How to find licensed childcare, check a provider’s inspection record, and get help paying for it in your state.",
+    "provider": "U.S. Department of Health & Human Services",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "childcare",
+      "subsidy"
+    ]
+  },
+  {
+    "id": "us-feeding-america-food-bank-finder",
+    "name": "Find Your Local Food Bank",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.feedingamerica.org/find-your-local-foodbank",
+    "description": "Enter a postcode to find the nearest food bank and its pantry partners — no eligibility paperwork at most locations.",
+    "provider": "Feeding America",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "food",
+      "postcode-search"
+    ]
+  },
+  {
+    "id": "us-hud-find-shelter",
+    "name": "HUD Find Shelter",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.hud.gov/findshelter",
+    "description": "The federal search for emergency shelter, housing, food and health clinics near an address, run by the housing department itself.",
+    "provider": "U.S. Department of Housing and Urban Development",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "shelter",
+      "housing",
+      "emergency"
+    ]
+  },
+  {
+    "id": "us-insure-kids-now",
+    "name": "InsureKidsNow.gov",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.insurekidsnow.gov/",
+    "description": "Free or low-cost health and dental coverage for children through Medicaid and CHIP, with state-by-state enrolment details.",
+    "provider": "Centers for Medicare & Medicaid Services",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "You can apply any time of year — unlike marketplace plans, CHIP and Medicaid have no enrolment window.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "chip",
+      "medicaid",
+      "children"
+    ]
+  },
+  {
+    "id": "us-lawhelp",
+    "name": "LawHelp.org",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.lawhelp.org/",
+    "description": "Free legal aid organisations and self-help guides by state, covering custody, housing, benefits and school issues.",
+    "provider": "Pro Bono Net",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "legal-aid",
+      "custody",
+      "housing"
+    ]
+  },
+  {
+    "id": "us-liheap",
+    "name": "LIHEAP — Help With Energy Bills",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.acf.hhs.gov/ocs/programs/liheap",
+    "description": "Federal help paying heating and cooling bills, and emergency assistance when a utility shut-off is threatened.",
+    "provider": "U.S. Administration for Children and Families",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Funds are administered by states and run out during the year — apply as early in the season as you can.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "utilities",
+      "emergency"
+    ]
+  },
+  {
+    "id": "us-military-onesource",
+    "name": "Military OneSource",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.militaryonesource.mil/",
+    "description": "Free counselling, education advising, tax help and relocation support for service members, veterans and their families.",
+    "provider": "U.S. Department of Defense",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "For military-connected families only, including many veterans within a year of separation.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "military-families",
+      "counselling"
+    ]
+  },
+  {
+    "id": "us-nche-homeless-education",
+    "name": "National Center for Homeless Education",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://nche.ed.gov/",
+    "description": "The rights of students without stable housing under the McKinney-Vento Act — including staying at the same school and getting to it.",
+    "provider": "U.S. Department of Education",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "These are legal rights, not favours. A family doubled up with relatives often qualifies and does not know it.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "mckinney-vento",
+      "housing-instability",
+      "school-rights"
+    ]
+  },
+  {
+    "id": "us-immigration-legal-directory",
+    "name": "National Immigration Legal Services Directory",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.immigrationadvocates.org/legaldirectory/",
+    "description": "A searchable directory of nonprofit organisations offering free or low-cost immigration legal help, by state and county.",
+    "provider": "Immigration Advocates Network",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "Only organisations recognised by the Department of Justice are listed — this is how you avoid notario fraud.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "immigration",
+      "legal-aid"
+    ]
+  },
+  {
+    "id": "us-office-of-child-support-services",
+    "name": "Office of Child Support Services",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.acf.hhs.gov/css",
+    "description": "The federal child support programme: how to open a case, establish parentage and enforce an order, with links to every state agency.",
+    "provider": "U.S. Administration for Children and Families",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "child-support",
+      "custody"
+    ]
+  },
+  {
+    "id": "us-usda-snap",
+    "name": "SNAP — Food Assistance",
+    "category": "family-support",
+    "country": "US",
+    "url": "https://www.fns.usda.gov/snap",
+    "description": "The federal food benefit programme, with a pre-screening tool and a link to every state’s application.",
+    "provider": "U.S. Department of Agriculture",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "College students face extra eligibility rules — read the student section before assuming a student cannot qualify.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "food",
+      "ebt",
+      "students"
+    ]
+  },
+  {
+    "id": "au-study-assist",
+    "name": "Study Assist",
+    "category": "financial-aid",
+    "country": "AU",
+    "url": "https://www.studyassist.gov.au/",
+    "description": "The Australian government’s official explanation of HECS-HELP and the other student loans, including what you repay and when.",
+    "provider": "Australian Government Department of Education",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "help-loans",
+      "hecs"
+    ]
+  },
+  {
+    "id": "ca-canada-learning-bond",
+    "name": "Canada Learning Bond",
+    "category": "financial-aid",
+    "country": "CA",
+    "url": "https://www.canada.ca/en/services/benefits/education/education-savings/canada-learning-bond.html",
+    "description": "Up to $2,000 the government deposits into an education savings plan for a child from a low-income family — no family contribution required.",
+    "provider": "Employment and Social Development Canada",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "You must open an RESP to receive it, and it can be claimed retroactively up to the child’s 21st birthday. Many families never claim it.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "resp",
+      "low-income"
+    ]
+  },
+  {
+    "id": "ca-canada-student-financial-assistance",
+    "name": "Student Aid — Government of Canada",
+    "category": "financial-aid",
+    "country": "CA",
+    "url": "https://www.canada.ca/en/services/benefits/education/student-aid.html",
+    "description": "The federal hub for Canada Student Grants and Loans, including an estimator and the provincial links you actually apply through.",
+    "provider": "Employment and Social Development Canada",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "You apply through your province or territory, not through this page — it points you to the right one.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "grants",
+      "loans"
+    ]
+  },
+  {
+    "id": "cl-beneficios-estudiantiles",
+    "name": "Beneficios Estudiantiles",
+    "category": "financial-aid",
+    "country": "CL",
+    "url": "https://portal.beneficiosestudiantiles.cl/",
+    "description": "Chile’s official portal for free tuition (Gratuidad), scholarships and student loans, with one application for all of them.",
+    "provider": "Ministerio de Educación, Chile",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Spanish only, and the FUAS application window is short — usually a few weeks in October.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "gratuidad",
+      "spanish"
+    ]
+  },
+  {
+    "id": "co-icetex",
+    "name": "ICETEX",
+    "category": "financial-aid",
+    "country": "CO",
+    "url": "https://web.icetex.gov.co/",
+    "description": "Colombia’s government agency for student credit and scholarships, including funding for study abroad.",
+    "provider": "ICETEX, Colombia",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Spanish only. Most ICETEX support is a loan that must be repaid, not a grant — read the terms.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "spanish",
+      "loans"
+    ]
+  },
+  {
+    "id": "gb-student-finance-england",
+    "name": "Student Finance — GOV.UK",
+    "category": "financial-aid",
+    "country": "GB",
+    "url": "https://www.gov.uk/student-finance",
+    "description": "The official route to UK tuition fee loans, maintenance loans and extra grants for students with children or a disability.",
+    "provider": "UK Government",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Apply as early as spring — funding is not guaranteed to arrive by term start if you apply late.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "maintenance-loan",
+      "tuition"
+    ]
+  },
+  {
+    "id": "gh-student-loan-trust-fund",
+    "name": "Student Loan Trust Fund",
+    "category": "financial-aid",
+    "country": "GH",
+    "url": "https://www.sltf.gov.gh/",
+    "description": "Ghana’s government student loan scheme for students at accredited tertiary institutions, applied for with a Ghana Card.",
+    "provider": "Student Loan Trust Fund, Ghana",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "This is a loan you repay after graduation. A Ghana Card is required to apply.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "loans",
+      "ghana-card"
+    ]
+  },
+  {
+    "id": "ie-susi",
+    "name": "SUSI — Student Universal Support Ireland",
+    "category": "financial-aid",
+    "country": "IE",
+    "url": "https://susi.ie/",
+    "description": "Ireland’s single national grant scheme covering student contribution fees and maintenance, with an eligibility reckoner before you apply.",
+    "provider": "City of Dublin Education and Training Board",
+    "providerType": "government",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "grant",
+      "maintenance"
+    ]
+  },
+  {
+    "id": "jm-students-loan-bureau",
+    "name": "Students’ Loan Bureau",
+    "category": "financial-aid",
+    "country": "JM",
+    "url": "https://www.slbja.com/",
+    "description": "Jamaica’s government student loan agency, funding tuition at approved local and regional tertiary institutions.",
+    "provider": "Students’ Loan Bureau, Jamaica",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Loans require a guarantor and are repaid after study. Read the guarantor obligations before anyone signs.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "loans",
+      "guarantor"
+    ]
+  },
+  {
+    "id": "ke-helb",
+    "name": "Higher Education Loans Board",
+    "category": "financial-aid",
+    "country": "KE",
+    "url": "https://www.helb.co.ke/",
+    "description": "Kenya’s national body for student loans, bursaries and scholarships for university and TVET students.",
+    "provider": "Higher Education Loans Board, Kenya",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Loans are repaid with interest starting a year after you finish. The site serves an incomplete certificate chain and some browsers warn — check the address bar reads helb.co.ke before signing in.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "loans",
+      "bursary"
+    ]
+  },
+  {
+    "id": "mx-becas-benito-juarez",
+    "name": "Becas Benito Juárez",
+    "category": "financial-aid",
+    "country": "MX",
+    "url": "https://www.gob.mx/becasbenitojuarez",
+    "description": "Mexico’s national scholarship programme paying a regular stipend to students in upper-secondary and higher education from low-income households.",
+    "provider": "Coordinación Nacional de Becas, Mexico",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Spanish only, and registration opens in announced windows rather than year-round.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "stipend",
+      "spanish"
+    ]
+  },
+  {
+    "id": "ng-nelfund",
+    "name": "Nigerian Education Loan Fund (NELFUND)",
+    "category": "financial-aid",
+    "country": "NG",
+    "url": "https://nelf.gov.ng/",
+    "description": "Nigeria’s federal student loan scheme covering tuition and an upkeep allowance for students at public tertiary institutions.",
+    "provider": "Nigerian Education Loan Fund",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Requires a National Identification Number and JAMB number, and applies only to government-owned institutions.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "loans",
+      "nin"
+    ]
+  },
+  {
+    "id": "nz-studylink",
+    "name": "StudyLink",
+    "category": "financial-aid",
+    "country": "NZ",
+    "url": "https://www.studylink.govt.nz/",
+    "description": "New Zealand’s student loans and allowances, including extra support for students who are also parents.",
+    "provider": "Ministry of Social Development, New Zealand",
+    "providerType": "government",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "student-allowance",
+      "parents"
+    ]
+  },
+  {
+    "id": "us-college-affordability-and-transparency-center",
+    "name": "College Affordability and Transparency Center",
+    "category": "financial-aid",
+    "country": "US",
+    "url": "https://collegecost.ed.gov/",
+    "description": "The federal site listing the highest- and lowest-cost colleges and linking to every institution’s required net price calculator.",
+    "provider": "U.S. Department of Education",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Sticker price is not what most families pay — use the net price calculator link for each school before ruling it out.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "net-price",
+      "cost"
+    ]
+  },
+  {
+    "id": "us-studentaid-loan-simulator",
+    "name": "Federal Loan Simulator",
+    "category": "financial-aid",
+    "country": "US",
+    "url": "https://studentaid.gov/loan-simulator/",
+    "description": "Shows what a federal student loan will actually cost each month under every repayment plan, before you borrow or when you already have.",
+    "provider": "U.S. Department of Education",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "You can run it without logging in by entering estimated amounts — useful for a family deciding how much to borrow.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "repayment",
+      "calculator"
+    ]
+  },
+  {
+    "id": "us-va-gi-bill-comparison-tool",
+    "name": "GI Bill Comparison Tool",
+    "category": "financial-aid",
+    "country": "US",
+    "url": "https://www.va.gov/education/gi-bill-comparison-tool/",
+    "description": "Compares what veterans’ education benefits are worth at a specific school, including housing allowance and Yellow Ribbon funding.",
+    "provider": "U.S. Department of Veterans Affairs",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Benefits can transfer to a spouse or child — worth checking even if the student never served.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "veterans",
+      "dependents"
+    ]
+  },
+  {
+    "id": "us-maryland-mhec-financial-aid",
+    "name": "Maryland State Financial Aid",
+    "category": "financial-aid",
+    "country": "US",
+    "url": "https://mhec.maryland.gov/preparing/Pages/FinancialAid/descriptions.aspx",
+    "description": "Every state grant and scholarship a Maryland student can claim, including need-based awards and programmes for students in foster care.",
+    "provider": "Maryland Higher Education Commission",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Maryland residents only. The state deadline is 1 March and is separate from any federal deadline.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "maryland",
+      "state-aid"
+    ]
+  },
+  {
+    "id": "us-cfpb-paying-for-college",
+    "name": "Paying for College",
+    "category": "financial-aid",
+    "country": "US",
+    "url": "https://www.consumerfinance.gov/paying-for-college/",
+    "description": "Plain-language tools from the US consumer regulator for comparing aid offers, understanding loan terms and avoiding predatory student lending.",
+    "provider": "Consumer Financial Protection Bureau",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "compare-offers",
+      "consumer-protection"
+    ]
+  },
+  {
+    "id": "us-bls-public-data-api",
+    "name": "BLS Public Data API",
+    "category": "open-data",
+    "country": "US",
+    "url": "https://www.bls.gov/developers/",
+    "description": "Programmatic access to US wage, employment and occupational projection series — the numbers behind every career outlook claim.",
+    "provider": "U.S. Bureau of Labor Statistics",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Registering for a key raises your daily limit. Call it during your build and ship the result — a key in browser code is a key you have published.",
+    "verifiedAt": "2026-09-07",
+    "license": "U.S. Government Work (public domain)",
+    "clientSideOnly": false,
+    "tags": [
+      "api",
+      "wages",
+      "projections"
+    ]
+  },
+  {
+    "id": "us-college-scorecard-data",
+    "name": "College Scorecard Data and API",
+    "category": "open-data",
+    "country": "US",
+    "url": "https://collegescorecard.ed.gov/data/",
+    "description": "The full federal dataset on every US college — cost, completion, debt and post-graduation earnings — as bulk files and an API.",
+    "provider": "U.S. Department of Education",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "The API needs a free api.data.gov key, so use it in a build step. The bulk CSV files need no key at all and are the better route for a static site.",
+    "verifiedAt": "2026-09-07",
+    "license": "U.S. Government Work (public domain)",
+    "clientSideOnly": false,
+    "tags": [
+      "api",
+      "colleges",
+      "earnings"
+    ]
+  },
+  {
+    "id": "us-ipeds-data",
+    "name": "IPEDS — Use the Data",
+    "category": "open-data",
+    "country": "US",
+    "url": "https://nces.ed.gov/ipeds/use-the-data",
+    "description": "The census of American higher education: every institution’s enrolment, staffing, finances and graduation rates, downloadable in full.",
+    "provider": "National Center for Education Statistics",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "U.S. Government Work (public domain)",
+    "clientSideOnly": true,
+    "tags": [
+      "colleges",
+      "bulk-data"
+    ]
+  },
+  {
+    "id": "us-onet-database-downloads",
+    "name": "O*NET Database Downloads",
+    "category": "open-data",
+    "country": "US",
+    "url": "https://www.onetcenter.org/database.html",
+    "description": "The complete occupational database — skills, tasks, knowledge and work styles for roughly 900 occupations — as flat files.",
+    "provider": "O*NET Resource Center",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Free to reuse commercially with attribution. Download the text or Excel files rather than scraping the site.",
+    "verifiedAt": "2026-09-07",
+    "license": "CC-BY-4.0",
+    "clientSideOnly": true,
+    "tags": [
+      "occupations",
+      "bulk-data"
+    ]
+  },
+  {
+    "id": "us-census-data-api",
+    "name": "U.S. Census Data API",
+    "category": "open-data",
+    "country": "US",
+    "url": "https://www.census.gov/data/developers.html",
+    "description": "Population, income, poverty and educational attainment data down to neighbourhood level, useful for showing families local context.",
+    "provider": "U.S. Census Bureau",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Fetch at build time. Cross-origin calls from a page under a strict CSP will be blocked.",
+    "verifiedAt": "2026-09-07",
+    "license": "U.S. Government Work (public domain)",
+    "clientSideOnly": false,
+    "tags": [
+      "api",
+      "demographics"
+    ]
+  },
+  {
+    "id": "eu-eurostat-education-database",
+    "name": "Eurostat Education and Training Database",
+    "category": "open-data",
+    "country": "Global",
+    "url": "https://ec.europa.eu/eurostat/web/education-and-training/database",
+    "description": "Comparable education statistics across every EU country — attainment, early leavers, tertiary enrolment and spending.",
+    "provider": "Eurostat, European Commission",
+    "providerType": "intergovernmental",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "CC-BY-4.0",
+    "clientSideOnly": true,
+    "tags": [
+      "europe",
+      "comparable"
+    ]
+  },
+  {
+    "id": "global-oecd-education-gps",
+    "name": "OECD Education GPS",
+    "category": "open-data",
+    "country": "Global",
+    "url": "https://gpseducation.oecd.org/",
+    "description": "Country-by-country education indicators from the OECD, including PISA results and the earnings premium of a degree.",
+    "provider": "OECD",
+    "providerType": "intergovernmental",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "OECD Terms and Conditions (attribution required)",
+    "clientSideOnly": true,
+    "tags": [
+      "pisa",
+      "international-comparison"
+    ]
+  },
+  {
+    "id": "global-world-bank-education-statistics",
+    "name": "World Bank Education Statistics",
+    "category": "open-data",
+    "country": "Global",
+    "url": "https://data.worldbank.org/topic/education",
+    "description": "Education indicators for almost every country on earth, downloadable as CSV and available through a free open API.",
+    "provider": "World Bank",
+    "providerType": "intergovernmental",
+    "requiresAccount": false,
+    "caveat": "The API needs no key and permits CORS, but fetch it at build time anyway so the page keeps working if the API is down.",
+    "verifiedAt": "2026-09-07",
+    "license": "CC-BY-4.0",
+    "clientSideOnly": true,
+    "tags": [
+      "api",
+      "global",
+      "indicators"
+    ]
+  },
+  {
+    "id": "global-date-fns",
+    "name": "date-fns",
+    "category": "open-source",
+    "country": "Global",
+    "url": "https://date-fns.org/",
+    "description": "Date maths without a heavy dependency — the practical way to build an admissions deadline countdown that is correct in every timezone.",
+    "provider": "date-fns contributors",
+    "providerType": "open-source",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "MIT",
+    "clientSideOnly": true,
+    "tags": [
+      "dates",
+      "deadlines"
+    ]
+  },
+  {
+    "id": "global-decimal-js",
+    "name": "decimal.js",
+    "category": "open-source",
+    "country": "Global",
+    "url": "https://github.com/MikeMcl/decimal.js",
+    "description": "Arbitrary-precision arithmetic. If you are building a cost or loan calculator, this is how you avoid floating-point money errors.",
+    "provider": "Michael Mclaughlin",
+    "providerType": "open-source",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "MIT",
+    "clientSideOnly": true,
+    "tags": [
+      "money",
+      "calculator"
+    ]
+  },
+  {
+    "id": "global-fuse-js",
+    "name": "Fuse.js",
+    "category": "open-source",
+    "country": "Global",
+    "url": "https://www.fusejs.io/",
+    "description": "Fuzzy search that runs entirely in the browser, so a resource directory stays searchable with no server and no tracking.",
+    "provider": "Kiro Risk",
+    "providerType": "open-source",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "Apache-2.0",
+    "clientSideOnly": true,
+    "tags": [
+      "search",
+      "client-side"
+    ]
+  },
+  {
+    "id": "global-oppia",
+    "name": "Oppia",
+    "category": "open-source",
+    "country": "Global",
+    "url": "https://www.oppia.org/",
+    "description": "An open-source platform of free interactive lessons, built by a nonprofit for learners without access to a teacher.",
+    "provider": "Oppia Foundation",
+    "providerType": "open-source",
+    "requiresAccount": false,
+    "caveat": "Using oppia.org needs nothing but a browser; self-hosting the platform requires a backend.",
+    "verifiedAt": "2026-09-07",
+    "license": "Apache-2.0",
+    "clientSideOnly": false,
+    "tags": [
+      "lessons",
+      "nonprofit"
+    ]
+  },
+  {
+    "id": "global-papaparse",
+    "name": "Papa Parse",
+    "category": "open-source",
+    "country": "Global",
+    "url": "https://www.papaparse.com/",
+    "description": "A fast CSV parser — the piece that turns a government bulk data download into something a static site can actually use.",
+    "provider": "Matt Holt and contributors",
+    "providerType": "open-source",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "MIT",
+    "clientSideOnly": true,
+    "tags": [
+      "csv",
+      "data-pipeline"
+    ]
+  },
+  {
+    "id": "global-react-aria",
+    "name": "React Aria",
+    "category": "open-source",
+    "country": "Global",
+    "url": "https://react-spectrum.adobe.com/react-aria/",
+    "description": "Accessible, unstyled React behaviour hooks — keyboard and screen reader support done properly, with your own visual design on top.",
+    "provider": "Adobe",
+    "providerType": "open-source",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "license": "Apache-2.0",
+    "clientSideOnly": true,
+    "tags": [
+      "react",
+      "accessibility"
+    ]
+  },
+  {
+    "id": "ar-becas-progresar",
+    "name": "Becas Progresar",
+    "category": "scholarships",
+    "country": "AR",
+    "url": "https://www.argentina.gob.ar/educacion/progresar",
+    "description": "Argentina’s national scholarship programme paying a monthly stipend to students aged 16–24 who are finishing secondary school or studying at university.",
+    "provider": "Ministerio de Capital Humano, Argentina",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Spanish only, and applications open in defined windows each year — check the dates before you plan around it.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "stipend",
+      "spanish"
+    ]
+  },
+  {
+    "id": "br-prouni",
+    "name": "ProUni — Programa Universidade para Todos",
+    "category": "scholarships",
+    "country": "BR",
+    "url": "https://acessounico.mec.gov.br/prouni",
+    "description": "Brazil’s federal programme granting full and half scholarships at private universities to low-income students, based on their ENEM exam score.",
+    "provider": "Ministério da Educação, Brazil",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Portuguese only. You must have sat the ENEM exam in the previous year to apply.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "enem",
+      "portuguese"
+    ]
+  },
+  {
+    "id": "ca-loran-scholars-foundation",
+    "name": "Loran Scholars Foundation",
+    "category": "scholarships",
+    "country": "CA",
+    "url": "https://loranscholar.ca/",
+    "description": "Canada’s largest four-year undergraduate award, chosen on character and service rather than grades alone, with mentorship and summer programmes attached.",
+    "provider": "Loran Scholars Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "Deadline falls in the autumn of the final year of high school — much earlier than most Canadian applications.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "leadership",
+      "undergraduate"
+    ]
+  },
+  {
+    "id": "ca-schulich-leader-scholarships",
+    "name": "Schulich Leader Scholarships",
+    "category": "scholarships",
+    "country": "CA",
+    "url": "https://schulichleaders.com/",
+    "description": "Large STEM entrance scholarships at partner universities in Canada and Israel. Students are nominated by their high school rather than applying directly.",
+    "provider": "Schulich Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "You cannot apply on your own — ask your school counsellor about being nominated, early.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "stem",
+      "nomination"
+    ]
+  },
+  {
+    "id": "in-national-scholarship-portal",
+    "name": "National Scholarship Portal",
+    "category": "scholarships",
+    "country": "IN",
+    "url": "https://scholarships.gov.in/",
+    "description": "India’s single government portal for central and state scholarships, covering school and college students, with one application shared across schemes.",
+    "provider": "Ministry of Electronics & IT, India",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Requires an Aadhaar-linked account and a bank account in the student’s own name. Application windows close firmly.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "aadhaar",
+      "government-scheme"
+    ]
+  },
+  {
+    "id": "us-college-fund-american-indian",
+    "name": "American Indian College Fund Scholarships",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://collegefund.org/students/scholarships/",
+    "description": "Scholarships for Native American and Alaska Native students at tribal colleges and at any accredited college, through one shared application.",
+    "provider": "American Indian College Fund",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "native-american",
+      "tribal-colleges"
+    ]
+  },
+  {
+    "id": "us-apia-scholars",
+    "name": "APIA Scholars",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://apiascholars.org/",
+    "description": "Scholarships for Asian and Pacific Islander American students, including a general programme open to first-year college students with financial need.",
+    "provider": "Asian & Pacific Islander American Scholars",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "aapi",
+      "need-based"
+    ]
+  },
+  {
+    "id": "us-coca-cola-scholars-foundation",
+    "name": "Coca-Cola Scholars Program",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://www.coca-colascholarsfoundation.org/",
+    "description": "A $20,000 achievement scholarship for 150 graduating high school seniors each year, judged on leadership and service rather than need.",
+    "provider": "Coca-Cola Scholars Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "The application opens in August and closes in late September of senior year — earlier than almost everything else.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "seniors",
+      "leadership"
+    ]
+  },
+  {
+    "id": "us-dell-scholars-program",
+    "name": "Dell Scholars Program",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://www.dellscholars.org/",
+    "description": "A scholarship built around students who have overcome real obstacles, adding a laptop, textbook credits and ongoing support rather than money alone.",
+    "provider": "Michael & Susan Dell Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "You must already be in a participating college-readiness programme to be eligible — check the list before you invest time in the application.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "need-based",
+      "wraparound-support"
+    ]
+  },
+  {
+    "id": "us-foster-care-to-success",
+    "name": "Foster Care to Success Scholarships",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://www.fc2success.org/",
+    "description": "Scholarships and care packages for students who spent time in foster care, from the oldest national nonprofit working with foster youth in college.",
+    "provider": "Foster Care to Success",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "foster-youth"
+    ]
+  },
+  {
+    "id": "us-hispanic-scholarship-fund",
+    "name": "Hispanic Scholarship Fund",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://www.hsf.net/",
+    "description": "Scholarships plus career and mentoring support for students of Hispanic heritage, from high school seniors through graduate school.",
+    "provider": "Hispanic Scholarship Fund",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "hispanic",
+      "mentoring"
+    ]
+  },
+  {
+    "id": "us-horatio-alger-scholarships",
+    "name": "Horatio Alger Association Scholarships",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://scholars.horatioalger.org/",
+    "description": "Need-based scholarships for students who have faced and overcome significant adversity, with national and state-level awards each year.",
+    "provider": "Horatio Alger Association",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "adversity",
+      "need-based"
+    ]
+  },
+  {
+    "id": "us-jack-kent-cooke-foundation",
+    "name": "Jack Kent Cooke Foundation Scholarships",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://www.jkcf.org/our-scholarships/",
+    "description": "Among the largest scholarships in the country for high-achieving students with financial need, including awards for high school seniors and community college transfers.",
+    "provider": "Jack Kent Cooke Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "high-achieving",
+      "transfer"
+    ]
+  },
+  {
+    "id": "us-point-foundation",
+    "name": "Point Foundation Scholarships",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://pointfoundation.org/",
+    "description": "Scholarships, mentorship and community for LGBTQ students, including a programme aimed specifically at graduating high school seniors.",
+    "provider": "Point Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "lgbtq",
+      "mentoring"
+    ]
+  },
+  {
+    "id": "us-questbridge-national-college-match",
+    "name": "QuestBridge National College Match",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://www.questbridge.org/",
+    "description": "Matches high-achieving students from low-income families with full four-year scholarships at some of the most selective colleges in the country.",
+    "provider": "QuestBridge",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "The Match application is due in late September of senior year and a match is binding — read the commitment carefully before ranking colleges.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "low-income",
+      "full-ride",
+      "binding"
+    ]
+  },
+  {
+    "id": "us-gates-scholarship",
+    "name": "The Gates Scholarship",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://www.thegatesscholarship.org/",
+    "description": "A last-dollar scholarship covering the full unmet cost of college for 300 exceptional Pell-eligible minority high school seniors each year.",
+    "provider": "Bill & Melinda Gates Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "Extremely selective and the application closes in September of senior year. Treat it as one option among many, never the plan.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "pell-eligible",
+      "full-ride"
+    ]
+  },
+  {
+    "id": "us-thurgood-marshall-college-fund",
+    "name": "Thurgood Marshall College Fund Scholarships",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://tmcf.org/students-alumni/scholarship/",
+    "description": "Scholarships for students attending publicly supported Historically Black Colleges and Universities, alongside career and internship programmes.",
+    "provider": "Thurgood Marshall College Fund",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "caveat": "Most awards require that you attend one of the member HBCUs — check the school list first.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "hbcu"
+    ]
+  },
+  {
+    "id": "us-uncf-scholarships",
+    "name": "UNCF Scholarships",
+    "category": "scholarships",
+    "country": "US",
+    "url": "https://scholarships.uncf.org/",
+    "description": "One application connecting students to dozens of scholarship programmes from the United Negro College Fund, for HBCUs and other accredited colleges.",
+    "provider": "UNCF (United Negro College Fund)",
+    "providerType": "nonprofit",
+    "requiresAccount": true,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "hbcu",
+      "black-students"
+    ]
+  },
+  {
+    "id": "global-mastercard-foundation-scholars",
+    "name": "Mastercard Foundation Scholars Program",
+    "category": "scholarships",
+    "country": "Global",
+    "url": "https://mastercardfdn.org/en/what-we-do/our-programs/mastercard-foundation-scholars-program/",
+    "description": "Full scholarships with mentoring for young people from Africa and other under-served regions, delivered through partner universities worldwide.",
+    "provider": "Mastercard Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "You apply to a partner university, not to the Foundation. Start from the partner list on this page.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "africa",
+      "full-ride"
+    ]
+  },
+  {
+    "id": "in-nptel",
+    "name": "NPTEL",
+    "category": "skills",
+    "country": "IN",
+    "url": "https://nptel.ac.in/",
+    "description": "Thousands of free university-level engineering and science courses recorded by the Indian Institutes of Technology.",
+    "provider": "IIT / IISc, India",
+    "providerType": "university",
+    "requiresAccount": false,
+    "caveat": "Watching is free; a proctored certificate requires an in-person exam and an exam fee.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "engineering",
+      "iit"
+    ]
+  },
+  {
+    "id": "in-swayam",
+    "name": "SWAYAM",
+    "category": "skills",
+    "country": "IN",
+    "url": "https://swayam.gov.in/",
+    "description": "India’s national platform for free online courses from class 9 through post-graduate level, with credits transferable at some universities.",
+    "provider": "Ministry of Education, India",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Courses are free; certification requires a paid proctored exam.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "moocs",
+      "credit-transfer"
+    ]
+  },
+  {
+    "id": "us-code-org",
+    "name": "Code.org",
+    "category": "skills",
+    "country": "US",
+    "url": "https://code.org/",
+    "description": "Free computer science courses from first steps through AP level, used in tens of thousands of schools, with no cost to families.",
+    "provider": "Code.org",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "computer-science",
+      "ap"
+    ]
+  },
+  {
+    "id": "us-digitallearn",
+    "name": "DigitalLearn",
+    "category": "skills",
+    "country": "US",
+    "url": "https://www.digitallearn.org/",
+    "description": "Short, patient courses on basic computer and internet skills, built by public librarians for adults who never had the chance to learn.",
+    "provider": "Public Library Association",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "digital-literacy",
+      "adults",
+      "parents"
+    ]
+  },
+  {
+    "id": "us-gcflearnfree",
+    "name": "GCFGlobal",
+    "category": "skills",
+    "country": "US",
+    "url": "https://edu.gcfglobal.org/en/",
+    "description": "Free tutorials on everything from Microsoft Word and email to reading a payslip and job hunting, written for absolute beginners.",
+    "provider": "Goodwill Community Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "office-skills",
+      "job-search",
+      "beginners"
+    ]
+  },
+  {
+    "id": "us-nasa-stem-engagement",
+    "name": "NASA STEM Engagement",
+    "category": "skills",
+    "country": "US",
+    "url": "https://www.nasa.gov/learning-resources/",
+    "description": "Free NASA lessons, activities and student challenges across every science subject, usable at home as well as in a classroom.",
+    "provider": "NASA",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "stem",
+      "activities"
+    ]
+  },
+  {
+    "id": "us-smithsonian-learning-lab",
+    "name": "Smithsonian Learning Lab",
+    "category": "skills",
+    "country": "US",
+    "url": "https://learninglab.si.edu/",
+    "description": "Millions of digitised museum objects and ready-made lessons from the Smithsonian, free to browse and build with.",
+    "provider": "Smithsonian Institution",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Browsing is open; saving your own collections needs a free account.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "museum",
+      "lessons"
+    ]
+  },
+  {
+    "id": "global-kolibri",
+    "name": "Kolibri",
+    "category": "skills",
+    "country": "Global",
+    "url": "https://learningequality.org/kolibri/",
+    "description": "A free offline learning platform you install on a laptop and use with no internet at all, bundled with open course libraries.",
+    "provider": "Learning Equality",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "You install and run it yourself — built for places with unreliable internet, not a website you simply visit.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "offline",
+      "low-bandwidth"
+    ]
+  },
+  {
+    "id": "global-project-gutenberg",
+    "name": "Project Gutenberg",
+    "category": "skills",
+    "country": "Global",
+    "url": "https://www.gutenberg.org/",
+    "description": "Over 70,000 books whose copyright has expired, free to download in full — including most of the literature on a school reading list.",
+    "provider": "Project Gutenberg Literary Archive Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "books",
+      "reading-list"
+    ]
+  },
+  {
+    "id": "gb-bbc-bitesize",
+    "name": "BBC Bitesize",
+    "category": "test-prep",
+    "country": "GB",
+    "url": "https://www.bbc.co.uk/bitesize",
+    "description": "Free revision material for GCSEs, Nationals and A-levels, organised by subject and exam board, from the BBC.",
+    "provider": "BBC",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "Built around the UK curriculum and exam boards — useful worldwide for the subject explanations, less so for exam formats.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "gcse",
+      "a-level",
+      "revision"
+    ]
+  },
+  {
+    "id": "in-nta-official-exam-portal",
+    "name": "National Testing Agency",
+    "category": "test-prep",
+    "country": "IN",
+    "url": "https://www.nta.ac.in/",
+    "description": "The official source for India’s national entrance exams including JEE and NEET — syllabus, past papers and mock tests.",
+    "provider": "National Testing Agency, India",
+    "providerType": "government",
+    "requiresAccount": false,
+    "caveat": "Use only nta.ac.in and the official exam sites it links to. Coaching sites impersonating NTA are common.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "jee",
+      "neet",
+      "mock-tests"
+    ]
+  },
+  {
+    "id": "us-ck12-foundation",
+    "name": "CK-12 Foundation",
+    "category": "test-prep",
+    "country": "US",
+    "url": "https://www.ck12.org/",
+    "description": "Free adaptive practice and interactive textbooks for maths and science, aligned to US school standards, from a long-running nonprofit.",
+    "provider": "CK-12 Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "You can read everything without an account; saving progress requires a free login.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "math",
+      "science",
+      "practice"
+    ]
+  },
+  {
+    "id": "us-march2success",
+    "name": "March2Success",
+    "category": "test-prep",
+    "country": "US",
+    "url": "https://www.march2success.com/",
+    "description": "Free standardised-test practice and study plans covering maths, English and science, with full-length practice tests.",
+    "provider": "U.S. Army",
+    "providerType": "government",
+    "requiresAccount": true,
+    "caveat": "Run by the U.S. Army as a recruiting-adjacent programme. It is genuinely free with no obligation, but expect that the Army may contact you.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "practice-tests",
+      "military"
+    ]
+  },
+  {
+    "id": "us-openstax",
+    "name": "OpenStax",
+    "category": "test-prep",
+    "country": "US",
+    "url": "https://openstax.org/",
+    "description": "Peer-reviewed college textbooks, free to read online or download as PDFs, covering the courses most first-year students take.",
+    "provider": "Rice University",
+    "providerType": "university",
+    "requiresAccount": false,
+    "caveat": "Printed copies cost money; the digital versions are permanently free with no account.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "textbooks",
+      "college-courses"
+    ]
+  },
+  {
+    "id": "au-beyond-blue",
+    "name": "Beyond Blue",
+    "category": "wellbeing",
+    "country": "AU",
+    "url": "https://www.beyondblue.org.au/",
+    "description": "Australian mental health support for anxiety and depression, with a 24/7 phone and chat service and resources written for parents.",
+    "provider": "Beyond Blue",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "anxiety",
+      "depression",
+      "24-7"
+    ]
+  },
+  {
+    "id": "au-headspace",
+    "name": "headspace",
+    "category": "wellbeing",
+    "country": "AU",
+    "url": "https://headspace.org.au/",
+    "description": "Australia’s national youth mental health service for 12–25 year olds, free in person at local centres and online.",
+    "provider": "headspace National Youth Mental Health Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "Not the meditation app of a similar name — this is the Australian health service.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "youth",
+      "free-counselling"
+    ]
+  },
+  {
+    "id": "ca-kids-help-phone",
+    "name": "Kids Help Phone",
+    "category": "wellbeing",
+    "country": "CA",
+    "url": "https://kidshelpphone.ca/",
+    "description": "Canada’s 24/7 e-mental health service for young people — call, text or chat, free and anonymous, in English and French.",
+    "provider": "Kids Help Phone",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "24-7",
+      "text-support",
+      "bilingual"
+    ]
+  },
+  {
+    "id": "gb-samaritans",
+    "name": "Samaritans",
+    "category": "wellbeing",
+    "country": "GB",
+    "url": "https://www.samaritans.org/",
+    "description": "Free 24-hour listening support on 116 123 for anyone in distress in the UK and Ireland, with no referral and no waiting list.",
+    "provider": "Samaritans",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "crisis",
+      "24-7"
+    ]
+  },
+  {
+    "id": "gb-young-minds",
+    "name": "YoungMinds",
+    "category": "wellbeing",
+    "country": "GB",
+    "url": "https://www.youngminds.org.uk/",
+    "description": "UK charity for young people’s mental health, including a free Parents Helpline for adults worried about a child.",
+    "provider": "YoungMinds",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "parents-helpline",
+      "youth"
+    ]
+  },
+  {
+    "id": "us-988-suicide-and-crisis-lifeline",
+    "name": "988 Suicide & Crisis Lifeline",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://988lifeline.org/",
+    "description": "Call or text 988 from anywhere in the US, any hour, to reach a trained crisis counsellor free and confidentially.",
+    "provider": "988 Suicide & Crisis Lifeline",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "If someone is in immediate danger, call 988 or 911 now rather than reading further.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "crisis",
+      "24-7",
+      "suicide-prevention"
+    ]
+  },
+  {
+    "id": "us-child-mind-institute",
+    "name": "Child Mind Institute",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://childmind.org/",
+    "description": "Clinician-written guides for parents on anxiety, ADHD, depression and behaviour — the family reference library, free to read.",
+    "provider": "Child Mind Institute",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "parent-guides",
+      "adhd",
+      "anxiety"
+    ]
+  },
+  {
+    "id": "us-crisis-text-line",
+    "name": "Crisis Text Line",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://www.crisistextline.org/",
+    "description": "Text HOME to 741741 to reach a trained volunteer crisis counsellor — free, 24/7, and silent, which matters for a teenager.",
+    "provider": "Crisis Text Line",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "text-support",
+      "24-7",
+      "teens"
+    ]
+  },
+  {
+    "id": "us-findtreatment-gov",
+    "name": "FindTreatment.gov",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://findtreatment.gov/",
+    "description": "The federal search for mental health and substance use treatment, filterable by what a facility charges and what insurance it takes.",
+    "provider": "Substance Abuse and Mental Health Services Administration",
+    "providerType": "government",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "treatment",
+      "substance-use"
+    ]
+  },
+  {
+    "id": "us-mental-health-america-screening",
+    "name": "Mental Health America Screening Tools",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://screening.mhanational.org/screening-tools/",
+    "description": "Free, anonymous, clinically validated mental health screenings for depression, anxiety and more, with results explained.",
+    "provider": "Mental Health America",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "A screening is not a diagnosis. It is a starting point for a conversation with a clinician.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "screening",
+      "anonymous"
+    ]
+  },
+  {
+    "id": "us-nami-teens-and-young-adults",
+    "name": "NAMI — Kids, Teens and Young Adults",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://www.nami.org/your-journey/kids-teens-and-young-adults/",
+    "description": "Guidance from the largest US grassroots mental health organisation for young people and the families supporting them.",
+    "provider": "National Alliance on Mental Illness",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "family-support",
+      "youth"
+    ]
+  },
+  {
+    "id": "us-jed-foundation",
+    "name": "The Jed Foundation",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://jedfoundation.org/",
+    "description": "Emotional health support built specifically around the transition from high school to college — for the student and the parent.",
+    "provider": "The Jed Foundation",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "transition",
+      "college-mental-health"
+    ]
+  },
+  {
+    "id": "us-national-domestic-violence-hotline",
+    "name": "The National Domestic Violence Hotline",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://www.thehotline.org/",
+    "description": "Free 24/7 confidential support by phone, chat or text for anyone experiencing abuse, with safety planning help.",
+    "provider": "National Domestic Violence Hotline",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "caveat": "The site has a quick-exit button. If a device may be monitored, use a different one or call 1-800-799-7233.",
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "crisis",
+      "safety-planning",
+      "24-7"
+    ]
+  },
+  {
+    "id": "us-trevor-project",
+    "name": "The Trevor Project",
+    "category": "wellbeing",
+    "country": "US",
+    "url": "https://www.thetrevorproject.org/",
+    "description": "Free 24/7 crisis support for LGBTQ young people by phone, chat and text, plus resources written for their parents.",
+    "provider": "The Trevor Project",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "lgbtq",
+      "crisis",
+      "24-7"
+    ]
+  },
+  {
+    "id": "global-befrienders-worldwide",
+    "name": "Befrienders Worldwide",
+    "category": "wellbeing",
+    "country": "Global",
+    "url": "https://befrienders.org/",
+    "description": "A directory of emotional support helplines in more than 30 countries — the fastest way to find a crisis line outside the US.",
+    "provider": "Befrienders Worldwide",
+    "providerType": "nonprofit",
+    "requiresAccount": false,
+    "verifiedAt": "2026-09-07",
+    "tags": [
+      "helpline-directory",
+      "international"
+    ]
+  }
+]

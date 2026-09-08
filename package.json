@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/sync-resources.mjs",
     "build": "vite build",
+    "sync:resources": "node scripts/sync-resources.mjs",
+    "check:resources": "node scripts/sync-resources.mjs --check",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",

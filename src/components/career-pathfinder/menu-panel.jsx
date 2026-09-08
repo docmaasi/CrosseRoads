@@ -18,6 +18,10 @@ const GROUPS = [
     title: 'Resources',
     links: [
       { href: '/CareerPathfinder#resources', label: 'Career resource library' },
+      {
+        href: '/CareerPathfinder#worldwide-resources',
+        label: 'Worldwide resource directory',
+      },
       { href: '/CollegePlanner#resources', label: 'Official college links' },
       { href: '/ParentRoadmap#services', label: 'Advising services' },
       { href: '/Wellness#resources', label: 'Wellness resources' },
