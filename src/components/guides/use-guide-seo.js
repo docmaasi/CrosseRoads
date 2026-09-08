@@ -6,13 +6,46 @@ import {
   removeJsonLd,
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
+import { ARTICLES } from './data/articles';
 
 const JSONLD_ID = 'guides-jsonld';
+const FAQ_JSONLD_ID = 'guides-faq-jsonld';
 
 const INDEX_TITLE = `Career & College Guides — ${BRAND.platformName}`;
 const INDEX_DESC =
-  'Free, practical guides from Dr. Kisa Crosse on choosing a career that fits, ' +
-  'college admissions timelines, Early Action strategy, and financial aid.';
+  `${ARTICLES.length} free, practical guides from Dr. Kisa Crosse — family physician, ` +
+  'educator and mother — on choosing a career, college admissions timelines, ' +
+  'paying for college, supporting your student, and getting through it all intact.';
+
+/**
+ * Author block, repeated on every article.
+ *
+ * Named consistently and with credentials attached because that is what search
+ * and answer engines use to decide whether a health-adjacent or money-adjacent
+ * claim came from someone qualified to make it. It is also simply true.
+ */
+const AUTHOR = {
+  '@type': 'Person',
+  name: 'Dr. Kisa Crosse',
+  honorificPrefix: 'Dr.',
+  honorificSuffix: 'M.D.',
+  jobTitle: 'Family Physician and Founder, CrosseRoads',
+  description:
+    'Board-certified family physician in Maryland, educator, mother, and founder of CrosseRoads.',
+  knowsAbout: [
+    'college admissions',
+    'financial aid',
+    'career discovery',
+    'adolescent health',
+    'parent wellbeing',
+  ],
+};
+
+const PUBLISHER = {
+  '@type': 'Organization',
+  name: BRAND.platformName,
+  url: 'https://crosseroads.com',
+};
 
 function articleJsonLd(article, canonical) {
   return {
@@ -21,9 +54,36 @@ function articleJsonLd(article, canonical) {
     headline: article.title,
     description: article.description,
     datePublished: article.datePublished,
-    mainEntityOfPage: canonical,
-    author: { '@type': 'Person', name: 'Dr. Kisa Crosse' },
-    publisher: { '@type': 'Organization', name: BRAND.platformName },
+    dateModified: article.datePublished,
+    inLanguage: 'en-US',
+    isAccessibleForFree: true,
+    articleSection: article.category,
+    keywords: (article.keywords ?? []).join(', '),
+    wordCount: article.sections
+      .flatMap((section) => [...(section.paragraphs ?? []), ...(section.list ?? [])])
+      .join(' ')
+      .split(/\s+/).length,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+    author: AUTHOR,
+    publisher: PUBLISHER,
+  };
+}
+
+/**
+ * FAQPage markup from the article's own question-and-answer block.
+ *
+ * This is the piece answer engines lift most readily: a plainly-worded question
+ * with a short answer that is true on its own, out of context.
+ */
+function faqJsonLd(article) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: article.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
   };
 }
 
@@ -34,7 +94,17 @@ function indexJsonLd(canonical) {
     name: INDEX_TITLE,
     description: INDEX_DESC,
     url: canonical,
-    publisher: { '@type': 'Organization', name: BRAND.platformName },
+    inLanguage: 'en-US',
+    isAccessibleForFree: true,
+    author: AUTHOR,
+    publisher: PUBLISHER,
+    hasPart: ARTICLES.slice(0, 30).map((article) => ({
+      '@type': 'Article',
+      headline: article.title,
+      description: article.description,
+      datePublished: article.datePublished,
+      url: `${canonical}/${article.slug}`,
+    })),
   };
 }
 
@@ -43,20 +113,34 @@ export function useGuideSeo(article) {
   useEffect(() => {
     const path = article ? `/Guides/${article.slug}` : '/Guides';
     const canonical = `${window.location.origin}${path}`;
+
     applySeoHead({
       title: article ? `${article.title} — ${BRAND.platformName}` : INDEX_TITLE,
       description: article ? article.description : INDEX_DESC,
       path,
       siteName: BRAND.platformName,
+      keywords: article?.keywords,
+      type: article ? 'article' : 'website',
+      publishedTime: article?.datePublished,
+      author: 'Dr. Kisa Crosse',
+      section: article?.category,
     });
+
     injectJsonLd(
       JSONLD_ID,
       article ? articleJsonLd(article, canonical) : indexJsonLd(canonical),
     );
 
+    if (article?.faq?.length) {
+      injectJsonLd(FAQ_JSONLD_ID, faqJsonLd(article));
+    } else {
+      removeJsonLd(FAQ_JSONLD_ID);
+    }
+
     return () => {
       resetSeoHead();
       removeJsonLd(JSONLD_ID);
+      removeJsonLd(FAQ_JSONLD_ID);
     };
   }, [article]);
 }

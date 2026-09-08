@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Clock, ExternalLink } from 'lucide-react';
 import { BRAND } from '../career-pathfinder/branding';
-
-const CATEGORY_LABELS = { career: 'Career', college: 'College' };
+import { CATEGORY_LABELS, relatedArticles } from './data/articles';
+import { ArticleShare, AuthorBio } from './article-share';
 
 /** Full article page: header, sections, tool CTA, and official sources. */
 export function ArticleView({ article }) {
@@ -22,13 +22,31 @@ export function ArticleView({ article }) {
         <h1 className="mt-1 font-serif text-3xl font-bold leading-tight text-[#4a2373]">
           {article.title}
         </h1>
-        <p className="mt-3 flex items-center gap-2 text-sm text-stone-500">
+        <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-stone-500">
           {BRAND.byline}
+          <span aria-hidden="true">·</span>
+          <time dateTime={article.datePublished}>
+            {new Date(`${article.datePublished}T12:00:00Z`).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              timeZone: 'UTC',
+            })}
+          </time>
           <span aria-hidden="true">·</span>
           <Clock className="h-3.5 w-3.5" aria-hidden="true" />
           {article.readMinutes} min read
         </p>
       </header>
+
+      {article.keyTakeaway && (
+        <div className="mt-6 rounded-2xl border-l-4 border-[#17808d] bg-[#17808d]/5 py-4 pl-5 pr-4">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#116a75]">
+            The short answer
+          </p>
+          <p className="mt-1 leading-relaxed text-stone-700">{article.keyTakeaway}</p>
+        </div>
+      )}
 
       <div className="mt-6 space-y-6">
         {article.sections.map((section, index) => (
@@ -88,6 +106,54 @@ export function ArticleView({ article }) {
           ))}
         </ul>
       </footer>
+
+      {article.faq && article.faq.length > 0 && (
+        <section aria-labelledby="faq-heading" className="mt-8">
+          <h2
+            id="faq-heading"
+            className="font-serif text-xl font-bold text-[#4a2373]"
+          >
+            Common questions
+          </h2>
+          <dl className="mt-3 space-y-4">
+            {article.faq.map((item) => (
+              <div
+                key={item.question}
+                className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm"
+              >
+                <dt className="font-semibold text-[#4a2373]">{item.question}</dt>
+                <dd className="mt-1 leading-relaxed text-stone-700">{item.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
+      <ArticleShare title={article.title} path={`/Guides/${article.slug}`} />
+
+      <AuthorBio />
+
+      <section aria-labelledby="related-heading" className="cp-no-print mt-8">
+        <h2
+          id="related-heading"
+          className="text-xs font-semibold uppercase tracking-wide text-[#116a75]"
+        >
+          Keep reading
+        </h2>
+        <ul className="mt-3 space-y-2">
+          {relatedArticles(article).map((related) => (
+            <li key={related.slug}>
+              <Link
+                to={`/Guides/${related.slug}`}
+                className="font-medium text-[#4a2373] underline-offset-2 hover:text-[#17808d] hover:underline"
+              >
+                {related.title}
+              </Link>
+              <p className="text-sm text-stone-600">{related.description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
     </article>
   );
 }
