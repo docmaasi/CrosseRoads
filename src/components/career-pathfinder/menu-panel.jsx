@@ -19,7 +19,7 @@ const GROUPS = [
     links: [
       { href: '/WorkWithMe#packages', label: 'Consulting packages' },
       { href: '/WorkWithMe#power-hour', label: 'Power Hour — $150' },
-      { href: '/WorkWithMe#power-mom', label: 'Power Mom à la carte' },
+      { href: '/WorkWithMe#a-la-carte', label: 'À la carte services' },
       { href: '/WorkWithMe#inquire', label: 'Send an inquiry' },
     ],
   },

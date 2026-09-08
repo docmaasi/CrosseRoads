@@ -22,14 +22,26 @@ const RATE_WINDOW_MS = 10 * 60 * 1000;
 const RATE_MAX_PER_IP = 5;
 
 const LIMITS = { name: 100, email: 200, grade: 40, pkg: 40, message: 3000 };
-const VALID_PKG = new Set(['', 'kickstart', 'college-plan', 'vip', 'power-hour', 'power-mom']);
+// 'power-mom' is the old id for 'a-la-carte'. It stays accepted because this
+// is a PWA: a family whose service worker still holds the previous bundle
+// would otherwise have their inquiry silently rejected.
+const VALID_PKG = new Set([
+  '',
+  'kickstart',
+  'college-plan',
+  'vip',
+  'power-hour',
+  'a-la-carte',
+  'power-mom',
+]);
 const PKG_LABEL = {
   '': 'Not sure yet',
   kickstart: 'The College Kickstart ($500)',
   'college-plan': 'The CrosseRoads College Plan ($1,250)',
   vip: 'The CrosseRoads VIP Experience ($2,000)',
   'power-hour': 'Power Hour ($150)',
-  'power-mom': 'A single Power Mom service',
+  'a-la-carte': 'A single à la carte service',
+  'power-mom': 'A single à la carte service',
 };
 
 // Per-instance memory. Vercel functions are short-lived, so this is a

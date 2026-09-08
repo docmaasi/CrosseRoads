@@ -21,7 +21,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
     heading: 'What CrosseRoads provides',
     paragraphs: [
       'CrosseRoads offers two things. First, free, self-guided educational tools and articles: a career assessment, a college admissions planner, a first-time college parent roadmap, a wellness companion, and written guides. The tools run in your browser and require no account or payment, and they will remain free.',
-      'Second, paid one-on-one college consulting services provided by Dr. Kisa Crosse: the College Kickstart, the CrosseRoads College Plan, the CrosseRoads VIP Experience, the Power Hour, and individual Power Mom College Consulting services. These are described on the Work With Me page and are governed by the "Consulting services" sections below.',
+      'Second, paid one-on-one college consulting services provided by Dr. Kisa Crosse: the College Kickstart, the CrosseRoads College Plan, the CrosseRoads VIP Experience, the Power Hour, and individual à la carte consulting services. These are described on the Work With Me page and are governed by the "Consulting services" sections below.',
     ],
   },
   {
