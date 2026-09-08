@@ -4,7 +4,7 @@ import {
   NOTE_FROM_KISA,
   PACKAGES_FAQ,
   POWER_HOUR,
-  POWER_MOM,
+  A_LA_CARTE,
 } from './data/packages';
 import { BRAND } from '../career-pathfinder/branding';
 import { HeroLaurels } from '../career-pathfinder/brand-decor';
@@ -33,8 +33,8 @@ export function PackagesHero() {
         <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-stone-600">
           The admissions process can feel overwhelming. My goal is to make it a
           little less stressful, a lot more organized, and to help your student
-          take ownership of the process — while making sure Mom and Dad know
-          what should be happening behind the scenes.
+          take ownership of the process — while making sure parents know what
+          should be happening behind the scenes.
         </p>
         <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
           {BRAND.byline} — physician, educator &amp; mom
@@ -223,26 +223,26 @@ export function PowerHourCard() {
   );
 }
 
-/** Power Mom — the à la carte add-on track. */
+/** The à la carte track: single services, alone or alongside a package. */
 export function PowerMomSection() {
   return (
-    <section id="power-mom" aria-labelledby="power-mom-heading" className="scroll-mt-16">
+    <section id="a-la-carte" aria-labelledby="a-la-carte-heading" className="scroll-mt-16">
       <div className="flex items-center gap-3">
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#e8a33d] to-[#b07514] shadow-md">
           <Sparkles className="h-5 w-5 text-white" aria-hidden="true" />
         </span>
         <div>
-          <h2 id="power-mom-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
-            {POWER_MOM.name}
+          <h2 id="a-la-carte-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
+            {A_LA_CARTE.name}
           </h2>
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8a33d]">
-            {POWER_MOM.tagline}
+            {A_LA_CARTE.tagline}
           </p>
         </div>
       </div>
-      <p className="mt-3 text-sm leading-relaxed text-stone-600">{POWER_MOM.summary}</p>
+      <p className="mt-3 text-sm leading-relaxed text-stone-600">{A_LA_CARTE.summary}</p>
       <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-        {POWER_MOM.services.map((service) => (
+        {A_LA_CARTE.services.map((service) => (
           <li
             key={service}
             className="flex gap-2 rounded-xl border border-stone-200 bg-white p-3.5 text-sm text-stone-700 shadow-sm"

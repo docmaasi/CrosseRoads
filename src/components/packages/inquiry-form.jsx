@@ -4,11 +4,14 @@ import { toast } from 'sonner';
 import { CONSULTING_TIERS } from './data/packages';
 import { BRAND } from '../career-pathfinder/branding';
 
-const PACKAGE_OPTIONS = [
+/** Exported so a test can prove every option the form can submit is one the
+  * API actually accepts. These two lists drifting apart means a family fills
+  * in the form, presses send, and is told their inquiry is invalid. */
+export const PACKAGE_OPTIONS = [
   { value: '', label: 'Not sure yet — help me choose' },
   ...CONSULTING_TIERS.map((tier) => ({ value: tier.slug, label: `${tier.name} (${tier.priceLabel})` })),
   { value: 'power-hour', label: 'Power Hour ($150)' },
-  { value: 'power-mom', label: 'A single Power Mom service' },
+  { value: 'a-la-carte', label: 'A single à la carte service' },
 ];
 
 const GRADE_OPTIONS = [

@@ -156,14 +156,17 @@ export const POWER_HOUR = {
 };
 
 /**
- * Power Mom College Consulting — the à la carte add-on track under the
- * CrosseRoads umbrella. These are the nine advising services that
- * previously sat unpriced on the Parent Roadmap page; they now live here
- * as individual services families can request alongside any package.
+ * The à la carte track. These are the nine advising services that previously
+ * sat unpriced on the Parent Roadmap page; they now live here as individual
+ * services families can request alongside any package.
+ *
+ * Deliberately not a separate sub-brand: a second consultancy name on this
+ * page made families stop and wonder whether they were on the wrong site, and
+ * it addressed only half of them. One brand, and every household in it.
  */
-export const POWER_MOM = {
-  name: 'Power Mom College Consulting',
-  tagline: 'Additional options, à la carte',
+export const A_LA_CARTE = {
+  name: 'CrosseRoads À La Carte',
+  tagline: 'Individual services, one at a time',
   summary:
     'Need one specific thing rather than a full package? These are available on their own, or as add-ons to any package above. Pricing is quoted per service.',
   services: [

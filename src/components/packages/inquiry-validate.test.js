@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { validate } from '../../../api/inquiry.js';
+import { PACKAGE_OPTIONS } from './inquiry-form.jsx';
 
 const good = {
   name: 'Jordan Rivera',
@@ -46,5 +47,26 @@ describe('inquiry validate', () => {
   it('caps field length', () => {
     const r = validate({ ...good, message: 'x'.repeat(10_000) });
     expect(r.fields.message.length).toBe(3000);
+  });
+});
+
+describe('the form and the API agree on package ids', () => {
+  it('accepts every option the form can actually submit', () => {
+    expect(PACKAGE_OPTIONS.length).toBeGreaterThan(3);
+    for (const option of PACKAGE_OPTIONS) {
+      const result = validate({ ...good, pkg: option.value });
+      expect(result.error, `${option.value || '(empty)'} — ${option.label}`).toBeUndefined();
+      expect(result.fields.pkg).toBe(option.value);
+    }
+  });
+
+  it('still accepts the retired power-mom id', () => {
+    // A family whose service worker is holding the previous bundle would
+    // otherwise be told their inquiry is invalid.
+    expect(validate({ ...good, pkg: 'power-mom' }).error).toBeUndefined();
+  });
+
+  it('rejects an id that is neither current nor retired', () => {
+    expect(validate({ ...good, pkg: 'platinum' }).error).toMatch(/package/i);
   });
 });
