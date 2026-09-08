@@ -1,8 +1,13 @@
-import { Mail } from 'lucide-react';
+import { Mail, ShieldAlert } from 'lucide-react';
 import { BrandRibbon } from './brand-decor';
 import { BRAND } from './branding';
 import { CrosseRoadsWordmark, PathfinderMark } from './pathfinder-logo';
 import { RESOURCE_LIBRARY } from './data/resources';
+import {
+  ACCESSIBILITY_NOTICE,
+  CRISIS_NOTICE,
+  DISCLAIMERS,
+} from './data/disclaimers';
 
 const exploreLinks = RESOURCE_LIBRARY[0].links.slice(0, 4);
 
@@ -20,7 +25,17 @@ function FooterColumn({ title, children }) {
 const footerLink =
   'text-stone-300 transition-colors hover:text-white hover:underline underline-offset-2';
 
-/** Industry-standard site footer for the Career Pathfinder pages. */
+/**
+ * Site-wide footer.
+ *
+ * The disclaimers are deliberately platform-wide rather than page-specific:
+ * this footer renders on the Wellness page too, so a notice that only mentioned
+ * the career assessment would not cover the page it was printed on.
+ *
+ * In-page anchors are written as absolute paths (/CareerPathfinder#faq) because
+ * a bare "#faq" silently does nothing on the four pages that have no such
+ * section.
+ */
 export function SiteFooter() {
   return (
     <footer className="bg-[#33184f] text-stone-300">
@@ -47,8 +62,8 @@ export function SiteFooter() {
           <li><a className={footerLink} href="/Wellness">Wellness transformation</a></li>
           <li><a className={footerLink} href="/Guides">Guides</a></li>
           <li><a className={`${footerLink} font-medium text-[#e8a33d]`} href="/WorkWithMe">Work with Dr. Crosse</a></li>
-          <li><a className={footerLink} href="#resources">Free resources</a></li>
-          <li><a className={footerLink} href="#faq">Frequently asked questions</a></li>
+          <li><a className={footerLink} href="/CareerPathfinder#resources">Free resources</a></li>
+          <li><a className={footerLink} href="/CareerPathfinder#faq">Frequently asked questions</a></li>
         </FooterColumn>
 
         <FooterColumn title="Career data sources">
@@ -66,7 +81,7 @@ export function SiteFooter() {
           ))}
         </FooterColumn>
 
-        <FooterColumn title="Contact">
+        <FooterColumn title="Contact & legal">
           <li>
             <a
               className={`${footerLink} inline-flex items-center gap-1.5`}
@@ -78,17 +93,79 @@ export function SiteFooter() {
           </li>
           <li><a className={footerLink} href="/Privacy">Privacy Policy</a></li>
           <li><a className={footerLink} href="/Terms">Terms of Use</a></li>
+          <li><a className={footerLink} href="/Terms#educational-only">Disclaimers</a></li>
+          <li><a className={footerLink} href="/Privacy#children">Children&apos;s privacy</a></li>
         </FooterColumn>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="mx-auto max-w-5xl space-y-2 px-6 py-5 text-xs text-stone-400">
-          <p>
-            {BRAND.productName} is a self-discovery tool for educational
-            purposes. It does not guarantee employment outcomes and is not a
-            substitute for professional career, academic, or financial advice.
-            Salary and outlook context reflects publicly available U.S. data.
+      {/* Crisis notice sits above the legal small print on purpose: it is the
+          one thing in this footer that might matter in the next five minutes. */}
+      <div className="border-t border-white/10 bg-[#2a1240]">
+        <div className="mx-auto flex max-w-5xl items-start gap-2.5 px-6 py-4">
+          <ShieldAlert
+            className="mt-0.5 h-4 w-4 shrink-0 text-[#e8a33d]"
+            aria-hidden="true"
+          />
+          <p className="text-xs leading-relaxed text-stone-300">
+            {CRISIS_NOTICE.lead}{' '}
+            <span className="font-semibold text-white">{CRISIS_NOTICE.emergency}</span>
+            {CRISIS_NOTICE.middle}{' '}
+            <a
+              href={CRISIS_NOTICE.lifelineHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white underline underline-offset-2 hover:text-[#e8a33d]"
+            >
+              {CRISIS_NOTICE.lifeline}
+            </a>
+            {CRISIS_NOTICE.tail}
           </p>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="mx-auto max-w-5xl px-6 py-6">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#e8a33d]">
+            Important disclaimers
+          </h2>
+          <dl className="mt-3 space-y-2">
+            {DISCLAIMERS.map((item) => (
+              <div key={item.id} className="text-xs leading-relaxed text-stone-400">
+                <dt className="inline font-semibold text-stone-300">
+                  {item.label}.{' '}
+                </dt>
+                <dd className="inline">{item.text}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-3 text-xs leading-relaxed text-stone-400">
+            <span className="font-semibold text-stone-300">Accessibility. </span>
+            {ACCESSIBILITY_NOTICE}
+          </p>
+          <p className="mt-3 text-xs leading-relaxed text-stone-400">
+            Career, wage, and outlook context is drawn from publicly available
+            U.S. Department of Labor data and other official sources, and may lag
+            current conditions. Full terms are in the{' '}
+            <a
+              className="text-stone-300 underline underline-offset-2 hover:text-white"
+              href="/Terms"
+            >
+              Terms of Use
+            </a>{' '}
+            and{' '}
+            <a
+              className="text-stone-300 underline underline-offset-2 hover:text-white"
+              href="/Privacy"
+            >
+              Privacy Policy
+            </a>
+            , which govern if anything here is unclear.
+          </p>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="mx-auto max-w-5xl px-6 py-5 text-xs text-stone-400">
           <p>
             © {new Date().getFullYear()} {BRAND.platformName}. All rights
             reserved. Site created and maintained by{' '}
