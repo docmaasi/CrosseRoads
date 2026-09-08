@@ -12,6 +12,7 @@ import {
   Users,
 } from 'lucide-react';
 import { BRAND } from './branding';
+import { DIRECTORY } from '@/data/resource-directory';
 
 const PILLARS = [
   { icon: Users, title: 'Parent Support', caption: "You're not alone." },
@@ -24,7 +25,7 @@ const STATS = [
   { value: '5', label: 'free tools' },
   { value: '36', label: 'assessment questions' },
   { value: '37', label: 'careers matched' },
-  { value: '50+', label: 'vetted resources' },
+  { value: `${DIRECTORY.length}+`, label: 'vetted resources' },
 ];
 
 const TOOLS = [
