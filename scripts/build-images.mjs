@@ -34,11 +34,15 @@ const ROLES = {
   'mission-band': 'hero',
   'acceptance-letter': 'support',
   graduation: 'support',
+  'dr-crosse': 'portrait',
 };
 
 const PROFILE = {
   hero: { widths: [1600, 800], budgetKb: 220 },
   support: { widths: [1200, 600], budgetKb: 120 },
+  // Square headshot. Deliberately small: it renders at roughly 200px and the
+  // source is a 400px LinkedIn export, so anything wider is invented detail.
+  portrait: { widths: [560, 280], budgetKb: 90 },
 };
 
 if (!existsSync(SRC)) {

@@ -28,13 +28,30 @@ rather than illustrative:
 | `acceptance-letter.jpg` | CollegePlanner mid-page | A mother in her forties and her eighteen-year-old daughter sit close together on a living-room sofa, both looking down at an opened white envelope and a single sheet of paper the daughter is holding. The mother's hand is on her daughter's shoulder, both faces lit with disbelief and joy. Warm afternoon light through a window. |
 | `graduation.jpg` | ParentRoadmap mid-page | A young graduate in a dark cap and gown embraces their mother tightly outdoors after a ceremony, both smiling, eyes closed. Other families blurred far behind. Bright warm late-morning sunlight, green trees. |
 
-## Still needed
+## `dr-crosse.jpg` — the one real photograph
 
-**`dr-crosse.jpg`** — a real portrait of Dr. Kisa Crosse. This one cannot be
-generated: a synthetic face presented as a real person is a lie about a real
-doctor. Drop a real photograph in here named `dr-crosse.jpg`, add a `dr-crosse`
-entry to `ROLES` in `scripts/build-images.mjs` (role `support`), and re-run
-`npm run images`.
+Not generated, and never to be: a synthetic face presented as a real person is a
+lie about a real doctor.
+
+This is Dr. Crosse's own professional headshot, supplied by her. The source was a
+400x400 LinkedIn export carrying the green #OPENTOWORK frame. Processing was
+deliberately conservative:
+
+1. Cropped to the largest region containing no part of the green frame, found by
+   scanning for green pixels rather than by eye — 295x295 from the upper right.
+2. Upscaled 2x with Lanczos, then a restrained unsharp mask and a slight lift in
+   contrast and saturation.
+
+No AI upscaler and no face enhancement. Those reconstruct facial detail, and on a
+real person's professional headshot that means quietly changing what she looks
+like. Sharpening is honest; invention is not.
+
+The embroidery on her coat reading "Kisa S. Crosse, M.D. — Family Medicine" is
+part of the photograph and stays. Only the LinkedIn frame was removed.
+
+To replace it: drop a new `dr-crosse.jpg` here and run `npm run images`. Prefer a
+higher-resolution original if she has one — 590px is the ceiling of what this
+source honestly supports.
 
 ## Adding a photograph
 

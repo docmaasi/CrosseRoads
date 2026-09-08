@@ -17,6 +17,7 @@ const RATIOS = {
   hero: { width: 1600, height: 896, widths: [1600, 800] },
   band: { width: 1600, height: 688, widths: [1600, 800] },
   support: { width: 1200, height: 800, widths: [1200, 600] },
+  portrait: { width: 560, height: 560, widths: [560, 280] },
 };
 
 export function PhotoBanner({
@@ -27,6 +28,7 @@ export function PhotoBanner({
   rounded = 'rounded-3xl',
   className = '',
   overlayClassName = 'from-[#4a2373]/40 via-[#4a2373]/20 to-[#17808d]/35',
+  sizes = '(min-width: 768px) 768px, 100vw',
   children = null,
 }) {
   const { width, height, widths } = RATIOS[shape];
@@ -36,8 +38,8 @@ export function PhotoBanner({
   return (
     <figure className={`relative overflow-hidden ${rounded} shadow-sm ${className}`}>
       <picture>
-        <source type="image/avif" srcSet={srcSet('avif')} sizes="(min-width: 768px) 768px, 100vw" />
-        <source type="image/webp" srcSet={srcSet('webp')} sizes="(min-width: 768px) 768px, 100vw" />
+        <source type="image/avif" srcSet={srcSet('avif')} sizes={sizes} />
+        <source type="image/webp" srcSet={srcSet('webp')} sizes={sizes} />
         <img
           src={`/images/${name}-${widths[0]}.webp`}
           alt={alt}

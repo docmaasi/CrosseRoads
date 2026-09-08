@@ -8,6 +8,7 @@ import {
 } from './data/packages';
 import { BRAND } from '../career-pathfinder/branding';
 import { HeroLaurels } from '../career-pathfinder/brand-decor';
+import { PhotoBanner } from '../career-pathfinder/photo-banner';
 
 /** Hero for the Work With Dr. Crosse page. */
 export function PackagesHero() {
@@ -260,6 +261,17 @@ export function PowerMomSection() {
 export function NoteFromKisa() {
   return (
     <section aria-labelledby="note-heading" className="rounded-3xl border border-[#e8a33d]/30 bg-white p-6 shadow-sm sm:p-8">
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-6">
+        <PhotoBanner
+          name="dr-crosse"
+          shape="portrait"
+          rounded="rounded-2xl"
+          sizes="(min-width: 640px) 200px, 60vw"
+          overlayClassName="from-transparent via-transparent to-[#4a2373]/10"
+          className="mx-auto w-40 shrink-0 sm:mx-0 sm:w-48"
+          alt="Dr. Kisa Crosse, a family physician, in a white coat embroidered with her name and Family Medicine."
+        />
+        <div>
       <h2 id="note-heading" className="font-serif text-2xl font-bold text-[#4a2373]">
         {NOTE_FROM_KISA.heading}
       </h2>
@@ -274,6 +286,8 @@ export function NoteFromKisa() {
         {NOTE_FROM_KISA.closing}
       </p>
       <p className="mt-2 text-sm text-stone-500">— Dr. Kisa Crosse</p>
+        </div>
+      </div>
     </section>
   );
 }
