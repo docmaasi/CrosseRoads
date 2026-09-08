@@ -2,6 +2,7 @@ import { GraduationCap } from 'lucide-react';
 import { PHASES } from './data/phases';
 import { BRAND } from '../career-pathfinder/branding';
 import { HeroLaurels } from '../career-pathfinder/brand-decor';
+import { PhotoBanner } from '../career-pathfinder/photo-banner';
 
 /** Hero + phase overview cards that double as anchor navigation. */
 export function PlannerHero({ phaseProgress, totalDone, totalItems }) {
@@ -32,6 +33,13 @@ export function PlannerHero({ phaseProgress, totalDone, totalItems }) {
         <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
           {BRAND.byline} — who has navigated admissions and scholarships as a mom, more than once
         </p>
+
+        <PhotoBanner
+          name="hero-college"
+          shape="hero"
+          className="mt-8"
+          alt="A father and his teenage son study a laptop together at the kitchen table at night while the boy's mother writes notes on a printed page beside them."
+        />
 
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
           {PHASES.map((phase, index) => {

@@ -11,6 +11,7 @@ import {
 import { AwardComparison } from '@/components/parent-roadmap/award-comparison';
 import { CollegeListTracker } from '@/components/parent-roadmap/college-list-tracker';
 import { CrosseRoadsHeader } from '@/components/career-pathfinder/crosseroads-header';
+import { PhotoBanner } from '@/components/career-pathfinder/photo-banner';
 import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import '@/components/career-pathfinder/pathfinder.css';
 
@@ -58,6 +59,14 @@ export default function ParentRoadmap() {
               Print my comparison & list
             </Button>
           </div>
+          <PhotoBanner
+            name="graduation"
+            shape="support"
+            rounded="rounded-2xl"
+            className="cp-no-print mx-auto max-w-xl"
+            alt="A graduate in cap and gown hugs their mother tightly outdoors after the ceremony, both smiling with their eyes closed."
+          />
+
           <ServicesMenu />
           <RoadmapFaq />
         </div>

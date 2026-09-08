@@ -12,6 +12,7 @@ import {
   Users,
 } from 'lucide-react';
 import { BRAND } from './branding';
+import { PhotoBanner } from './photo-banner';
 
 const PILLARS = [
   { icon: Users, title: 'Parent Support', caption: "You're not alone." },
@@ -67,7 +68,24 @@ const TOOLS = [
 
 function MissionBand() {
   return (
-    <div className="bg-gradient-to-br from-[#33184f] via-[#4a2373] to-[#17546b] px-4 py-12 text-center">
+    <div className="relative overflow-hidden bg-[#33184f] px-4 py-12 text-center">
+      <img
+        src="/images/mission-band-1600.webp"
+        srcSet="/images/mission-band-800.webp 800w, /images/mission-band-1600.webp 1600w"
+        sizes="100vw"
+        alt=""
+        aria-hidden="true"
+        width="1600"
+        height="688"
+        loading="lazy"
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-br from-[#33184f]/80 via-[#4a2373]/66 to-[#17546b]/74"
+      />
+      <div className="relative">
       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#e8a33d]">
         {BRAND.platformTagline}
       </p>
@@ -88,6 +106,7 @@ function MissionBand() {
             <p className="text-xs text-white/70">{caption}</p>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { Clock, Gift, ShieldCheck } from 'lucide-react';
 import { Button } from '@/ui/button';
 import { BRAND } from './branding';
 import { HeroLaurels } from './brand-decor';
+import { PhotoBanner } from './photo-banner';
 
 const FACTORS = [
   'Education',
@@ -82,6 +83,14 @@ export function IntroScreen({ onStart, hasProgress }) {
           What you&apos;re good at, what you love, and the life you want to
           build — one assessment looks at all of it, across seven factors.
         </p>
+
+        <PhotoBanner
+          name="hero-career"
+          shape="hero"
+          eager
+          className="mt-8"
+          alt="A mother and her teenage daughter sit on their front steps in the late-afternoon sun, leaning over an open notebook together and smiling."
+        />
 
         <div className="mx-auto mt-7 flex max-w-lg flex-wrap justify-center gap-2">
           {FACTORS.map((factor, index) => (

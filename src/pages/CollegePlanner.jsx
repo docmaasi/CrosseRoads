@@ -8,6 +8,7 @@ import { PhaseSection } from '@/components/college-planner/phase-section';
 import { PlannerResources } from '@/components/college-planner/planner-resources';
 import { PlannerFaq } from '@/components/college-planner/planner-faq';
 import { CrosseRoadsHeader } from '@/components/career-pathfinder/crosseroads-header';
+import { PhotoBanner } from '@/components/career-pathfinder/photo-banner';
 import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import { PHASES } from '@/components/college-planner/data/phases';
 import '@/components/career-pathfinder/pathfinder.css';
@@ -75,6 +76,14 @@ export default function CollegePlanner() {
               Reset progress
             </Button>
           </div>
+
+          <PhotoBanner
+            name="acceptance-letter"
+            shape="support"
+            rounded="rounded-2xl"
+            className="cp-no-print mx-auto max-w-xl"
+            alt="A mother and her daughter sit close together on a sofa, reading an opened acceptance letter with joy and disbelief."
+          />
 
           <PlannerResources />
           <PlannerFaq />
