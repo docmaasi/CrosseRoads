@@ -12,6 +12,7 @@ const GROUPS = [
       { href: '/ParentRoadmap', label: 'Parent roadmap' },
       { href: '/Wellness', label: 'Wellness' },
       { href: '/Guides', label: 'Guides & articles' },
+      { href: '/Worksheets', label: 'Printable worksheets' },
     ],
   },
   {

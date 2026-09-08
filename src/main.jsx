@@ -9,6 +9,7 @@ const CollegePlanner = lazy(() => import('./pages/CollegePlanner'));
 const ParentRoadmap = lazy(() => import('./pages/ParentRoadmap'));
 const Wellness = lazy(() => import('./pages/Wellness'));
 const Guides = lazy(() => import('./pages/Guides'));
+const Worksheets = lazy(() => import('./pages/Worksheets'));
 const WorkWithMe = lazy(() => import('./pages/WorkWithMe'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
@@ -33,6 +34,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/Wellness" element={<Wellness />} />
           <Route path="/Guides" element={<Guides />} />
           <Route path="/Guides/:slug" element={<Guides />} />
+          <Route path="/Worksheets" element={<Worksheets />} />
+          <Route path="/Worksheets/:slug" element={<Worksheets />} />
           <Route path="/WorkWithMe" element={<WorkWithMe />} />
           <Route path="/Privacy" element={<Privacy />} />
           <Route path="/Terms" element={<Terms />} />

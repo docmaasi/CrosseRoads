@@ -17,6 +17,7 @@ const ROUTES = [
   '/ParentRoadmap',
   '/Wellness',
   '/Guides',
+  '/Worksheets',
   '/WorkWithMe',
   '/Privacy',
   '/Terms',

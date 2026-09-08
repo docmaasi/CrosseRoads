@@ -61,6 +61,7 @@ export function SiteFooter() {
           <li><a className={footerLink} href="/ParentRoadmap">Parent roadmap package</a></li>
           <li><a className={footerLink} href="/Wellness">Wellness transformation</a></li>
           <li><a className={footerLink} href="/Guides">Guides</a></li>
+          <li><a className={footerLink} href="/Worksheets">Printable worksheets</a></li>
           <li><a className={`${footerLink} font-medium text-[#e8a33d]`} href="/WorkWithMe">Work with Dr. Crosse</a></li>
           <li><a className={footerLink} href="/CareerPathfinder#resources">Free resources</a></li>
           <li><a className={footerLink} href="/CareerPathfinder#faq">Frequently asked questions</a></li>
