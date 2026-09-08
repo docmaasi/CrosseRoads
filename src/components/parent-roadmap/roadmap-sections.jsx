@@ -1,6 +1,7 @@
 import { ArrowRight, CalendarCheck, Heart, Map } from 'lucide-react';
 import { PACKAGE_ITEMS, ROADMAP_FAQ } from './data/package';
 import { BRAND } from '../career-pathfinder/branding';
+import { PhotoBanner } from '../career-pathfinder/photo-banner';
 import { HeroLaurels } from '../career-pathfinder/brand-decor';
 
 /** Hero for the First-Time College Parent Roadmap package. */
@@ -33,6 +34,13 @@ export function RoadmapHero() {
         <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
           {BRAND.byline} — who has navigated admissions and scholarships as a mom, more than once
         </p>
+
+        <PhotoBanner
+          name="hero-parents"
+          shape="hero"
+          className="mt-8"
+          alt="A father and his teenage daughter sit together on a porch swing early in the morning, holding mugs and talking."
+        />
       </div>
     </div>
   );

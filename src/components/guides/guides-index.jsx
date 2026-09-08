@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Clock } from 'lucide-react';
 import { ARTICLES } from './data/articles';
 import { BRAND } from '../career-pathfinder/branding';
+import { PhotoBanner } from '../career-pathfinder/photo-banner';
 
 const CATEGORY_LABELS = { career: 'Career', college: 'College' };
 
@@ -28,6 +29,13 @@ export function GuidesIndex() {
           Practical, no-fluff guides on careers and college admissions —
           {' '}{BRAND.byline.replace(/^From/, 'from')}.
         </p>
+
+        <PhotoBanner
+          name="hero-guides"
+          shape="hero"
+          className="mt-8"
+          alt="A student carrying a backpack walks away along a tree-lined campus path towards brick buildings on an autumn morning."
+        />
       </div>
 
       <div className="mt-8 space-y-4">

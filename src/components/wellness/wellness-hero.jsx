@@ -1,6 +1,7 @@
 import { HeartPulse, ShieldAlert } from 'lucide-react';
 import { BRAND } from '../career-pathfinder/branding';
 import { HeroLaurels } from '../career-pathfinder/brand-decor';
+import { PhotoBanner } from '../career-pathfinder/photo-banner';
 
 /** Hero + the medical disclaimer that frames the whole page. */
 export function WellnessHero() {
@@ -35,6 +36,13 @@ export function WellnessHero() {
         <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-400">
           {BRAND.byline} — primary care physician
         </p>
+
+        <PhotoBanner
+          name="hero-wellness"
+          shape="hero"
+          className="mt-8"
+          alt="A woman sits alone in an armchair by a sunlit window, writing in an open journal and looking out thoughtfully."
+        />
 
         <div className="mx-auto mt-7 flex max-w-xl gap-2.5 rounded-xl border border-stone-300 bg-white p-4 text-left">
           <ShieldAlert
