@@ -9,6 +9,7 @@ import { CrosseRoadsHeader } from '@/components/career-pathfinder/crosseroads-he
 import { FaqSection } from '@/components/career-pathfinder/faq-section';
 import { PlatformAbout } from '@/components/career-pathfinder/platform-about';
 import { ResourceLibrary } from '@/components/career-pathfinder/results/resource-library';
+import { WorldwideDirectory } from '@/components/career-pathfinder/results/worldwide-directory';
 import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import { TOTAL_QUESTIONS } from '@/components/career-pathfinder/data/sections';
 import '@/components/career-pathfinder/pathfinder.css';
@@ -68,8 +69,9 @@ export default function CareerPathfinder() {
                 />
                 <PlatformAbout />
                 <FaqSection />
-                <div className="mx-auto max-w-2xl px-4 pb-14">
+                <div className="mx-auto max-w-2xl space-y-10 px-4 pb-14">
                   <ResourceLibrary />
+                  <WorldwideDirectory />
                 </div>
               </>
             )}

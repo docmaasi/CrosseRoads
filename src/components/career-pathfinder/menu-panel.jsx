@@ -27,6 +27,10 @@ const GROUPS = [
     title: 'Resources',
     links: [
       { href: '/CareerPathfinder#resources', label: 'Career resource library' },
+      {
+        href: '/CareerPathfinder#worldwide-resources',
+        label: 'Worldwide resource directory',
+      },
       { href: '/CollegePlanner#resources', label: 'Official college links' },
       { href: '/Wellness#resources', label: 'Wellness resources' },
       { href: 'https://exampilot.help/', label: 'ExamPilot — AI exam prep', external: true },

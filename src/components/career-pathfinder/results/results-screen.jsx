@@ -8,6 +8,7 @@ import { ProfileSummary } from './profile-summary';
 import { MatchCard } from './match-card';
 import { NextMove } from './next-move';
 import { ResourceLibrary } from './resource-library';
+import { WorldwideDirectory } from './worldwide-directory';
 
 function TierNote({ report }) {
   const best = report.bestMatches.length;
@@ -117,6 +118,8 @@ export function ResultsScreen({ answers, optimize, setOptimize, restart }) {
       <NextMove matches={matches} />
 
       <ResourceLibrary />
+
+      <WorldwideDirectory />
 
       <div className="flex justify-center pb-8">
         <Button variant="outline" onClick={restart}>
