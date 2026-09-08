@@ -35,10 +35,19 @@ function navLinkClass(isActive, accent) {
  * hamburger menu (all screen sizes) with app install/share and legal
  * links. `right` renders page-specific content (e.g. a progress bar).
  *
- * The pill nav appears at md, not sm. Six links plus the progress bar plus
- * two icon buttons need 678px, so between 640 and 679 the row used to
- * overflow and the labels collided into each other. Nothing is lost below
- * md: the hamburger is present at every width and lists every page.
+ * The pill nav appears at lg, and the row widens to max-w-5xl to hold it.
+ *
+ * The row was capped at max-w-3xl (768px) while six nav links, the brand, a
+ * progress bar and two icon buttons need about 954px. Because the nav carried
+ * min-w-0 it shrank instead of overflowing the row, so its labels spilled
+ * silently underneath the progress bar -- "Guides" and "Work with me" printed
+ * on top of the step count, at every viewport width, because the cap and not
+ * the screen was the constraint.
+ *
+ * shrink-0 now means the nav keeps its measured width rather than quietly
+ * collapsing, so if this ever stops fitting it will overflow visibly instead
+ * of overlapping. Nothing is lost below lg: the hamburger is present at every
+ * width and lists every page.
  */
 export function CrosseRoadsHeader({ right = null }) {
   const { pathname } = useLocation();
@@ -55,7 +64,7 @@ export function CrosseRoadsHeader({ right = null }) {
         Skip to main content
       </a>
       <BrandRibbon />
-      <div className="relative mx-auto flex max-w-3xl items-center gap-3 px-4 py-2.5">
+      <div className="relative mx-auto flex max-w-3xl items-center gap-3 px-4 py-2.5 lg:max-w-5xl">
         <a href="/CareerPathfinder" className="flex shrink-0 items-center gap-2">
           <PathfinderMark size={30} />
           <span className="font-serif text-lg font-bold text-[#4a2373]">
@@ -65,7 +74,7 @@ export function CrosseRoadsHeader({ right = null }) {
         </a>
         <nav
           aria-label="CrosseRoads platform"
-          className="hidden min-w-0 flex-1 items-center gap-1 md:flex"
+          className="hidden flex-1 shrink-0 items-center gap-1 lg:flex"
         >
           {NAV_LINKS.map((link) => (
             <a
@@ -78,7 +87,7 @@ export function CrosseRoadsHeader({ right = null }) {
             </a>
           ))}
         </nav>
-        <div className="flex-1 md:hidden" />
+        <div className="flex-1 lg:hidden" />
         {right && <div className="shrink-0">{right}</div>}
         <button
           type="button"
