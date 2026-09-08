@@ -34,6 +34,11 @@ function navLinkClass(isActive, accent) {
  * Shared CrosseRoads header: emblem + wordmark, desktop pill nav, and a
  * hamburger menu (all screen sizes) with app install/share and legal
  * links. `right` renders page-specific content (e.g. a progress bar).
+ *
+ * The pill nav appears at md, not sm. Six links plus the progress bar plus
+ * two icon buttons need 678px, so between 640 and 679 the row used to
+ * overflow and the labels collided into each other. Nothing is lost below
+ * md: the hamburger is present at every width and lists every page.
  */
 export function CrosseRoadsHeader({ right = null }) {
   const { pathname } = useLocation();
@@ -54,7 +59,7 @@ export function CrosseRoadsHeader({ right = null }) {
         </a>
         <nav
           aria-label="CrosseRoads platform"
-          className="hidden min-w-0 flex-1 items-center gap-1 sm:flex"
+          className="hidden min-w-0 flex-1 items-center gap-1 md:flex"
         >
           {NAV_LINKS.map((link) => (
             <a
@@ -67,7 +72,7 @@ export function CrosseRoadsHeader({ right = null }) {
             </a>
           ))}
         </nav>
-        <div className="flex-1 sm:hidden" />
+        <div className="flex-1 md:hidden" />
         {right && <div className="shrink-0">{right}</div>}
         <button
           type="button"

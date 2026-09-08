@@ -39,10 +39,11 @@ export default function CareerPathfinder() {
       <CrosseRoadsHeader
         right={
           isTakingAssessment ? (
-            <div className="flex w-32 items-center gap-2 sm:w-44">
+            <div className="flex items-center gap-2 sm:w-44">
               <Progress
                 value={(answeredCount / TOTAL_QUESTIONS) * 100}
-                className="h-2 bg-stone-100 [&>div]:bg-gradient-to-r [&>div]:from-[#4a2373] [&>div]:to-[#17808d]"
+                aria-label={`Assessment progress: ${answeredCount} of ${TOTAL_QUESTIONS} questions answered`}
+                className="hidden h-2 bg-stone-100 sm:block [&>div]:bg-gradient-to-r [&>div]:from-[#4a2373] [&>div]:to-[#17808d]"
               />
               <span className="shrink-0 text-xs text-stone-500">
                 {answeredCount}/{TOTAL_QUESTIONS}

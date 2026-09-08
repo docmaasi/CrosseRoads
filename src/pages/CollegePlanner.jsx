@@ -31,10 +31,11 @@ export default function CollegePlanner() {
     <div className="cp-root flex min-h-screen flex-col bg-gradient-to-b from-[#f6f0fa] via-[#fefcff] to-[#efe8f6]">
       <CrosseRoadsHeader
         right={
-          <div className="flex w-32 items-center gap-2 sm:w-44">
+          <div className="flex items-center gap-2 sm:w-44">
             <Progress
               value={(totalDone / totalItems) * 100}
-              className="h-2 bg-stone-100 [&>div]:bg-gradient-to-r [&>div]:from-[#4a2373] [&>div]:to-[#17808d]"
+              aria-label={`Planner progress: ${totalDone} of ${totalItems} steps complete`}
+              className="hidden h-2 bg-stone-100 sm:block [&>div]:bg-gradient-to-r [&>div]:from-[#4a2373] [&>div]:to-[#17808d]"
             />
             <span className="shrink-0 text-xs text-stone-500">
               {totalDone}/{totalItems}
