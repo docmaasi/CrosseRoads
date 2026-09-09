@@ -43,6 +43,7 @@ describe('sitemap.xml', () => {
 
   it('lists every top-level page, including the newer ones', () => {
     for (const path of [
+      '/',
       '/CareerPathfinder',
       '/CollegePlanner',
       '/ParentRoadmap',

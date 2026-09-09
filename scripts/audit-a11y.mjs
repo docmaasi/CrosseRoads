@@ -23,6 +23,7 @@ const PORT = Number(process.env.A11Y_PORT ?? 4402);
 const BASE = `http://localhost:${PORT}`;
 
 const PAGES = [
+  '/',
   '/CareerPathfinder',
   '/CollegePlanner',
   '/ParentRoadmap',

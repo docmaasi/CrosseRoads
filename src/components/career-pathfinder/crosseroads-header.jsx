@@ -65,7 +65,7 @@ export function CrosseRoadsHeader({ right = null }) {
       </a>
       <BrandRibbon />
       <div className="relative mx-auto flex max-w-3xl items-center gap-3 px-4 py-2.5 lg:max-w-5xl">
-        <a href="/CareerPathfinder" className="flex shrink-0 items-center gap-2">
+        <a href="/" className="flex shrink-0 items-center gap-2">
           <PathfinderMark size={30} />
           <span className="font-serif text-lg font-bold text-[#4a2373]">
             Cross<span className="text-[#e8a33d]">e</span>

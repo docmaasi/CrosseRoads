@@ -12,6 +12,7 @@ afterEach(cleanup);
 /** Routes declared in main.jsx. Kept here so a footer link to a route that
  *  does not exist fails a test rather than a visitor. */
 const ROUTES = [
+  '/',
   '/CareerPathfinder',
   '/CollegePlanner',
   '/ParentRoadmap',

@@ -5,6 +5,7 @@ import { Toaster } from 'sonner';
 import { ScrollToHash } from './ui/scroll-to-hash';
 import './index.css';
 
+const Home = lazy(() => import('./pages/Home'));
 const CareerPathfinder = lazy(() => import('./pages/CareerPathfinder'));
 const CollegePlanner = lazy(() => import('./pages/CollegePlanner'));
 const ParentRoadmap = lazy(() => import('./pages/ParentRoadmap'));
@@ -32,7 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <ScrollToHash />
       <Suspense fallback={<Fallback />}>
         <Routes>
-          <Route path="/" element={<Navigate to="/CareerPathfinder" replace />} />
+          <Route path="/" element={<Home />} />
           <Route path="/CareerPathfinder" element={<CareerPathfinder />} />
           <Route path="/CollegePlanner" element={<CollegePlanner />} />
           <Route path="/ParentRoadmap" element={<ParentRoadmap />} />
@@ -47,7 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/WorkWithMe" element={<WorkWithMe />} />
           <Route path="/Privacy" element={<Privacy />} />
           <Route path="/Terms" element={<Terms />} />
-          <Route path="*" element={<Navigate to="/CareerPathfinder" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
       <Toaster position="top-center" />

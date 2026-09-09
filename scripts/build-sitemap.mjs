@@ -67,7 +67,8 @@ const guides = guideFiles
 
 /** Static routes, with the priority each deserves. */
 const STATIC = [
-  ['/CareerPathfinder', 'monthly', '1.0'],
+  ['/', 'weekly', '1.0'],
+  ['/CareerPathfinder', 'monthly', '0.9'],
   ['/WorkWithMe', 'monthly', '0.9'],
   ['/Worksheets', 'weekly', '0.9'],
   ['/About', 'monthly', '0.8'],

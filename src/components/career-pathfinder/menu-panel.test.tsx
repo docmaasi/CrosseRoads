@@ -8,6 +8,7 @@ afterEach(cleanup);
 
 /** Routes declared in main.jsx. */
 const ROUTES = [
+  '/',
   '/CareerPathfinder',
   '/CollegePlanner',
   '/ParentRoadmap',
