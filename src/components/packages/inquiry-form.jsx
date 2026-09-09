@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Mail, Send } from 'lucide-react';
 import { toast } from 'sonner';
 import { CONSULTING_TIERS } from './data/packages';
@@ -36,9 +37,18 @@ const labelClass = 'block text-sm font-medium text-stone-700';
  * by bots, and the API drops any submission that has it set.
  */
 export function InquiryForm() {
-  const [values, setValues] = useState(INITIAL);
+  const [searchParams] = useSearchParams();
   const [status, setStatus] = useState('idle'); // idle | sending | sent
   const [startedAt] = useState(() => Date.now());
+
+  // Honour /WorkWithMe?package=vip so the package CTAs work even when the
+  // click handler never runs -- opened in a new tab, or JavaScript failed.
+  // Validated against the real options so a crafted URL cannot inject a value.
+  const [values, setValues] = useState(() => {
+    const requested = searchParams.get('package');
+    const known = PACKAGE_OPTIONS.some((option) => option.value === requested);
+    return known ? { ...INITIAL, pkg: requested } : INITIAL;
+  });
 
   // Package cards dispatch this to pre-select themselves.
   useEffect(() => {

@@ -125,7 +125,7 @@ function TierCard({ tier }) {
       </blockquote>
 
       <a
-        href={`#inquire?package=${tier.slug}`}
+        href={`/WorkWithMe?package=${tier.slug}#inquire`}
         onClick={(event) => {
           event.preventDefault();
           selectPackage(tier.slug);
@@ -150,6 +150,14 @@ function selectPackage(slug) {
   window.dispatchEvent(new CustomEvent('crosseroads:select-package', { detail: slug }));
   document.getElementById('inquire')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+/**
+ * The href is a real, working URL rather than decoration: /WorkWithMe with the
+ * package as a query parameter and #inquire as the fragment. With JavaScript
+ * the click handler beats the browser to it and scrolls instantly; without it,
+ * or on a middle-click, the URL still lands on the form with the right package
+ * already chosen.
+ */
 
 /** The three packages. */
 export function TierGrid() {
@@ -210,7 +218,7 @@ export function PowerHourCard() {
           {POWER_HOUR.creditNote}
         </p>
         <a
-          href="#inquire?package=power-hour"
+          href="/WorkWithMe?package=power-hour#inquire"
           onClick={(event) => {
             event.preventDefault();
             selectPackage('power-hour');

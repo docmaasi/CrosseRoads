@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Toaster } from 'sonner';
+import { ScrollToHash } from './ui/scroll-to-hash';
 import './index.css';
 
 const CareerPathfinder = lazy(() => import('./pages/CareerPathfinder'));
@@ -26,6 +27,7 @@ function Fallback() {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToHash />
       <Suspense fallback={<Fallback />}>
         <Routes>
           <Route path="/" element={<Navigate to="/CareerPathfinder" replace />} />
