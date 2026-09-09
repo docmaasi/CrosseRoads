@@ -38,21 +38,31 @@ const worksheetSlugs = readdirSync(worksheetDir)
 
 const guideDir = join(ROOT, 'src', 'components', 'guides', 'data');
 const guideFiles = readdirSync(guideDir).filter(
-  (f) => f.startsWith('article-') && f.endsWith('.ts'),
+  (f) => /^articles?-/.test(f) && f.endsWith('.ts') && !f.endsWith('.test.ts'),
 );
+
+/**
+ * Splits a data file into per-article chunks on the `slug:` key, so a file
+ * holding six articles yields six entries rather than only the first. Crude on
+ * purpose: this runs in plain node with no TypeScript loader, and the test in
+ * sitemap.test.ts imports the real modules and fails if the two disagree.
+ */
 const guides = guideFiles
-  .map((f) => {
+  .flatMap((f) => {
     const source = readFileSync(join(guideDir, f), 'utf8');
-    const pick = (key) =>
-      source.match(new RegExp(`\\b${key}:\\s*'((?:[^'\\\\]|\\\\.)*)'`))?.[1]?.replace(/\\'/g, "'");
-    return {
-      slug: pick('slug'),
-      title: pick('title'),
-      description: pick('description'),
-      datePublished: pick('datePublished'),
-    };
+    const chunks = source.split(/\n\s*(?=slug:\s*')/).slice(1);
+    return chunks.map((chunk) => {
+      const pick = (key) =>
+        chunk.match(new RegExp(`\\b${key}:\\s*'((?:[^'\\\\]|\\\\.)*)'`))?.[1]?.replace(/\\'/g, "'");
+      return {
+        slug: pick('slug'),
+        title: pick('title'),
+        description: pick('description'),
+        datePublished: pick('datePublished'),
+      };
+    });
   })
-  .filter((g) => g.slug)
+  .filter((g) => g.slug && g.datePublished)
   .sort((a, b) => (a.datePublished ?? '').localeCompare(b.datePublished ?? ''));
 
 /** Static routes, with the priority each deserves. */

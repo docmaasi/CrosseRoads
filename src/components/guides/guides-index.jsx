@@ -1,13 +1,20 @@
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock } from 'lucide-react';
-import { ARTICLES } from './data/articles';
+import {
+  ARTICLES,
+  ARTICLE_CATEGORY_ORDER,
+  articlesByCategory,
+  CATEGORY_LABELS,
+} from './data/articles';
 import { BRAND } from '../career-pathfinder/branding';
 import { PhotoBanner } from '../career-pathfinder/photo-banner';
 
-const CATEGORY_LABELS = { career: 'Career', college: 'College' };
-
 /** Guides landing page: hero + article cards. */
 export function GuidesIndex() {
+  const [category, setCategory] = useState('all');
+  const shown = useMemo(() => articlesByCategory(category), [category]);
+
   return (
     <div className="mx-auto max-w-2xl px-4 py-12">
       <div className="text-center">
@@ -38,8 +45,34 @@ export function GuidesIndex() {
         />
       </div>
 
-      <div className="mt-8 space-y-4">
-        {ARTICLES.map((article) => (
+      <div className="mt-8">
+        <div role="group" aria-label="Filter guides by topic" className="flex flex-wrap gap-2">
+          {['all', ...ARTICLE_CATEGORY_ORDER].map((value) => {
+            const active = category === value;
+            return (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={active}
+                onClick={() => setCategory(value)}
+                className={`rounded-full px-4 py-1.5 text-sm transition-colors ${
+                  active
+                    ? 'bg-[#4a2373] font-medium text-white'
+                    : 'border border-stone-300 text-stone-600 hover:border-[#17808d] hover:text-[#4a2373]'
+                }`}
+              >
+                {value === 'all' ? 'All guides' : CATEGORY_LABELS[value]}
+              </button>
+            );
+          })}
+        </div>
+        <p aria-live="polite" className="mt-2 text-xs text-stone-500">
+          Showing {shown.length} of {ARTICLES.length} guides.
+        </p>
+      </div>
+
+      <div className="mt-6 space-y-4">
+        {shown.map((article) => (
           <Link
             key={article.slug}
             to={`/Guides/${article.slug}`}
@@ -59,6 +92,16 @@ export function GuidesIndex() {
                 <Clock className="h-3.5 w-3.5" aria-hidden="true" />
                 {article.readMinutes} min
               </span>
+              <time
+                dateTime={article.datePublished}
+                className="text-stone-500"
+              >
+                {new Date(`${article.datePublished}T12:00:00Z`).toLocaleDateString('en-US', {
+                  month: 'short',
+                  year: 'numeric',
+                  timeZone: 'UTC',
+                })}
+              </time>
               <span className="inline-flex items-center gap-1 font-medium text-[#17808d]">
                 Read the guide <ArrowRight className="h-3.5 w-3.5" />
               </span>

@@ -28,6 +28,7 @@ const PAGES = [
   '/ParentRoadmap',
   '/Wellness',
   '/Guides',
+  '/Guides/senior-year-stress-what-is-normal',
   '/Worksheets',
   '/Worksheets/balanced-college-list',
   '/WorkWithMe',

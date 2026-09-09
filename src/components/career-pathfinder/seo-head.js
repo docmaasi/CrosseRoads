@@ -26,8 +26,27 @@ function setCanonical(href) {
   el.setAttribute('href', href);
 }
 
-/** Set title, description, canonical, Open Graph and Twitter tags. */
-export function applySeoHead({ title, description, path, siteName }) {
+/**
+ * Set title, description, canonical, Open Graph and Twitter tags.
+ *
+ * The optional arguments carry article metadata: keywords, the Open Graph
+ * article type, publication date, author and section. Note that these are set
+ * from JavaScript, so social crawlers — which do not run scripts — see only
+ * the static tags in index.html. They still reach browsers, extensions and the
+ * crawlers that do execute pages; making them visible to the rest needs
+ * prerendering, which is a separate decision.
+ */
+export function applySeoHead({
+  title,
+  description,
+  path,
+  siteName,
+  keywords,
+  type = 'website',
+  publishedTime,
+  author,
+  section,
+}) {
   const canonical = `${window.location.origin}${path}`;
   document.title = title;
   setMeta('description', description);
@@ -35,7 +54,14 @@ export function applySeoHead({ title, description, path, siteName }) {
   setMeta('og:title', title, 'property');
   setMeta('og:description', description, 'property');
   setMeta('og:url', canonical, 'property');
-  setMeta('og:type', 'website', 'property');
+  setMeta('og:type', type, 'property');
+  if (keywords?.length) setMeta('keywords', keywords.join(', '));
+  if (publishedTime) setMeta('article:published_time', publishedTime, 'property');
+  if (author) {
+    setMeta('article:author', author, 'property');
+    setMeta('author', author);
+  }
+  if (section) setMeta('article:section', section, 'property');
   setMeta('og:site_name', siteName, 'property');
   setMeta('og:image', `${window.location.origin}/crosseroads-logo.png`, 'property');
   setMeta('twitter:card', 'summary_large_image');
@@ -56,6 +82,9 @@ export function resetSeoHead() {
     'link[rel="canonical"]',
     'meta[property^="og:"]',
     'meta[name^="twitter:"]',
+    'meta[property^="article:"]',
+    'meta[name="keywords"]',
+    'meta[name="author"]',
   ];
   for (const selector of managed) {
     document.querySelectorAll(selector).forEach((el) => el.remove());
