@@ -33,6 +33,8 @@ const PAGES = [
   '/Worksheets/balanced-college-list',
   '/WorkWithMe',
   '/Search',
+  '/About',
+  '/Resources',
   '/Privacy',
   '/Terms',
 ];

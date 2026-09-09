@@ -49,6 +49,8 @@ describe('sitemap.xml', () => {
       '/Wellness',
       '/Guides',
       '/Worksheets',
+      '/About',
+      '/Resources',
       '/WorkWithMe',
       '/Privacy',
       '/Terms',

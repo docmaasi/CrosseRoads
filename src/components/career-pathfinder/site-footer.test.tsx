@@ -19,6 +19,8 @@ const ROUTES = [
   '/Guides',
   '/Worksheets',
   '/Search',
+  '/About',
+  '/Resources',
   '/WorkWithMe',
   '/Privacy',
   '/Terms',
@@ -30,6 +32,8 @@ const ANCHORS: Record<string, string[]> = {
   '/Privacy': PRIVACY_SECTIONS.map((section) => section.id),
   // Rendered by CareerPathfinder's intro screen.
   '/CareerPathfinder': ['resources', 'faq', 'about', 'worldwide-resources'],
+  '/About': ['about', 'faq'],
+  '/Resources': ['resources', 'worldwide-resources'],
 };
 
 function footerLinks() {

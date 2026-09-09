@@ -67,8 +67,8 @@ export function SiteFooter() {
           <li><a className={footerLink} href="/Worksheets">Printable worksheets</a></li>
           <li><a className={footerLink} href="/Search">Search the site</a></li>
           <li><a className={`${footerLink} font-medium text-[#e8a33d]`} href="/WorkWithMe">Work with Dr. Crosse</a></li>
-          <li><a className={footerLink} href="/CareerPathfinder#resources">Free resources</a></li>
-          <li><a className={footerLink} href="/CareerPathfinder#faq">Frequently asked questions</a></li>
+          <li><a className={footerLink} href="/Resources">Free resources</a></li>
+          <li><a className={footerLink} href="/About#faq">Frequently asked questions</a></li>
         </FooterColumn>
 
         <FooterColumn title="Career data sources">

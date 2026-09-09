@@ -70,6 +70,8 @@ const STATIC = [
   ['/CareerPathfinder', 'monthly', '1.0'],
   ['/WorkWithMe', 'monthly', '0.9'],
   ['/Worksheets', 'weekly', '0.9'],
+  ['/About', 'monthly', '0.8'],
+  ['/Resources', 'weekly', '0.8'],
   ['/CollegePlanner', 'monthly', '0.8'],
   ['/ParentRoadmap', 'monthly', '0.8'],
   ['/Guides', 'weekly', '0.7'],

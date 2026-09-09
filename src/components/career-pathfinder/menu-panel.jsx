@@ -28,9 +28,9 @@ const GROUPS = [
   {
     title: 'Resources',
     links: [
-      { href: '/CareerPathfinder#resources', label: 'Career resource library' },
+      { href: '/Resources#resources', label: 'Career resource library' },
       {
-        href: '/CareerPathfinder#worldwide-resources',
+        href: '/Resources#worldwide-resources',
         label: 'Worldwide resource directory',
       },
       { href: '/CollegePlanner#resources', label: 'Official college links' },
@@ -41,8 +41,8 @@ const GROUPS = [
   {
     title: 'About',
     links: [
-      { href: '/CareerPathfinder#about', label: 'Our mission' },
-      { href: '/CareerPathfinder#faq', label: 'FAQs' },
+      { href: '/About', label: 'Our mission' },
+      { href: '/About#faq', label: 'FAQs' },
       { href: '/Privacy', label: 'Privacy Policy' },
       { href: '/Terms', label: 'Terms of Use' },
     ],

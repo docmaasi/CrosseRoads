@@ -12,6 +12,8 @@ const Wellness = lazy(() => import('./pages/Wellness'));
 const Guides = lazy(() => import('./pages/Guides'));
 const Worksheets = lazy(() => import('./pages/Worksheets'));
 const Search = lazy(() => import('./pages/Search'));
+const About = lazy(() => import('./pages/About'));
+const Resources = lazy(() => import('./pages/Resources'));
 const WorkWithMe = lazy(() => import('./pages/WorkWithMe'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
@@ -40,6 +42,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/Worksheets" element={<Worksheets />} />
           <Route path="/Worksheets/:slug" element={<Worksheets />} />
           <Route path="/Search" element={<Search />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Resources" element={<Resources />} />
           <Route path="/WorkWithMe" element={<WorkWithMe />} />
           <Route path="/Privacy" element={<Privacy />} />
           <Route path="/Terms" element={<Terms />} />

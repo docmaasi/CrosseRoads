@@ -15,6 +15,8 @@ const ROUTES = [
   '/Guides',
   '/Worksheets',
   '/Search',
+  '/About',
+  '/Resources',
   '/WorkWithMe',
   '/Privacy',
   '/Terms',
@@ -29,6 +31,10 @@ const ROUTES = [
  */
 const ANCHORS: Record<string, string[]> = {
   '/CareerPathfinder': ['resources', 'worldwide-resources', 'about', 'faq'],
+  // These render on a page of their own, so they survive a visitor who has
+  // started the assessment — which the CareerPathfinder versions did not.
+  '/About': ['about', 'faq'],
+  '/Resources': ['resources', 'worldwide-resources'],
   '/CollegePlanner': ['resources'],
   '/Wellness': ['resources'],
   '/WorkWithMe': ['packages', 'power-hour', 'a-la-carte', 'inquire'],
