@@ -68,6 +68,68 @@ const TOOLS = [
   },
 ];
 
+/**
+ * The mission statement.
+ *
+ * "Our mission" in the menu used to land on a screen-reader-only heading, a
+ * one-line quote and then a list of tools — a link that arrived nowhere. This
+ * is what it arrives at now.
+ */
+const MISSION = {
+  eyebrow: 'Our mission',
+  heading: 'Every family deserves to know what is possible',
+  paragraphs: [
+    'The road from high school to college is not equally lit for everyone. Some families inherit the map. They know which questions to ask, which deadlines actually matter, and who to call when something goes wrong. Other families are handed the same eighteen months, the same forms and the same stakes, and are expected to work it out alone.',
+    'Dr. Kisa Crosse has spent more than two decades as a family physician, sitting with families through the years that shape everything after them. She has also been the mother at the kitchen table late at night, with a deadline in the morning and nobody to ask. CrosseRoads is what she wished had been there then.',
+    'So the work here is easy to describe and hard to do: take a process that quietly rewards insider knowledge, and make it plain. Give a parent enough to feel steady. Give a student enough to take the wheel. And treat this year as what it actually is — not a competition to be won, but a family working out, together, what comes next.',
+  ],
+  beliefs: [
+    'This should be a partnership. Not a parent taking it over, and not a seventeen-year-old left alone with it.',
+    'Getting in was never the goal. The right fit, and a student ready to thrive once they arrive, is.',
+    'Families deserve straight answers — about the money, about the odds, about what genuinely matters and what does not.',
+    'Nobody should have to already know somebody in order to find out how any of this works.',
+  ],
+};
+
+function MissionStatement() {
+  return (
+    <div className="mx-auto max-w-2xl px-4 pt-12 text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#116a75]">
+        {MISSION.eyebrow}
+      </p>
+      <h3 className="mt-3 bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text font-serif text-3xl font-bold leading-tight text-transparent">
+        {MISSION.heading}
+      </h3>
+
+      <div className="mt-5 space-y-4 text-left">
+        {MISSION.paragraphs.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="leading-relaxed text-stone-700">
+            {paragraph}
+          </p>
+        ))}
+      </div>
+
+      <ul className="mt-8 space-y-3 text-left">
+        {MISSION.beliefs.map((belief) => (
+          <li
+            key={belief.slice(0, 40)}
+            className="flex gap-3 rounded-2xl border border-stone-200 bg-white p-4 shadow-sm"
+          >
+            <span aria-hidden="true" className="mt-0.5 text-[#e8a33d]">
+              ✦
+            </span>
+            <span className="leading-relaxed text-stone-700">{belief}</span>
+          </li>
+        ))}
+      </ul>
+
+      <p className="mt-6 font-serif text-lg italic text-[#4a2373]">
+        Guidance, support, and opportunity — for every household, whatever it looks like.
+      </p>
+    </div>
+  );
+}
+
 function MissionBand() {
   return (
     <div className="relative overflow-hidden bg-[#33184f] px-4 py-12 text-center">
@@ -122,6 +184,8 @@ export function PlatformAbout() {
         About CrosseRoads
       </h2>
       <MissionBand />
+
+      <MissionStatement />
 
       <div className="mx-auto max-w-3xl px-4 text-center">
         <div className="grid grid-cols-2 gap-3 py-10 sm:grid-cols-4">
