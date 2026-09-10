@@ -31,6 +31,7 @@ export default function About() {
     <div className="cp-root flex min-h-screen flex-col bg-gradient-to-b from-[#f6f0fa] via-[#fefcff] to-[#efe8f6]">
       <CrosseRoadsHeader />
       <main id="main-content" tabIndex={-1} className="flex-1 pb-6">
+        <h1 className="sr-only">About CrosseRoads and our mission</h1>
         <PlatformAbout />
         <FaqSection />
       </main>

@@ -30,6 +30,17 @@ export default function Resources() {
       <CrosseRoadsHeader />
       <main id="main-content" tabIndex={-1} className="flex-1">
         <div className="mx-auto max-w-2xl space-y-10 px-4 py-10">
+          <header>
+            <h1 className="bg-gradient-to-r from-[#4a2373] via-[#6b2f9c] to-[#17808d] bg-clip-text font-serif text-3xl font-bold text-transparent">
+              Free resources
+            </h1>
+            <p className="mt-2 leading-relaxed text-stone-600">
+              A short, hand-picked career library, and {DIRECTORY.length} free
+              resources from governments, universities and established nonprofits
+              across 20 countries. Every link was opened and checked by hand.
+            </p>
+          </header>
+
           <ResourceLibrary />
           <WorldwideDirectory />
         </div>
