@@ -4,6 +4,7 @@ import { CrosseRoadsHeader } from '@/components/career-pathfinder/crosseroads-he
 import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import { BRAND } from '@/components/career-pathfinder/branding';
 import { applySeoHead, resetSeoHead } from '@/components/career-pathfinder/seo-head';
+import { PAGES } from '@/data/page-meta';
 import '@/components/career-pathfinder/pathfinder.css';
 
 /** Site-wide search. Deliberately not in the sitemap — it has no content of
@@ -11,9 +12,7 @@ import '@/components/career-pathfinder/pathfinder.css';
 export default function Search() {
   useEffect(() => {
     applySeoHead({
-      title: `Search — ${BRAND.platformName}`,
-      description:
-        'Search every CrosseRoads worksheet, guide and vetted free resource. Runs entirely in your browser.',
+      ...PAGES['/Search'],
       path: '/Search',
       siteName: BRAND.platformName,
     });

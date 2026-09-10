@@ -6,6 +6,7 @@ import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import { BRAND } from '@/components/career-pathfinder/branding';
 import { DIRECTORY } from '@/data/resource-directory';
 import { applySeoHead, resetSeoHead } from '@/components/career-pathfinder/seo-head';
+import { resourcesMeta } from '@/data/page-meta';
 import '@/components/career-pathfinder/pathfinder.css';
 
 /**
@@ -16,9 +17,7 @@ import '@/components/career-pathfinder/pathfinder.css';
 export default function Resources() {
   useEffect(() => {
     applySeoHead({
-      title: `Free resources — ${BRAND.platformName}`,
-      description:
-        `${DIRECTORY.length} free, vetted resources from governments, universities and established nonprofits in 20 countries, plus the career library. No account, no cost.`,
+      ...resourcesMeta(DIRECTORY.length),
       path: '/Resources',
       siteName: BRAND.platformName,
     });

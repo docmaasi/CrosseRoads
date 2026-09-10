@@ -3,6 +3,7 @@ import { HomeScreen } from '@/components/home/home-screen';
 import { CrosseRoadsHeader } from '@/components/career-pathfinder/crosseroads-header';
 import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import { BRAND } from '@/components/career-pathfinder/branding';
+import { PAGES } from '@/data/page-meta';
 import {
   applySeoHead,
   injectJsonLd,
@@ -17,8 +18,7 @@ const JSONLD_ID = 'home-jsonld';
 export default function Home() {
   useEffect(() => {
     applySeoHead({
-      title: `${BRAND.platformName} — ${BRAND.platformTagline}`,
-      description: BRAND.mission,
+      ...PAGES['/'],
       path: '/',
       siteName: BRAND.platformName,
     });

@@ -7,14 +7,13 @@ import {
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
 import { LIBRARY_LICENCE, WORKSHEETS } from './data/worksheets';
+import { worksheetMeta, worksheetsIndexMeta } from '@/data/page-meta';
 
 const JSONLD_ID = 'worksheets-jsonld';
 
-const INDEX_TITLE = `Free College Planning Worksheets — ${BRAND.platformName}`;
-const INDEX_DESC =
-  `${WORKSHEETS.length} free printable worksheets for families going from high school to ` +
-  'college: college list trackers, financial aid comparison charts, deadline ' +
-  'checklists, essay brainstorms and parent conversation guides. Openly licensed.';
+const { title: INDEX_TITLE, description: INDEX_DESC } = worksheetsIndexMeta(
+  WORKSHEETS.length,
+);
 
 /** Marked up as a dataset so the library is discoverable as open educational data. */
 function indexJsonLd(canonical) {
@@ -53,10 +52,9 @@ export function useWorksheetSeo(worksheet) {
     const path = worksheet ? `/Worksheets/${worksheet.slug}` : '/Worksheets';
     const canonical = `${window.location.origin}${path}`;
     applySeoHead({
-      title: worksheet
-        ? `${worksheet.title} — free printable worksheet — ${BRAND.platformName}`
-        : INDEX_TITLE,
-      description: worksheet ? worksheet.purpose : INDEX_DESC,
+      ...(worksheet
+        ? worksheetMeta(worksheet)
+        : { title: INDEX_TITLE, description: INDEX_DESC }),
       path,
       siteName: BRAND.platformName,
     });

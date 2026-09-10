@@ -6,15 +6,12 @@ import {
   removeJsonLd,
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
+import { PAGES } from '@/data/page-meta';
 
 // Per-route SEO for /CollegePlanner (shared seo-head helpers), with
 // WebApplication + FAQPage JSON-LD.
 
-const TITLE = `Free College Admissions Planner & Checklist — by ${BRAND.platformName}`;
-const DESCRIPTION =
-  'A free interactive college admissions checklist for parents and students — ' +
-  'junior-year foundations, month-by-month senior year deadlines, financial aid, ' +
-  'and everything after acceptance through move-in day.';
+const { title: TITLE, description: DESCRIPTION } = PAGES['/CollegePlanner'];
 const JSONLD_ID = 'college-planner-jsonld';
 
 export const PLANNER_FAQ = [

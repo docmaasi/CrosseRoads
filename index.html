@@ -7,12 +7,23 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#4a2373" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      prerender:head:start
+
+      Everything between these two markers is replaced, per route, by
+      scripts/prerender.mjs during the build, so that a link to any page shares
+      with that page's own title, description and card rather than the
+      homepage's. Social crawlers never run JavaScript, so this markup is the
+      only thing they see. What is written here by hand is the homepage set,
+      which is also what `npm run dev` serves, since prerendering is a build
+      step. The copy itself lives in src/data/page-meta.ts — edit it there.
+    -->
+    <title>CrosseRoads — Guidance • Support • Opportunity</title>
     <meta
       name="description"
-      content="CrosseRoads empowers single parents and families to navigate the path from high school to college and beyond — a free career assessment, college admissions planner, parent roadmap, and wellness companion from Dr. Kisa Crosse."
+      content="Empowering single parents and families to navigate the path from high school to college and beyond."
     />
-    <title>CrosseRoads — Guidance • Support • Opportunity</title>
-    <!-- Social sharing card. -->
+    <link rel="canonical" href="https://crosseroads.com/" />
     <meta property="og:title" content="CrosseRoads — Guidance • Support • Opportunity" />
     <meta
       property="og:description"
@@ -21,9 +32,15 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://crosseroads.com/" />
     <meta property="og:site_name" content="CrosseRoads" />
-    <meta property="og:image" content="https://crosse-roads.vercel.app/og-card.jpg" />
+    <meta property="og:image" content="https://crosseroads.com/og-card.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://crosse-roads.vercel.app/og-card.jpg" />
+    <meta name="twitter:title" content="CrosseRoads — Guidance • Support • Opportunity" />
+    <meta
+      name="twitter:description"
+      content="Empowering single parents and families to navigate the path from high school to college and beyond."
+    />
+    <meta name="twitter:image" content="https://crosseroads.com/og-card.jpg" />
+    <!-- prerender:head:end -->
     <link
       rel="alternate"
       type="application/rss+xml"

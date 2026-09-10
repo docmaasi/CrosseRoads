@@ -6,14 +6,10 @@ import {
   removeJsonLd,
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
+import { PAGES } from '@/data/page-meta';
 import { CONSULTING_TIERS, PACKAGES_FAQ, POWER_HOUR } from './data/packages';
 
-const TITLE = `College Consulting Packages — Work with Dr. Kisa Crosse | ${BRAND.platformName}`;
-const DESCRIPTION =
-  'One-on-one college admissions consulting from Dr. Kisa Crosse: the College ' +
-  'Kickstart ($500), the CrosseRoads College Plan ($1,250 Founding Family Rate), ' +
-  'the VIP Experience ($2,000), and a $150 Power Hour. Every package is backed ' +
-  'by the free CrosseRoads planning tools.';
+const { title: TITLE, description: DESCRIPTION } = PAGES['/WorkWithMe'];
 const JSONLD_ID = 'work-with-me-jsonld';
 
 const PROVIDER = {

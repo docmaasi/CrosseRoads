@@ -6,14 +6,10 @@ import {
   removeJsonLd,
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
+import { PAGES } from '@/data/page-meta';
 import { ROADMAP_FAQ } from './data/package';
 
-const TITLE = `First-Time College Parent Roadmap — ${BRAND.platformName}`;
-const DESCRIPTION =
-  'A guided package for first-time college families: the interactive admissions ' +
-  'planner, a financial-aid award comparison worksheet, an editable college-list ' +
-  'tracker, monthly deadline reminders, and a private parent consultation with ' +
-  'Dr. Kisa Crosse — from junior year through move-in day.';
+const { title: TITLE, description: DESCRIPTION } = PAGES['/ParentRoadmap'];
 const JSONLD_ID = 'parent-roadmap-jsonld';
 
 export function useRoadmapSeo() {

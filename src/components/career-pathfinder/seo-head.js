@@ -2,9 +2,7 @@
 // (Career Pathfinder, College Planner). One implementation keeps the
 // apply/reset behavior identical across pages.
 
-const DEFAULT_TITLE = 'CrosseRoads — Guidance • Support • Opportunity';
-const DEFAULT_DESC =
-  'CrosseRoads empowers single parents and families to navigate the path from high school to college and beyond — a free career assessment, college admissions planner, parent roadmap, and wellness companion from Dr. Kisa Crosse.';
+import { DEFAULT_META, OG_IMAGE_URL, SITE_NAME, SITE_ORIGIN } from '@/data/page-meta';
 
 function setMeta(name, content, attr = 'name') {
   let el = document.querySelector(`meta[${attr}="${name}"]`);
@@ -30,11 +28,13 @@ function setCanonical(href) {
  * Set title, description, canonical, Open Graph and Twitter tags.
  *
  * The optional arguments carry article metadata: keywords, the Open Graph
- * article type, publication date, author and section. Note that these are set
- * from JavaScript, so social crawlers — which do not run scripts — see only
- * the static tags in index.html. They still reach browsers, extensions and the
- * crawlers that do execute pages; making them visible to the rest needs
- * prerendering, which is a separate decision.
+ * article type, publication date, author and section.
+ *
+ * These are set from JavaScript, which social crawlers do not run — so what
+ * they actually read is the markup `scripts/prerender.mjs` bakes into a static
+ * file per route at build time. Both sides take their copy from
+ * src/data/page-meta.ts so the two always agree; this function is what keeps
+ * the head correct as a visitor moves between routes without a page load.
  */
 export function applySeoHead({
   title,
@@ -47,7 +47,7 @@ export function applySeoHead({
   author,
   section,
 }) {
-  const canonical = `${window.location.origin}${path}`;
+  const canonical = `${SITE_ORIGIN}${path}`;
   document.title = title;
   setMeta('description', description);
   setCanonical(canonical);
@@ -63,30 +63,36 @@ export function applySeoHead({
   }
   if (section) setMeta('article:section', section, 'property');
   setMeta('og:site_name', siteName, 'property');
-  setMeta('og:image', `${window.location.origin}/crosseroads-logo.png`, 'property');
+  setMeta('og:image', OG_IMAGE_URL, 'property');
   setMeta('twitter:card', 'summary_large_image');
   setMeta('twitter:title', title);
   setMeta('twitter:description', description);
-  setMeta('twitter:image', `${window.location.origin}/crosseroads-logo.png`);
+  setMeta('twitter:image', OG_IMAGE_URL);
 }
 
 /**
- * Restore the head to the index.html defaults: title and description
- * are reset; canonical, og:* and twitter:* tags (which index.html does
- * not define) are removed entirely.
+ * Restore the head to the site defaults as a page unmounts.
+ *
+ * This used to delete the og:* and twitter:* tags outright, on the belief that
+ * index.html did not define any. It does — and every prerendered page now
+ * defines a full set — so deleting them left whichever page came next briefly
+ * describing nothing at all. Restoring the homepage set instead means the head
+ * is always answerable, whatever order the routes are visited in.
+ *
+ * The article-only tags have no default and are still removed.
  */
 export function resetSeoHead() {
-  document.title = DEFAULT_TITLE;
-  setMeta('description', DEFAULT_DESC);
-  const managed = [
-    'link[rel="canonical"]',
-    'meta[property^="og:"]',
-    'meta[name^="twitter:"]',
+  applySeoHead({
+    title: DEFAULT_META.title,
+    description: DEFAULT_META.description,
+    path: '/',
+    siteName: SITE_NAME,
+  });
+  for (const selector of [
     'meta[property^="article:"]',
     'meta[name="keywords"]',
     'meta[name="author"]',
-  ];
-  for (const selector of managed) {
+  ]) {
     document.querySelectorAll(selector).forEach((el) => el.remove());
   }
 }

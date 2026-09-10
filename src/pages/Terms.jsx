@@ -18,7 +18,6 @@ export default function Terms() {
           effective={TERMS_EFFECTIVE}
           sections={TERMS_SECTIONS}
           path="/Terms"
-          description="CrosseRoads terms of use: free self-guided educational tools, acceptable use, and disclaimers in plain English."
         />
       </div>
       <SiteFooter />

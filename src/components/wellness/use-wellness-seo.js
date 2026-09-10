@@ -6,12 +6,9 @@ import {
   removeJsonLd,
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
+import { PAGES } from '@/data/page-meta';
 
-const TITLE = `Wellness Transformation for Midlife Women — ${BRAND.platformName}`;
-const DESCRIPTION =
-  'A free, gentle wellness companion for midlife women: realistic starting ' +
-  'plans, a simple habit tracker, daily energy and mood check-ins, trend ' +
-  'charts, and a reflection journal. Private — everything stays on your device.';
+const { title: TITLE, description: DESCRIPTION } = PAGES['/Wellness'];
 const JSONLD_ID = 'wellness-jsonld';
 
 export const WELLNESS_FAQ = [

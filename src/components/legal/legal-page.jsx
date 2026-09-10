@@ -4,18 +4,24 @@ import {
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
 import { BRAND } from '../career-pathfinder/branding';
+import { PAGES } from '@/data/page-meta';
 
-/** Shared renderer for the Privacy Policy and Terms of Use pages. */
-export function LegalPage({ title, effective, sections, path, description }) {
+/**
+ * Shared renderer for the Privacy Policy and Terms of Use pages.
+ *
+ * `title` is the heading a reader sees. The <head> copy comes from
+ * page-meta.ts instead, so that the tags baked into the prerendered file at
+ * build time and the ones set here at runtime are the same strings.
+ */
+export function LegalPage({ title, effective, sections, path }) {
   useEffect(() => {
     applySeoHead({
-      title: `${title} — ${BRAND.platformName}`,
-      description,
+      ...PAGES[path],
       path,
       siteName: BRAND.platformName,
     });
     return resetSeoHead;
-  }, [title, description, path]);
+  }, [path]);
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-12">

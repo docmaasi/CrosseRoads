@@ -5,6 +5,7 @@ import { FaqSection } from '@/components/career-pathfinder/faq-section';
 import { SiteFooter } from '@/components/career-pathfinder/site-footer';
 import { BRAND } from '@/components/career-pathfinder/branding';
 import { applySeoHead, resetSeoHead } from '@/components/career-pathfinder/seo-head';
+import { PAGES } from '@/data/page-meta';
 import '@/components/career-pathfinder/pathfinder.css';
 
 /**
@@ -18,9 +19,7 @@ import '@/components/career-pathfinder/pathfinder.css';
 export default function About() {
   useEffect(() => {
     applySeoHead({
-      title: `Our mission — ${BRAND.platformName}`,
-      description:
-        'Why CrosseRoads exists, what it believes, and the physician and mother behind it. Guidance, support and opportunity for every household.',
+      ...PAGES['/About'],
       path: '/About',
       siteName: BRAND.platformName,
     });

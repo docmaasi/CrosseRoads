@@ -18,7 +18,6 @@ export default function Privacy() {
           effective={PRIVACY_EFFECTIVE}
           sections={PRIVACY_SECTIONS}
           path="/Privacy"
-          description="CrosseRoads privacy policy: no accounts, no tracking cookies, and everything you enter stays in your own browser."
         />
       </div>
       <SiteFooter />

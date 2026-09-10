@@ -51,8 +51,12 @@ registerRoute(
     } catch {
       // Offline, or the network took too long. Fall through to the shell.
     }
-    // Any route the visitor has not opened before still resolves, because
-    // every page in this app is the same shell with a different path.
+    // Any route the visitor has not opened before still resolves: each page is
+    // the same bundle on a different path, so React renders the right screen
+    // from the precached shell. Only the <head> differs — offline, an unvisited
+    // route falls back to the homepage's title and card. Nothing reads those
+    // offline, and online the network-first branch above fetches that route's
+    // own prerendered file, which is what link previews are served.
     return offlineShell(options);
   }),
 );

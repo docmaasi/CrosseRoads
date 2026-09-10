@@ -2,16 +2,13 @@ import { useEffect } from 'react';
 import { BRAND } from './branding';
 import { FAQ_ITEMS } from './faq-section';
 import { applySeoHead, injectJsonLd, removeJsonLd, resetSeoHead } from './seo-head';
+import { PAGES } from '@/data/page-meta';
 
 // Per-route SEO for /CareerPathfinder: meta tags via the shared
 // seo-head helpers, plus WebApplication + FAQPage JSON-LD so search
 // engines, answer engines, and AI assistants can understand the page.
 
-const TITLE = `Free Career Assessment — ${BRAND.productName} by ${BRAND.platformName}`;
-const DESCRIPTION =
-  'Discover the careers that fit who you are. A free 10-minute assessment ' +
-  'matching your talents, interests, personality, and lifestyle to your top ' +
-  '10 careers — with education paths, reality checks, and next steps.';
+const { title: TITLE, description: DESCRIPTION } = PAGES['/CareerPathfinder'];
 const JSONLD_ID = 'career-pathfinder-jsonld';
 
 function buildJsonLd(canonical) {

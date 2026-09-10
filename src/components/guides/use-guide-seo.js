@@ -7,15 +7,12 @@ import {
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
 import { ARTICLES } from './data/articles';
+import { guideMeta, guidesIndexMeta } from '@/data/page-meta';
 
 const JSONLD_ID = 'guides-jsonld';
 const FAQ_JSONLD_ID = 'guides-faq-jsonld';
 
-const INDEX_TITLE = `Career & College Guides — ${BRAND.platformName}`;
-const INDEX_DESC =
-  `${ARTICLES.length} free, practical guides from Dr. Kisa Crosse — family physician, ` +
-  'educator and mother — on choosing a career, college admissions timelines, ' +
-  'paying for college, supporting your student, and getting through it all intact.';
+const { title: INDEX_TITLE, description: INDEX_DESC } = guidesIndexMeta(ARTICLES.length);
 
 /**
  * Author block, repeated on every article.
@@ -115,15 +112,9 @@ export function useGuideSeo(article) {
     const canonical = `${window.location.origin}${path}`;
 
     applySeoHead({
-      title: article ? `${article.title} — ${BRAND.platformName}` : INDEX_TITLE,
-      description: article ? article.description : INDEX_DESC,
+      ...(article ? guideMeta(article) : { title: INDEX_TITLE, description: INDEX_DESC }),
       path,
       siteName: BRAND.platformName,
-      keywords: article?.keywords,
-      type: article ? 'article' : 'website',
-      publishedTime: article?.datePublished,
-      author: 'Dr. Kisa Crosse',
-      section: article?.category,
     });
 
     injectJsonLd(

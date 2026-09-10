@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "node scripts/sync-resources.mjs",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender.mjs",
+    "prerender": "node scripts/prerender.mjs",
     "images": "node scripts/build-images.mjs",
     "worksheets": "node scripts/build-worksheets.mjs",
     "sitemap": "node scripts/build-sitemap.mjs",
@@ -32,6 +33,7 @@
     "@testing-library/react": "^16.2.0",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "esbuild": "^0.25.12",
     "happy-dom": "^17.1.0",
     "playwright": "^1.63.0",
     "postcss": "^8.5.1",
