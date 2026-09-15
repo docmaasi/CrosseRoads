@@ -24,14 +24,9 @@ export const WELLNESS_RESOURCES: WellnessResource[] = [
     description: "The U.S. government's hub for women's health information",
   },
   {
-    name: 'Getting active for health (OWH)',
-    url: 'https://womenshealth.gov/getting-active/how-be-active-health',
-    description: 'How to be active for health, from the Office on Women’s Health',
-  },
-  {
     name: 'National Institute on Aging (NIH)',
     url: 'https://www.nia.nih.gov/',
-    description: 'Evidence-based guidance on healthy aging, menopause, and more',
+    description: 'Evidence-based guidance on staying healthy at every stage of adult life',
   },
   {
     name: 'MedlinePlus (NIH)',

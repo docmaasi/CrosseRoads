@@ -9,7 +9,7 @@ export const REFLECTION_PROMPTS: string[] = [
   'When did you feel most like yourself recently?',
   'What is one expectation you could soften this week?',
   'Who or what helped you stay on track lately?',
-  'If your best friend described your week, what would she celebrate?',
+  'If your best friend described your week, what would they celebrate?',
   'What is one thing you keep postponing that would take ten minutes?',
   'How did you rest this week — and did it actually restore you?',
   'What food made you feel good this week? What made you feel heavy?',

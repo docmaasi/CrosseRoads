@@ -30,8 +30,9 @@ export function WellnessHero() {
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-lg text-stone-600">
           Not a restrictive diet. Not another fitness app. A gentle system for
-          midlife women: pick a starting point, track a few habits, check in
-          with yourself daily, and watch your energy trend up.
+          parents and anyone who has been putting themselves last: pick a
+          starting point, track a few habits, check in with yourself daily, and
+          watch your energy trend up.
         </p>
         <p className="mt-4 text-xs uppercase tracking-[0.2em] text-stone-500">
           {BRAND.byline} — primary care physician
