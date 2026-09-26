@@ -15,7 +15,8 @@ export const WELLNESS_FAQ = [
   {
     question: 'What is Wellness Transformation?',
     answer:
-      'A free wellness companion for midlife women, created by Dr. Kisa Crosse, ' +
+      'A free wellness companion for parents and anyone who has been putting ' +
+      'themselves last, created by Dr. Kisa Crosse, ' +
       'a primary care physician. It offers a realistic starting plan based on your ' +
       'activity level, a simple habit tracker, daily energy/mood/sleep check-ins ' +
       'with trend charts, and a reflection journal. It is educational — not a diet, ' +

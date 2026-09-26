@@ -84,9 +84,10 @@ export const PAGES: Record<string, PageMeta> = {
       'Dr. Kisa Crosse — from junior year through move-in day.',
   },
   '/Wellness': {
-    title: `Wellness Transformation for Midlife Women — ${BRAND.platformName}`,
+    title: `Wellness Transformation for Busy Parents — ${BRAND.platformName}`,
     description:
-      'A free, gentle wellness companion for midlife women: realistic starting ' +
+      'A free, gentle wellness companion for parents and anyone who has been ' +
+      'putting themselves last: realistic starting ' +
       'plans, a simple habit tracker, daily energy and mood check-ins, trend ' +
       'charts, and a reflection journal. Private — everything stays on your device.',
   },
