@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#4a2373" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Page not found — CrosseRoads</title>
+    <!--
+      A real 404, served with a 404 status.
+
+      Until now vercel.json rewrote EVERY unmatched path to /index.html, so a
+      mistyped or retired address answered "200 OK" with the homepage. Search
+      engines call that a soft 404 and index the address as if it were a page.
+      Every genuine route is prerendered to its own file by scripts/prerender.mjs
+      and Vercel serves the filesystem before it consults `rewrites`, so dropping
+      the catch-all leaves real pages untouched and lets only unknown paths land
+      here.
+
+      Plain HTML on purpose: no React, no build step, nothing that can fail on
+      the one page a visitor reaches when something has already gone wrong.
+      Inline <style> is permitted by the site's Content-Security-Policy
+      (style-src includes 'unsafe-inline'); an inline <script> would NOT be, so
+      there is none.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap"
+    />
+    <style>
+      :root {
+        --ink: #241132;
+        --plum: #4a2373;
+        --muted: #5d5468;
+        --wash: #faf7fc;
+        --line: #e6dcef;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+        background: var(--wash);
+        color: var(--ink);
+        font-family: "Nunito Sans", system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+      }
+      main { width: 100%; max-width: 34rem; text-align: center; }
+      img { width: 64px; height: auto; margin: 0 auto 1.5rem; display: block; }
+      .code {
+        font-family: "Nunito Sans", system-ui, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--plum);
+        margin: 0 0 0.5rem;
+      }
+      h1 {
+        font-family: Fraunces, Georgia, serif;
+        font-weight: 700;
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+        line-height: 1.2;
+        margin: 0 0 0.75rem;
+      }
+      p { color: var(--muted); margin: 0 auto 2rem; max-width: 28rem; }
+      .go {
+        display: inline-block;
+        background: var(--plum);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 0.8rem 1.6rem;
+        border-radius: 999px;
+      }
+      .go:hover { background: #3a1b5c; }
+      nav {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+        justify-content: center;
+      }
+      nav a { color: var(--plum); text-decoration: none; font-weight: 600; }
+      nav a:hover { text-decoration: underline; }
+      @media (prefers-color-scheme: dark) {
+        :root { --ink: #f6f1fa; --plum: #c9a8ea; --muted: #b6a9c4; --wash: #1b0f26; --line: #3a2a4a; }
+        .go { color: #1b0f26; }
+        .go:hover { background: #dcc4f2; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="/crosseroads-emblem.png" alt="CrosseRoads" />
+      <p class="code">Error 404</p>
+      <h1>We can&rsquo;t find that page</h1>
+      <p>
+        The address may have changed, or there may be a typo in the link. Everything
+        else is still here &mdash; start from the homepage or pick a section below.
+      </p>
+      <a class="go" href="/">Go to the homepage</a>
+      <nav>
+        <a href="/Guides">Guides</a>
+        <a href="/Worksheets">Worksheets</a>
+        <a href="/Resources">Resources</a>
+        <a href="/Search">Search</a>
+        <a href="/WorkWithMe">Work with me</a>
+      </nav>
+    </main>
+  </body>
+</html>
