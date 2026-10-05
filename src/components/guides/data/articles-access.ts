@@ -2,6 +2,115 @@ import type { GuideArticle } from './types';
 
 export const ACCESS_ARTICLES: GuideArticle[] = [
   {
+    slug: 'nobody-is-coming-to-pay-your-tuition',
+    title: 'Nobody Is Coming to Pay Your Tuition. Here Is What Actually Does.',
+    description:
+      'A viral story about a celebrity rescuing one student is worth examining — because the real rescue, worth billions a year, goes unclaimed by the students it was built for.',
+    category: 'access',
+    readMinutes: 3,
+    datePublished: '2026-10-05',
+    keyTakeaway:
+      'No celebrity is going to pay for your education, but federal aid will. About 830,000 Pell-eligible students skipped the FAFSA in one recent year, leaving roughly $4.4 billion unclaimed. The form is free, takes under an hour, and is the highest-value thing most families will do all year.',
+    keywords: [
+      'how to pay for college',
+      'unclaimed financial aid',
+      'pell grant eligibility',
+      'fafsa not filed',
+      'cannot afford college',
+      'dropping out of college money',
+    ],
+    sections: [
+      {
+        paragraphs: [
+          'A story moved through social media fast this fall. A young woman reportedly spent her last $1,000 on a VIP meet-and-greet with Chris Brown, told him she was a student about to drop out, and walked away with her tuition covered, a year of rent paid, and $25,000 in cash.',
+          'Treat the details carefully. Neither Brown’s representatives nor any major news outlet has confirmed it, and a similar earlier claim about him was publicly denied by the fan involved. What is not in doubt is that millions of people shared it.',
+          'The sharing is the part worth studying. If the act happened, it deserves every bit of the credit it got — paying a stranger’s way through school is a genuinely good thing to do. But a story travels that fast only when it describes something people badly want to be true. For most families, a rich stranger noticing you is the only rescue plan anybody has ever described to them.',
+          'There is another one. It is less exciting and far more reliable.',
+        ],
+      },
+      {
+        heading: 'The rescue that already exists',
+        paragraphs: [
+          'In a single recent application cycle, roughly 830,000 students who qualified for a federal Pell Grant never filed the FAFSA. The aid they left behind came to about $4.4 billion.',
+          'Pell Grants are not loans. They do not have to be repaid, they are not awarded on talent or luck, and nobody has to notice you first. They are awarded on a form — and about 44 percent of graduating seniors never complete it.',
+        ],
+      },
+      {
+        heading: 'Why the money sits there',
+        list: [
+          'Families assume they earn too much. Eligibility depends on household size, how many are in college and what the school costs — not income alone. Filing is free and is the only way to find out.',
+          'They think financial aid means debt. The same application unlocks grants, work-study and a great deal of state and institutional money that is never repaid.',
+          'Nobody at home has done it before, and the form looks like a tax return.',
+          'They miss a state or college deadline, which is often months earlier than the federal one.',
+          'They are already enrolled and do not realize aid must be refiled every single year.',
+        ],
+      },
+      {
+        heading: 'What this costs, counted up',
+        paragraphs: [
+          'About 43.1 million Americans now hold college credits and no credential, a figure that grew again last year. Asked why they are not enrolled, 87 percent say cost is a very or moderately important reason.',
+          'Those are not people who lacked ability. They are people who ran out of money partway through — often over an amount smaller than the aid they never applied for.',
+        ],
+      },
+      {
+        heading: 'Four things to do this month',
+        list: [
+          'File the FAFSA. Not next month. Gather the documents and file it.',
+          'Find your state deadline, assume it is earlier than the federal one, and work backward from it.',
+          'Ask each college’s financial aid office exactly what its cost of attendance figure includes and what it leaves out. They will tell you. Almost nobody asks.',
+          'If you already left school owing a small balance, call the bursar and ask what a payment plan or re-enrollment grant would take. More institutions have both than admit it publicly.',
+        ],
+      },
+      {
+        heading: 'Why this site costs nothing',
+        paragraphs: [
+          'CrosseRoads was built by Dr. Kisa Crosse — a family physician, an educator and a parent who kept watching capable students stall out for reasons that had nothing to do with how smart they were.',
+          'Her answer was not a viral moment. It was to put the entire roadmap online and charge nobody for it: planners, printable worksheets and a directory of verified free resources, equally available to a student whose parents did this before and a student whose parents did not.',
+          'That is the unglamorous rescue. It helps vastly more students than any meet-and-greet ever will, and it does not require being noticed by anyone.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Did Chris Brown really pay a fan’s tuition?',
+        answer:
+          'The story circulated widely in 2026 but has not been confirmed by Chris Brown’s representatives or any major news outlet, so treat it as unverified. A similar earlier claim about him was publicly denied by the fan involved.',
+      },
+      {
+        question: 'How much financial aid goes unclaimed every year?',
+        answer:
+          'In one recent cycle about 830,000 Pell-eligible students did not file the FAFSA, leaving roughly $4.4 billion in grant money unclaimed. Pell Grants never have to be repaid.',
+      },
+      {
+        question: 'Do I earn too much to qualify for financial aid?',
+        answer:
+          'Probably not in the way you assume. Eligibility turns on household size, how many people are in college and the cost of the school, not income by itself. Filing costs nothing and is the only way to know.',
+      },
+      {
+        question: 'Do I have to file the FAFSA every year?',
+        answer:
+          'Yes. Aid is renewed annually, and missing the renewal is one of the most common reasons an enrolled student abruptly loses funding.',
+      },
+    ],
+    cta: {
+      label: 'Print the FAFSA Document Checklist',
+      text: 'A free worksheet listing every document to gather before you sit down — so the form takes an evening, not a month.',
+      href: '/Worksheets/fafsa-document-checklist',
+    },
+    sources: [
+      { name: 'Federal Student Aid', url: 'https://studentaid.gov/' },
+      {
+        name: 'National Student Clearinghouse Research Center',
+        url: 'https://nscresearchcenter.org/some-college-no-credential/scncreport2025/',
+      },
+      { name: 'Gallup', url: 'https://news.gallup.com/poll/646088/cost-leading-reason-college-students-stopping.aspx' },
+      {
+        name: 'Higher Education Today (American Council on Education)',
+        url: 'https://www.higheredtoday.org/2025/05/05/pell-grant-dollars-are-left-unclaimed/',
+      },
+    ],
+  },
+  {
     slug: 'first-generation-what-nobody-tells-you',
     title: 'First-Generation Students: The Things Nobody Tells You',
     description:

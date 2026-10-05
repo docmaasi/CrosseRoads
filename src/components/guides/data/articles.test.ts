@@ -24,6 +24,9 @@ const EXTRA_VETTED_HOSTS = [
   'www.nimh.nih.gov', // National Institute of Mental Health, NIH
   'www.dosomething.org',
   'www.volunteermatch.org',
+  'nscresearchcenter.org', // National Student Clearinghouse Research Center
+  'news.gallup.com', // Gallup
+  'www.higheredtoday.org', // American Council on Education
 ];
 
 const VETTED_HOSTS = new Set([
