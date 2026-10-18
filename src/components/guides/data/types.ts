@@ -35,9 +35,23 @@ export type ArticleCategory =
   | 'wellbeing'
   | 'access';
 
+/** A person or organisation an article is about, for structured data. */
+export interface ArticleEntity {
+  type: 'Person' | 'Organization';
+  name: string;
+  url?: string;
+}
+
 export interface GuideArticle {
   slug: string;
   title: string;
+  /**
+   * Replaces "From Dr. Kisa Crosse" for a piece that is about her rather than
+   * by her. When set, the structured data credits CrosseRoads as the author.
+   */
+  byline?: string;
+  /** People and organisations the piece is about, named for answer engines. */
+  mentions?: ArticleEntity[];
   description: string;
   category: ArticleCategory;
   readMinutes: number;

@@ -4,6 +4,7 @@ import { CATEGORY_LABELS } from './types';
 import { DIRECTORY } from '@/data/resource-directory';
 import { RESOURCE_LIBRARY } from '@/components/career-pathfinder/data/resources';
 import { WORKSHEETS } from '@/components/worksheets/data/worksheets';
+import { inlineLinkHrefs, splitInlineLinks, stripInlineLinks } from './inline-links';
 
 /**
  * An article may cite anything already vetted for the resource directory or the
@@ -27,6 +28,9 @@ const EXTRA_VETTED_HOSTS = [
   'nscresearchcenter.org', // National Student Clearinghouse Research Center
   'news.gallup.com', // Gallup
   'www.higheredtoday.org', // American Council on Education
+  'www.schoolcounselor.org', // American School Counselor Association
+  'www.ncan.org', // National College Attainment Network
+  'aka1908.com', // Alpha Kappa Alpha Sorority, Incorporated (official site)
 ];
 
 const VETTED_HOSTS = new Set([
@@ -105,6 +109,34 @@ describe('guide articles', () => {
         expect([...VETTED_HOSTS], `${article.slug} cites ${url.host}`).toContain(url.host);
       }
     }
+  });
+
+  it('links inline only to app routes or https pages', () => {
+    for (const article of ARTICLES) {
+      const text = article.sections.flatMap((s) => [...(s.paragraphs ?? []), ...(s.list ?? [])]);
+      for (const href of text.flatMap(inlineLinkHrefs)) {
+        if (href.startsWith('/')) {
+          const [path] = href.split(/[?#]/);
+          const route = path.startsWith('/Guides/') || path.startsWith('/Worksheets/')
+            ? path.split('/').slice(0, 2).join('/')
+            : path;
+          expect(['/', '/About', '/Resources', ...TOOL_ROUTES], `${article.slug} -> ${href}`).toContain(route);
+        } else {
+          expect(new URL(href).protocol, `${article.slug} -> ${href}`).toBe('https:');
+        }
+      }
+      // A half-written link would print its brackets to the reader.
+      for (const line of text) expect(stripInlineLinks(line), article.slug).not.toMatch(/\]\(/);
+    }
+  });
+
+  it('splits inline links in reading order', () => {
+    expect(splitInlineLinks('See [the planner](/CollegePlanner) today.')).toEqual([
+      'See ',
+      { label: 'the planner', href: '/CollegePlanner' },
+      ' today.',
+    ]);
+    expect(stripInlineLinks('A [b](https://x.org) c')).toBe('A b c');
   });
 
   it('uses categories the index can label and filter', () => {
