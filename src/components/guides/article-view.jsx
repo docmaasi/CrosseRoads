@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Clock, ExternalLink } from 'lucide-react';
 import { BRAND } from '../career-pathfinder/branding';
 import { CATEGORY_LABELS, relatedArticles } from './data/articles';
 import { ArticleShare, AuthorBio } from './article-share';
+import { RichText } from './rich-text';
 
 /** Full article page: header, sections, tool CTA, and official sources. */
 export function ArticleView({ article }) {
@@ -23,7 +24,7 @@ export function ArticleView({ article }) {
           {article.title}
         </h1>
         <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-stone-500">
-          {BRAND.byline}
+          {article.byline ?? BRAND.byline}
           <span aria-hidden="true">·</span>
           <time dateTime={article.datePublished}>
             {new Date(`${article.datePublished}T12:00:00Z`).toLocaleDateString('en-US', {
@@ -58,7 +59,7 @@ export function ArticleView({ article }) {
             )}
             {section.paragraphs?.map((text) => (
               <p key={text.slice(0, 40)} className="mb-3 leading-relaxed text-stone-700">
-                {text}
+                <RichText text={text} />
               </p>
             ))}
             {section.list && (
@@ -66,7 +67,9 @@ export function ArticleView({ article }) {
                 {section.list.map((entry) => (
                   <li key={entry.slice(0, 40)} className="flex gap-2 text-stone-700">
                     <span className="text-[#e8a33d]">✦</span>
-                    <span className="leading-relaxed">{entry}</span>
+                    <span className="leading-relaxed">
+                      <RichText text={entry} />
+                    </span>
                   </li>
                 ))}
               </ul>

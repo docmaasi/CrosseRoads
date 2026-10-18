@@ -7,6 +7,7 @@ import {
   resetSeoHead,
 } from '../career-pathfinder/seo-head';
 import { ARTICLES } from './data/articles';
+import { stripInlineLinks } from './data/inline-links';
 import { guideMeta, guidesIndexMeta } from '@/data/page-meta';
 
 const JSONLD_ID = 'guides-jsonld';
@@ -56,13 +57,24 @@ function articleJsonLd(article, canonical) {
     isAccessibleForFree: true,
     articleSection: article.category,
     keywords: (article.keywords ?? []).join(', '),
-    wordCount: article.sections
-      .flatMap((section) => [...(section.paragraphs ?? []), ...(section.list ?? [])])
-      .join(' ')
-      .split(/\s+/).length,
+    wordCount: stripInlineLinks(
+      article.sections
+        .flatMap((section) => [...(section.paragraphs ?? []), ...(section.list ?? [])])
+        .join(' '),
+    ).split(/\s+/).length,
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-    author: AUTHOR,
+    // A profile of Dr. Crosse is about her, not by her.
+    author: article.byline ? PUBLISHER : AUTHOR,
     publisher: PUBLISHER,
+    ...(article.mentions?.length
+      ? {
+          about: article.mentions.map(({ type, name, url }) => ({
+            '@type': type,
+            name,
+            ...(url ? { url } : {}),
+          })),
+        }
+      : {}),
   };
 }
 

@@ -10,6 +10,7 @@ import { CAREER_ARTICLES } from './articles-career';
 import { PARENT_ARTICLES } from './articles-parents';
 import { WELLBEING_ARTICLES } from './articles-wellbeing';
 import { ACCESS_ARTICLES } from './articles-access';
+import { articleKisaCrosseProfile } from './article-kisa-crosse-profile';
 
 export * from './types';
 
@@ -25,6 +26,7 @@ const ALL = [
   ...PARENT_ARTICLES,
   ...WELLBEING_ARTICLES,
   ...ACCESS_ARTICLES,
+  articleKisaCrosseProfile,
 ];
 
 /** Newest first — a guides index that opens on last February reads as abandoned. */
