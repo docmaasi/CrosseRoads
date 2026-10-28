@@ -18,10 +18,11 @@ export const PLANNER_FAQ = [
   {
     question: 'What is the College Admissions Planner?',
     answer:
-      'A free interactive checklist that walks families through the entire college ' +
-      'admissions journey: junior-year preparation, month-by-month senior-year ' +
-      'application milestones, financial aid steps, and everything between ' +
-      'acceptance and move-in day. Check items off and your progress saves on your device.',
+      'A free interactive checklist of the key milestones in the college admissions ' +
+      'journey: junior-year preparation, month-by-month senior-year applications, ' +
+      'financial aid, and the steps between acceptance and move-in day. Check items ' +
+      'off and your progress saves on your device. Families who want the full ' +
+      'step-by-step plan can work with Dr. Kisa Crosse directly.',
   },
   {
     question: 'When should college planning start?',

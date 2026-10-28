@@ -11,7 +11,7 @@ describe('planner phase data', () => {
     const ids = ALL_ITEMS.map((item) => item.id);
     expect(new Set(ids).size).toBe(ids.length);
     expect(TOTAL_ITEMS).toBe(ids.length);
-    expect(TOTAL_ITEMS).toBeGreaterThan(60);
+    expect(TOTAL_ITEMS).toBeGreaterThan(20);
   });
 
   it('gives every item and group real content', () => {
