@@ -26,7 +26,7 @@ export function PlannerHero({ phaseProgress, totalDone, totalItems }) {
           College Admissions Planner
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-lg text-stone-600">
-          Every milestone from junior year to move-in day — in one checklist
+          The big milestones from junior year to move-in day, in one checklist
           your family can work through together. Progress saves automatically
           on this device.
         </p>

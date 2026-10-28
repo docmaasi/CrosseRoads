@@ -72,8 +72,8 @@ export const PAGES: Record<string, PageMeta> = {
     title: `Free College Admissions Planner & Checklist — by ${BRAND.platformName}`,
     description:
       'A free interactive college admissions checklist for parents and students — ' +
-      'junior-year foundations, month-by-month senior year deadlines, financial aid, ' +
-      'and everything after acceptance through move-in day.',
+      'junior-year foundations, month-by-month senior year milestones, financial aid, ' +
+      'and the key steps after acceptance through move-in day.',
   },
   '/ParentRoadmap': {
     title: `First-Time College Parent Roadmap — ${BRAND.platformName}`,

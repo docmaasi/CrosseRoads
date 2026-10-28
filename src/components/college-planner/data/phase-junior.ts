@@ -1,6 +1,8 @@
 import type { PlannerPhase } from './types';
 
-// Junior year — the groundwork for a successful senior year.
+// Junior year — the groundwork for a successful senior year. Kept to the
+// big milestones on purpose: the step-by-step detail is part of working
+// with Dr. Crosse directly (her request, 2026-10-28).
 export const juniorPhase: PlannerPhase = {
   id: 'junior',
   name: 'Junior Year: Build the Foundation',
@@ -9,49 +11,22 @@ export const juniorPhase: PlannerPhase = {
   groups: [
     {
       id: 'jr-year',
-      title: 'Throughout the year',
+      title: 'Fall–Winter: Get Involved',
       items: [
-        {
-          id: 'jr-service',
-          text: 'Participate in meaningful community service (10–20 hours for the year).',
-          detail:
-            'Ideas: stock a local food bank, hand out or deliver holiday food baskets, make or serve meals at a local shelter or group home, walk or run local 5Ks for causes like the American Heart Association or Red Cross, join school-offered activities, volunteer as a camp coach, or find virtual service projects on DoSomething.org.',
-        },
+        { id: 'jr-service', text: 'Take part in meaningful community service.' },
         {
           id: 'jr-clubs',
-          text: 'Join school clubs, organizations, athletics, or performing arts — and pursue leadership positions whenever possible.',
+          text: 'Join clubs, athletics, or the arts, and pursue leadership roles.',
         },
       ],
     },
     {
       id: 'jr-spring',
-      title: 'Testing & the college list',
+      title: 'Spring: Test and Explore',
       items: [
-        {
-          id: 'jr-prep',
-          text: 'Begin SAT and/or ACT preparation in February or March.',
-          detail: 'Consider a prep course, a tutor, or a structured self-study plan.',
-        },
-        {
-          id: 'jr-both-tests',
-          text: 'Take both the SAT and ACT during the spring (April–May) if possible.',
-          detail:
-            "Comparing scores helps determine which exam best highlights your student's strengths.",
-        },
-        {
-          id: 'jr-list',
-          text: 'Build a balanced college list with Likely (Safety), Target (Match), and Reach schools.',
-        },
-        {
-          id: 'jr-visits',
-          text: 'Visit college campuses whenever possible.',
-          detail:
-            'Campus visits help students discover where they feel most comfortable and can influence the final college list.',
-        },
-        {
-          id: 'jr-recs',
-          text: 'Make a list of 2–3 teachers to ask for recommendation letters.',
-        },
+        { id: 'jr-tests', text: 'Prepare for and take the SAT and/or ACT.' },
+        { id: 'jr-list', text: 'Build a balanced college list.' },
+        { id: 'jr-visits', text: 'Visit college campuses.' },
       ],
     },
   ],

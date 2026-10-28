@@ -63,6 +63,23 @@ export default function CollegePlanner() {
             />
           ))}
 
+          <div className="cp-no-print rounded-2xl border border-[#4a2373]/15 bg-white p-6 text-center shadow-sm">
+            <h2 className="font-serif text-xl font-bold text-[#4a2373]">
+              Want the full step-by-step plan?
+            </h2>
+            <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-stone-600">
+              This checklist covers the big milestones. Families who work with
+              Dr. Crosse get every step, deadline, and tip, tailored to their
+              student.
+            </p>
+            <a
+              href="/WorkWithMe"
+              className="mt-4 inline-flex items-center rounded-full bg-[#4a2373] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#3a1b5c]"
+            >
+              Work with Dr. Crosse
+            </a>
+          </div>
+
           <div className="cp-no-print flex flex-wrap justify-center gap-3">
             <Button variant="outline" onClick={() => window.print()}>
               <Printer className="mr-1.5 h-4 w-4" />
