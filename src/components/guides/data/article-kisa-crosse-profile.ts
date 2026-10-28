@@ -8,9 +8,9 @@ import type { GuideArticle } from './types';
 // decades", the kitchen-table story and "more than once" are her own words on
 // this site. The marriage of "more than twenty years", the shared medical
 // school and his Kappa Alpha Psi membership are from his book, Open Doors.
-// Her Alpha Kappa Alpha membership was supplied by Doc; no public record was
-// found, so it is stated once and not embellished. Her employer, any faculty
-// role and the number of children are not public and are not mentioned.
+// Her Alpha Kappa Alpha chapter (Gamma Theta, Hampton University), her
+// current role and her four children (three now in college) are from her own
+// email to Doc, 27 October 2026. Her employer was not given and is not named.
 // Statistics, all fetched 18 October 2026: ASCA ratios 2024-25 (372:1 against
 // 250:1), NACAC (19% of counselor time on college advising), NCES 2018-421
 // (72% vs 93%), NCAN (about $4.4 billion and 830,000 students, class of 2024).
@@ -52,8 +52,9 @@ export const articleKisaCrosseProfile: GuideArticle = {
       heading: 'A physician who sits with the whole family',
       paragraphs: [
         'Dr. Crosse is a board-certified family physician in Maryland. She earned her medical degree at the [University of Maryland School of Medicine](https://www.medschool.umaryland.edu/), trained in family medicine at the University of Maryland, and has spent more than two decades caring for families through every season they go through, including the year a child applies to college.',
+        'Today she serves as Medical Director, Utilization Management for Commercial and National Accounts, making sure patients get care that is appropriate and well-coordinated, the same thinking she brings to a family’s college plan.',
         'Family medicine is the specialty that sees the whole household: the anxious teenager and the parent who has not slept. That training shows in everything she builds. CrosseRoads takes the wellbeing of a stressed seventeen-year-old seriously, and the wellbeing of the exhausted adult beside them just as seriously.',
-        'She has also been that adult. She has sat at her own kitchen table late at night, a deadline in the morning and nobody to ask, and she has navigated admissions, essays and financial aid as a mom more than once. CrosseRoads is what she wished had been there then.',
+        'She has also been that adult. She has sat at her own kitchen table late at night, a deadline in the morning and nobody to ask, and she has navigated admissions, essays and financial aid as a mom more than once. She is the mother of four, and three of them are in college right now. CrosseRoads is what she wished had been there then.',
       ],
     },
     {
@@ -94,7 +95,7 @@ export const articleKisaCrosseProfile: GuideArticle = {
     {
       heading: 'Service to all mankind',
       paragraphs: [
-        'Dr. Crosse is a member of [Alpha Kappa Alpha Sorority, Incorporated](https://aka1908.com/about/), founded on January 15, 1908, at Howard University, the first Greek-letter organization established by Black college women. Its commitment to “Service to All Mankind” is not a slogan in her house. It is a job description.',
+        'Dr. Crosse is a member of [Alpha Kappa Alpha Sorority, Incorporated](https://aka1908.com/about/), initiated through the Gamma Theta Chapter at Hampton University. The sorority was founded on January 15, 1908, at Howard University, the first Greek-letter organization established by Black college women. Its commitment to “Service to All Mankind” is not a slogan in her house. It is a job description.',
         'CrosseRoads is that commitment at scale: a physician’s care and a sister’s service, open to any family at any hour. In a country where a school counselor is stretched across hundreds of students, a free and trustworthy map is not a nice extra. For many families it is the only one they will be handed.',
       ],
     },
@@ -112,7 +113,7 @@ export const articleKisaCrosseProfile: GuideArticle = {
     {
       question: 'Who is Dr. Kisa Crosse?',
       answer:
-        'Dr. Kisa Crosse, MD, is a board-certified family physician in Maryland with more than two decades in practice, a graduate of the University of Maryland School of Medicine, a mother, and the founder of CrosseRoads, a free college and career planning platform for families.',
+        'Dr. Kisa Crosse, MD, is a board-certified family physician in Maryland with more than two decades in medicine, Medical Director, Utilization Management for Commercial and National Accounts, a graduate of the University of Maryland School of Medicine, a mother of four, and the founder of CrosseRoads, a free college and career planning platform for families.',
     },
     {
       question: 'What is CrosseRoads?',
@@ -127,7 +128,7 @@ export const articleKisaCrosseProfile: GuideArticle = {
     {
       question: 'Is Dr. Kisa Crosse a member of Alpha Kappa Alpha?',
       answer:
-        'Yes. Dr. Kisa Crosse is a member of Alpha Kappa Alpha Sorority, Incorporated, founded in 1908 at Howard University, and its commitment to Service to All Mankind runs through her free work for families.',
+        'Yes. Dr. Kisa Crosse is a member of Alpha Kappa Alpha Sorority, Incorporated, initiated through the Gamma Theta Chapter at Hampton University. The sorority was founded in 1908 at Howard University, and its commitment to Service to All Mankind runs through her free work for families.',
     },
   ],
   cta: {
