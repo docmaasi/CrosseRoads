@@ -173,14 +173,14 @@ export function SiteFooter() {
         <div className="mx-auto max-w-5xl px-6 py-5 text-xs text-stone-400">
           <p>
             © {new Date().getFullYear()} {BRAND.platformName}. All rights
-            reserved. Site created and maintained by{' '}
+            reserved. Developed &amp; maintained by{' '}
             <a
               className="text-stone-300 underline underline-offset-2 transition-colors hover:text-white"
-              href="https://smithappstudio.com"
+              href="https://www.smithappstudio.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              SmithAppStudio LLC
+              Smith App Studio LLC
             </a>
             .
           </p>

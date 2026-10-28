@@ -85,7 +85,7 @@ describe('<SiteFooter />', () => {
   it('keeps the studio credit and a current copyright year', () => {
     render(<SiteFooter />);
     const footer = screen.getByRole('contentinfo');
-    expect(within(footer).getByRole('link', { name: /SmithAppStudio LLC/ })).toBeTruthy();
+    expect(within(footer).getByRole('link', { name: /Smith App Studio LLC/ })).toBeTruthy();
     expect(within(footer).getByText(new RegExp(`© ${new Date().getFullYear()}`))).toBeTruthy();
   });
 
